@@ -19,7 +19,7 @@ VYTRON is an automated falling-ball viscometer system developed as a TÜBİTAK 2
   * Custom-engineered sealing channels using **NBR O-Rings** and **Viton (FKM)** seals for chemical resistance and zero-leakage operation.
   * **Computational Fluid Dynamics (CFD):** Boundary wall-effect validation and Stokes' Law correction factors modeled and verified via **ANSYS**.
     
-  ### 🏆 Grants & Publications
+### 🏆 Grants & Publications
   
 - **TÜBİTAK Project:** Supported by the TÜBİTAK 2209-A University Students Research Projects Support Program (Project No: **1919B012431971**).
 - **Academic Publication:** Co-authored the research paper *"Triboloji Uygulamaları: Geleneksel Viskozimetrelere Mekatronik Destekli Yaklaşım"* with Prof. Dr. Ertuğrul Durak, published in **Lubricant World** magazine.
