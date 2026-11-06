@@ -1,0 +1,6 @@
+Copyright © 2026 Rashad Rahimzade. All rights reserved.
+
+This repository and everything in it (firmware, circuit schematics, mechanical CAD files, documentation and images) may not be copied, modified, distributed, or used in any other project, commercial or non-commercial, without the author's prior written permission.
+
+To request permission, please contact the author by email: rahimzaderashad1@gmail.com
+
