@@ -9,7 +9,7 @@ VYTRON is an automated **falling-ball viscometer** developed as a **TÜBİTAK 22
 
 This repository contains the **firmware, circuit schematics, and mechanical CAD files** of the system.
 
-![VYTRON system overview](docs/overview.png)
+![VYTRON system overview]<img width="675" height="540" alt="Adsız Proje" src="https://github.com/user-attachments/assets/8b889f8e-9948-4315-9d08-34bf66bbcde4" />
 
 ---
 
@@ -68,8 +68,8 @@ Because the ball falls in a bounded tube, the result is multiplied by a **wall-e
 
 | Controller | Role |
 |------------|------|
-| **Arduino Mega 2560** (main MCU) | Master control logic, temperature tracking, viscosity calculation, measurement sequencing |
-| **Arduino Nano** (motion MCU) | Reads the MPU-6050, controls tube position and drives the stepper driver |
+| **Arduino Mega 2560** (main MCU) | Master control logic, temperature tracking, viscosity calculation, Rotational position via MPU-6050, mesurement sequencing |
+| **Arduino Nano** (motion MCU) | Controls tube position and drives the stepper driver |
 
 ```
  ┌──────────────┐                                            ┌──────────────┐
@@ -77,7 +77,7 @@ Because the ball falls in a bounded tube, the result is multiplied by a **wall-e
  │  (Master)    │          serial communication              │  (Motion)    │
  └──────┬───────┘                                            └──────┬───────┘
         │                                                           │
-   DS18B20 (temp)                                  MPU-6050 (tilt) + JSS-860H ► NEMA 34
+DS18B20 (temp),MPU-6050 (tilt)                             JSS-860H ► NEMA 34
 ```
 
 ---
