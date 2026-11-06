@@ -9,7 +9,7 @@ VYTRON is an automated **falling-ball viscometer** developed as a **TÜBİTAK 22
 
 This repository contains the **firmware, circuit schematics, and mechanical CAD files** of the system.
 
-![VYTRON system overview]<img width="675" height="540" alt="Adsız Proje" src="https://github.com/user-attachments/assets/8b889f8e-9948-4315-9d08-34bf66bbcde4" />
+<img width="675" height="540" alt="Adsız Proje" src="https://github.com/user-attachments/assets/8b889f8e-9948-4315-9d08-34bf66bbcde4" />
 
 ---
 
