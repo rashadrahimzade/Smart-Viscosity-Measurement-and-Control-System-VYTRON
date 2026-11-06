@@ -151,7 +151,11 @@ Because the ball falls in a bounded tube, the result is multiplied by a **wall-e
 
 ## 📄 License
 
-No license has been specified yet. Please contact the author before reuse.
+**Copyright © 2026 Rashad Rahimzade. All rights reserved.**
+
+This repository and everything in it (firmware, circuit schematics, mechanical CAD files, documentation and images) may not be copied, modified, distributed, or used in any other project, commercial or non-commercial, without the author's prior written permission.
+
+To request permission, please contact the author by email: **rahimzaderashad1@gmail.com**
 
 ---
 
