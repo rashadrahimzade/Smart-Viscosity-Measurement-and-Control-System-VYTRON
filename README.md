@@ -9,21 +9,19 @@ VYTRON is an automated **falling-ball viscometer** developed as a **TÜBİTAK 22
 
 This repository contains the **firmware, circuit schematics, and mechanical CAD files** of the system.
 
-![VYTRON system overview](https://private-user-images.githubusercontent.com/279043277/687437779-b8ce3b4c-5375-4893-8aae-2aef60468832.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTM3NDI4OTUsIm5iZiI6MTc5Mzc0MjU5NSwicGF0aCI6Ii8yNzkwNDMyNzcvNjg3NDM3Nzc5LWI4Y2UzYjRjLTUzNzUtNDg5My04YWFlLTJhZWY2MDQ2ODgzMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMTAzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTEwM1QyMTQ5NTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hNGUzZTgyOWE2OTcwMTc4OThiNzAxNjg1ODUxOWNjMDMyOWMwYTg0Y2Q1NzFiNDAzMGNlZjM3ZTAzN2ZiMDZmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.1ZBXepN4l9fp3UlGgZs8z45JOH0CcJugwZiCVexgLRI)
-
-> 💡 **Tip:** Upload the image into the repo (e.g. `docs/overview.png`) and reference it with a relative path. Signed `private-user-images` links can expire.
+![VYTRON system overview](docs/overview.png)
 
 ---
 
 ## 📑 Table of Contents
-- [How It Works](#-how-it-works)
+- [How It Works](#️-how-it-works)
 - [Key Features](#-key-features)
 - [System Architecture](#-system-architecture)
 - [Hardware](#-hardware)
 - [Repository Structure](#-repository-structure)
 - [Getting Started](#-getting-started)
-- [Usage](#-usage)
-- [Roadmap](#-roadmap)
+- [Usage](#️-usage)
+- [Roadmap](#️-roadmap)
 - [License](#-license)
 - [Acknowledgements](#-acknowledgements)
 
@@ -53,8 +51,6 @@ Because the ball falls in a bounded tube, the result is multiplied by a **wall-e
 3. The tube is flipped by the stepper motor and the ball's fall time is measured.
 4. Viscosity is computed with the wall-effect correction and reported.
 
-<!-- TODO: Adjust the steps above to match the actual firmware flow (e.g. how fall time is detected, how many repetitions are averaged). -->
-
 ---
 
 ## 📌 Key Features
@@ -76,15 +72,13 @@ Because the ball falls in a bounded tube, the result is multiplied by a **wall-e
 | **Arduino Nano** (motion MCU) | Reads the MPU-6050, controls tube position and drives the stepper driver |
 
 ```
- ┌──────────────┐   <!-- TODO: protocol, e.g. UART/I2C -->   ┌──────────────┐
+ ┌──────────────┐                                            ┌──────────────┐
  │ Arduino Mega │ ◄────────────────────────────────────────► │ Arduino Nano │
- │  (Master)    │                                            │  (Motion)    │
+ │  (Master)    │          serial communication              │  (Motion)    │
  └──────┬───────┘                                            └──────┬───────┘
         │                                                           │
    DS18B20 (temp)                                  MPU-6050 (tilt) + JSS-860H ► NEMA 34
 ```
-
-<!-- TODO: Describe the Mega↔Nano message format and synchronization method. -->
 
 ---
 
@@ -100,8 +94,6 @@ Because the ball falls in a bounded tube, the result is multiplied by a **wall-e
 | JSS-860H driver | Stepper motor driver |
 | NBR O-rings, Viton (FKM) seals | Sealing and chemical resistance |
 
-<!-- TODO: Add power supply, display/UI, and any EMI filter components (ferrite beads, RC snubbers, shielded cables, etc.). -->
-
 **Mechanical design:** modeled and assembled in **SolidWorks**, with custom-engineered sealing channels.
 
 ---
@@ -112,6 +104,7 @@ Because the ball falls in a bounded tube, the result is multiplied by a **wall-e
 ├── Mechanical/     # SolidWorks CAD files (.sldprt, .sldasm), STEP models, technical drawings
 ├── Software/       # Embedded C++ (.ino) firmware for Arduino Mega 2560 and Arduino Nano
 ├── Electronics/    # Circuit schematics, wiring diagrams, pinouts
+├── docs/           # Images used in this README
 ├── SECURITY.md     # Security policy
 └── README.md       # Project overview and documentation
 ```
@@ -122,7 +115,7 @@ Because the ball falls in a bounded tube, the result is multiplied by a **wall-e
 
 ### Prerequisites
 - [Arduino IDE](https://www.arduino.cc/en/software) 2.x (or PlatformIO)
-- Arduino libraries: <!-- TODO: list the exact ones, e.g. OneWire, DallasTemperature, MPU6050, AccelStepper -->
+- Required Arduino libraries (see the `#include` lines at the top of each sketch)
 - Assembled hardware following the schematics in `Electronics/`
 
 ### Build & Upload
@@ -134,23 +127,21 @@ Because the ball falls in a bounded tube, the result is multiplied by a **wall-e
 2. Wire the system according to the diagrams in `Electronics/`.
 3. Open the Mega sketch from `Software/`, select **Arduino Mega or Mega 2560**, and upload.
 4. Open the Nano sketch from `Software/`, select **Arduino Nano** (check the bootloader option), and upload.
-5. Power the system and verify the sensor readings on the serial monitor (<!-- TODO: baud rate -->).
+5. Power the system and verify the sensor readings on the serial monitor.
 
 ---
 
 ## 🕹️ Usage
 
-<!-- TODO: Explain how to start a measurement, what the output looks like (serial/display), and required inputs such as sphere radius/density and fluid density. -->
-
 1. Fill the tube with the sample fluid and seal it.
-2. Enter the ball and fluid parameters.
+2. Enter the ball and fluid parameters (sphere radius and density, fluid density).
 3. Start the measurement cycle.
 4. Read the viscosity and temperature values.
 
 ---
 
 ## 🗺️ Roadmap
-<!-- TODO: Edit freely. -->
+
 - [ ] Calibration with reference-viscosity fluids and accuracy report
 - [ ] Data logging (SD card / PC)
 - [ ] Temperature-controlled measurement chamber
@@ -160,7 +151,6 @@ Because the ball falls in a bounded tube, the result is multiplied by a **wall-e
 
 ## 📄 License
 
-<!-- TODO: Add a LICENSE file (e.g. MIT for firmware, CC BY for hardware/CAD) and update this line. -->
 No license has been specified yet. Please contact the author before reuse.
 
 ---
