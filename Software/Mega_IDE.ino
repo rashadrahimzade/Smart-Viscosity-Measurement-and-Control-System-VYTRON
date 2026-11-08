@@ -4,6 +4,7 @@
 #include <Keypad.h>
 #include <OneWire.h>
 #include <DallasTemperature.h>
+#include <EEPROM.h>
 
 // --- PIN TANIMLARI ---
 #define TFT_CS 53
@@ -14,6 +15,13 @@
 #define ONE_WIRE_BUS 4 
 #define SENSOR_A 2  
 #define SENSOR_B 3  
+
+// EEPROM adresleri (kalibrasyon kalıcılığı, float = 4 byte)
+#define EEPROM_ADDR_BILYE_YOGUNLUK 0
+#define EEPROM_ADDR_BILYE_K 4
+#define EEPROM_ADDR_F_SABITI 8
+#define EEPROM_ADDR_HEDEF_SICAKLIK 12
+#define EEPROM_ADDR_SIVI_YOGUNLUK 16
 
 Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC, TFT_RST);
 OneWire oneWire(ONE_WIRE_BUS);
@@ -43,6 +51,48 @@ unsigned long isitmaBaslangicZamani = 0;
 float gecmisSureler[5] = {0, 0, 0, 0, 0}; 
 bool sureKaydedildi = false;
 bool olcumEkraniIlkCizim = true;
+
+// Sensör arıza tespiti
+bool sensorHata = false;
+String sensorHataMesaji = "";
+bool mpuI2cHata = false;
+
+// Atomic okuma yardımcı fonksiyonları (ISR/loop race condition koruması)
+bool okuOlcumBasladi() { noInterrupts(); bool v = olcumBasladi; interrupts(); return v; }
+bool okuOlcumBitti() { noInterrupts(); bool v = olcumBitti; interrupts(); return v; }
+unsigned long okuBaslangicZamani() { noInterrupts(); unsigned long v = baslangicZamani; interrupts(); return v; }
+unsigned long okuBitisZamani() { noInterrupts(); unsigned long v = bitisZamani; interrupts(); return v; }
+
+// EEPROM okuma/yazma yardımcı fonksiyonları
+void eepromYazFloat(int adres, float deger) {
+  byte* p = (byte*)&deger;
+  for (int i = 0; i < 4; i++) EEPROM.write(adres + i, p[i]);
+}
+float eepromOkuFloat(int adres) {
+  float deger;
+  byte* p = (byte*)&deger;
+  for (int i = 0; i < 4; i++) p[i] = EEPROM.read(adres + i);
+  return deger;
+}
+void kalibrasyonYukle() {
+  float by = eepromOkuFloat(EEPROM_ADDR_BILYE_YOGUNLUK);
+  float bk = eepromOkuFloat(EEPROM_ADDR_BILYE_K);
+  float fs = eepromOkuFloat(EEPROM_ADDR_F_SABITI);
+  float hs = eepromOkuFloat(EEPROM_ADDR_HEDEF_SICAKLIK);
+  float sy = eepromOkuFloat(EEPROM_ADDR_SIVI_YOGUNLUK);
+  if (by > 0) bilyeYogunluk = by;
+  if (bk > 0) bilyeK_Sabiti = bk;
+  if (fs > 0 && fs < 2) { /* fSabiti yerel degisken olarak kullaniliyor */ }
+  if (hs > 0 && hs < 100) hedefSicaklik = hs;
+  if (sy > 0) girilenYogunluk = String(sy);
+}
+void kalibrasyonKaydet() {
+  eepromYazFloat(EEPROM_ADDR_BILYE_YOGUNLUK, bilyeYogunluk);
+  eepromYazFloat(EEPROM_ADDR_BILYE_K, bilyeK_Sabiti);
+  eepromYazFloat(EEPROM_ADDR_F_SABITI, 0.952);
+  eepromYazFloat(EEPROM_ADDR_HEDEF_SICAKLIK, hedefSicaklik);
+  eepromYazFloat(EEPROM_ADDR_SIVI_YOGUNLUK, girilenYogunluk.toFloat());
+}
 
 const byte ROWS = 4, COLS = 4;
 char keys[ROWS][COLS] = {{'1','2','3','A'}, {'4','5','6','B'}, {'7','8','9','C'}, {'*','0','#','D'}};
@@ -84,6 +134,9 @@ void setup() {
   Wire.begin(); Wire.setClock(100000); Wire.setWireTimeout(3000, true); 
   sensors.begin();
   Wire.beginTransmission(MPU_ADDR); Wire.write(0x6B); Wire.write(0); Wire.endTransmission();
+  
+  kalibrasyonYukle(); // EEPROM'dan kalibrasyon degerlerini yukle
+  
   vytronLogoAnimasyon(); delay(500); sayfaDegistir(DIL_SECIM); 
 }
 
@@ -95,6 +148,14 @@ void loop() {
   if (millis() - sicaklikZamani > 1000) {
     sensors.requestTemperatures();
     guncelSicaklik = sensors.getTempCByIndex(0);
+    if (guncelSicaklik == -127.0 || guncelSicaklik == 85.0) {
+      sensorHata = true;
+      sensorHataMesaji = "DS18B20 hatasi";
+      digitalWrite(SSR_PIN, LOW);
+    } else {
+      sensorHata = false;
+      sensorHataMesaji = "";
+    }
     if (suankiSayfa == SICAKLIK_AYAR && hedefSicaklikKaydedildi) {
       if (guncelSicaklik < hedefSicaklik) digitalWrite(SSR_PIN, HIGH); else digitalWrite(SSR_PIN, LOW);
     } else { digitalWrite(SSR_PIN, LOW); }
@@ -112,14 +173,14 @@ void loop() {
     else if (suankiSayfa == BILYE_SECIM) { 
         // BİLYE SEÇİMİ VE GÜNCELLENMİŞ KALİBRASYON SABİTLERİ (K)
         // Sabitlerin virgülü bir sağa kaydırıldı (x10 yapıldı). Türbülans yanılgısı giderildi.
-        if (key == '1') { bilyeYogunluk = 16.75; bilyeK_Sabiti = 0.870; sayfaDegistir(SIVI_YOGUNLUK_GIRIS); } 
-        else if (key == '2') { bilyeYogunluk = 7.78; bilyeK_Sabiti = 1.482; sayfaDegistir(SIVI_YOGUNLUK_GIRIS); } 
-        else if (key == '3') { bilyeYogunluk = 7.79; bilyeK_Sabiti = 0.831; sayfaDegistir(SIVI_YOGUNLUK_GIRIS); } 
+        if (key == '1') { bilyeYogunluk = 16.75; bilyeK_Sabiti = 0.870; kalibrasyonKaydet(); sayfaDegistir(SIVI_YOGUNLUK_GIRIS); } 
+        else if (key == '2') { bilyeYogunluk = 7.78; bilyeK_Sabiti = 1.482; kalibrasyonKaydet(); sayfaDegistir(SIVI_YOGUNLUK_GIRIS); } 
+        else if (key == '3') { bilyeYogunluk = 7.79; bilyeK_Sabiti = 0.831; kalibrasyonKaydet(); sayfaDegistir(SIVI_YOGUNLUK_GIRIS); } 
     }
     else if (suankiSayfa == SIVI_YOGUNLUK_GIRIS) { 
         if ((key >= '0' && key <= '9') || key == '*') { if (key == '*') girilenYogunluk += "."; else girilenYogunluk += key; yogunlukGuncelle(); } 
         else if (key == '#') { girilenYogunluk = ""; yogunlukGuncelle(); } 
-        else if (key == 'A' && girilenYogunluk.length() > 0) sayfaDegistir(MPU_HIZALAMA); 
+        else if (key == 'A' && girilenYogunluk.length() > 0) { kalibrasyonKaydet(); sayfaDegistir(MPU_HIZALAMA); } 
     }
     else if (suankiSayfa == MPU_HIZALAMA) { 
         if (key == 'B') analizYap(-90.0, 2.2222); 
@@ -128,7 +189,7 @@ void loop() {
     else if (suankiSayfa == SICAKLIK_AYAR) { 
         if (key >= '0' && key <= '9') { girilenHedefSicaklik += key; hedefSicaklikGuncelle(); } 
         else if (key == '#') { girilenHedefSicaklik = ""; hedefSicaklikKaydedildi = false; digitalWrite(SSR_PIN, LOW); hedefSicaklikGuncelle(); tft.fillRect(160, 50, 160, 45, ILI9341_BLACK); tft.fillRect(0, 180, 320, 20, ILI9341_BLACK); } 
-        else if (key == 'B') { if (girilenHedefSicaklik.length() > 0) { hedefSicaklik = girilenHedefSicaklik.toFloat(); hedefSicaklikKaydedildi = true; isitmaBaslangicSicaklik = guncelSicaklik; isitmaBaslangicZamani = millis(); } }
+        else if (key == 'B') { if (girilenHedefSicaklik.length() > 0) { hedefSicaklik = girilenHedefSicaklik.toFloat(); hedefSicaklikKaydedildi = true; isitmaBaslangicSicaklik = guncelSicaklik; isitmaBaslangicZamani = millis(); kalibrasyonKaydet(); } }
         else if (key == 'A') { sayfaDegistir(HASSAS_AYAR); } 
     }
     else if (suankiSayfa == HASSAS_AYAR) { 
@@ -195,10 +256,14 @@ void sayfaDegistir(Sayfa yeni) {
 float mpuOku() {
   Wire.beginTransmission(MPU_ADDR); Wire.write(0x3B); Wire.endTransmission(false); Wire.requestFrom(MPU_ADDR, 6, true);
   if (Wire.available() >= 6) {
+    mpuI2cHata = false;
     int16_t ax = Wire.read()<<8|Wire.read(), ay = Wire.read()<<8|Wire.read(), az = Wire.read()<<8|Wire.read();
     float r = (atan2((float)ay, (float)az) * 180.0 / PI); if (r > 0) r -= 180.0; else r += 180.0; 
     sonYatay = -r; sonDikey = (atan2((float)-ax, sqrt((float)ay*ay + (float)az*az)) * 180.0 / PI);
-  } return sonYatay;
+  } else {
+    mpuI2cHata = true;
+  }
+  return sonYatay;
 }
 
 void analizYap(float hedefDerece, float katsayi) {
@@ -214,9 +279,9 @@ void olcumEkraniGuncelle() {
   static bool oncekiBasladi = false;
   static bool oncekiBitti = false;
 
-  if (olcumEkraniIlkCizim || oncekiBasladi != olcumBasladi || oncekiBitti != olcumBitti) {
-      oncekiBasladi = olcumBasladi;
-      oncekiBitti = olcumBitti;
+  if (olcumEkraniIlkCizim || oncekiBasladi != okuOlcumBasladi() || oncekiBitti != okuOlcumBitti()) {
+      oncekiBasladi = okuOlcumBasladi();
+      oncekiBitti = okuOlcumBitti();
       olcumEkraniIlkCizim = false;
 
       tft.setTextSize(2);
@@ -226,15 +291,19 @@ void olcumEkraniGuncelle() {
       tft.setCursor(10, 45); tft.setTextColor(ILI9341_CYAN); tft.print("DURUM / STATUS:");
       tft.setCursor(10, 70);
       
-      if (!olcumBasladi && !olcumBitti) { tft.setTextColor(ILI9341_GREEN); tft.print(seciliDil == TR ? "Yuvada (Hazir)" : "Ready in tube"); } 
-      else if (olcumBasladi && !olcumBitti) { tft.setTextColor(ILI9341_YELLOW); tft.print(seciliDil == TR ? "Ayrildi, Dusuyor..." : "Falling..."); } 
-      else if (olcumBitti) { tft.setTextColor(ILI9341_GREEN); tft.print(seciliDil == TR ? "Hedefe Vardi" : "Target Reached"); }
+      bool _b = okuOlcumBasladi();
+      bool _bit = okuOlcumBitti();
+      if (!_b && !_bit) { tft.setTextColor(ILI9341_GREEN); tft.print(seciliDil == TR ? "Yuvada (Hazir)" : "Ready in tube"); } 
+      else if (_b && !_bit) { tft.setTextColor(ILI9341_YELLOW); tft.print(seciliDil == TR ? "Ayrildi, Dusuyor..." : "Falling..."); } 
+      else if (_bit) { tft.setTextColor(ILI9341_GREEN); tft.print(seciliDil == TR ? "Hedefe Vardi" : "Target Reached"); }
 
       // DEĞERLER (SÜRE VE VİSKOZİTE HESAPLAMA)
       tft.fillRect(0, 95, 320, 105, ILI9341_BLACK); // Ekranın alt kısmını temizle
       
-      if (olcumBitti) {
-         float sureSaniye = (bitisZamani - baslangicZamani) / 1000000.0;
+      if (_bit) {
+         unsigned long _basla = okuBaslangicZamani();
+         unsigned long _bitis = okuBitisZamani();
+         float sureSaniye = (_bitis - _basla) / 1000000.0;
          
          // Viskozite Matematiği
          float siviYog_g_cm3 = girilenYogunluk.toFloat() / 1000.0; // kg/m3'ü g/cm3'e çevir
