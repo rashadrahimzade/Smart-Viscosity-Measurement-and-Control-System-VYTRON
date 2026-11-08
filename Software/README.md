@@ -6,14 +6,14 @@ This directory contains the modular C/C++ embedded firmware running on the dual-
 
 ### 🧱 System Architecture & Microcontroller Roles
 
-#### 1. Master Controller (`VYTRON_Mega_Main.ino`)
+#### 1. Master Controller (`Mega_IDE.ino`)
 * **Core Responsibilities:** Graphical UI management, sensor data processing, temperature control, and viscosity mathematics[cite: 3].
 * **User Interface:** Drives the **ILI9341 TFT LCD** with page-state management (`enum Sayfa`) and dual-language (TR/EN) support[cite: 3].
 * **High-Precision Time Measurement:** Uses hardware interrupts (`sensorTetikInterrupt`) on `SENSOR_A` and `SENSOR_B` to calculate ball fall time in microseconds (`micros()`)[cite: 3].
 * **Thermal Regulation:** Reads fluid temperature via **DS18B20** and controls a Solid State Relay (SSR) with real-time ETA calculation during heating[cite: 3].
 * **Kinematics & Calculations:** Analyzes system tilt using the **MPU-6050** orientation sensor and computes Dynamic ($\text{cP}$) and Kinematic ($\text{cSt}$) Viscosity based on Stokes' Law[cite: 3].
 
-#### 2. Motion Controller (`VYTRON_Nano_Motion.ino`)
+#### 2. Motion Controller (`Nano_IDE.ino`)
 * **Core Responsibilities:** Stepper motor driver timing, manual user input, and automated mixing sequences[cite: 4].
 * **Motion Profiling:** Controls the **NEMA 34** motor via **JSS-860H** driver using `AccelStepper` for acceleration/deceleration curves[cite: 4].
 * **Inter-MCU Communication:** Listens to UART Serial commands (`H`, `G`, `S`) sent by the Arduino Mega[cite: 4].
