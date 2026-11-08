@@ -176,6 +176,8 @@ All detailed guides are centralized under the `docs/` folder:
 | Mechanical Design & Fluid Dynamics | `docs/mechanical/mechanical-design.md` | CAD, sealing system, Stokes' Law basis |
 | CFD & Flow Analysis | `docs/cfd/cfd-analysis.md` | Ansys Fluent simulation setup and findings |
 | Interference Mitigation | `docs/electronics/interference-mitigation.md` | EMI/RFI filtering, I2C timeout, glitch filtering |
+| TÜBİTAK Sonuç Raporu | `docs/tubitak/sonuc-raporu.md` | TÜBİTAK 2209-A sonuç raporu bilgisi |
+| Proje Makalesi | `docs/tubitak/makale.md` | Proje makalesi bilgisi |
 
 Each document can be read directly on GitHub by clicking the links above.
 
@@ -201,8 +203,21 @@ To request permission, please contact the author by email: **rahimzaderashad1@gm
 
 ---
 
-## 🙏 Acknowledgements
+## 🙏 Acknowledgements & Destek
 
-This project was supported by the **TÜBİTAK 2209-A** University Students Research Projects Support Program.
+Bu proje aşağıdaki destek ve katkılar ile gerçekleştirilmiştir:
 
-**Author:** [@rashadrahimzade](https://github.com/rashadrahimzade)
+- **TÜBİTAK 2209-A** University Students Research Projects Support Program
+- **Prof. Dr. Ertuğrul Durak** (Proje Danışmanı / Destek)
+- **SDU YETEM** (Süleyman Demirel Üniversitesi Araştırma Merkezi Destek)
+
+**Yazar:** [@rashadrahimzade](https://github.com/rashadrahimzade)
+
+### 📄 TÜBİtaK Belgeleri
+
+| Belge | Açıklama | Dosya |
+|-------|----------|-------|
+| Sonuç Raporu | TÜBİTAK 2209-A sonuç raporu | [`docs/tubitak/sonuc-raporu.md`](./docs/tubitak/sonuc-raporu.md) |
+| Makale | Proje makalesi (PDF) | [`docs/tubitak/makale.md`](./docs/tubitak/makale.md) |
+
+> PDF dosyaları ilgili klasörlerin içine eklenmelidir.
