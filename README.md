@@ -161,6 +161,10 @@ All detailed guides are centralized under the `docs/` folder:
 | Document | Path | Description |
 |----------|------|-------------|
 | Getting Started | `docs/getting-started.md` | Step-by-step setup, wiring, and first run |
+| BOM Index (Genel Özet) | `docs/bom/bom-index.md` | Toplam malzeme özeti ve alt bölümlere linkler |
+| Elektronik Malzeme Listesi | `docs/electronics/electronics-bom.md` | MCU, sensör, motor, sürücü, ekran, güç parçaları |
+| Mekanik Malzeme Listesi | `docs/mechanical/mechanical-bom.md` | Cam tüp, contalar, vida, montaj parçaları |
+| Ürün Fiyatlandırması | `docs/pricing.md` | BOM maliyeti, komersiyel karşılaştırma ve fiyat önerileri |
 | Mechanical Assembly | `docs/assembly-guide.md` | Step-by-step mechanical build and sealing |
 | Wiring & Pinout | `docs/wiring-guide.md` | Detailed pin tables and wiring diagrams |
 | Calibration Procedure | `docs/calibration.md` | Reference-fluid calibration and validation |
