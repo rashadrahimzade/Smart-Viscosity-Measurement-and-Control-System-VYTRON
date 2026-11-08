@@ -104,7 +104,7 @@ DS18B20 (temp),MPU-6050 (tilt)                             JSS-860H ► NEMA 34
 ├── Mechanical/     # SolidWorks CAD files (.sldprt, .sldasm), STEP models, technical drawings
 ├── Software/       # Embedded C++ (.ino) firmware for Arduino Mega 2560 and Arduino Nano
 ├── Electronics/    # Circuit schematics, wiring diagrams, pinouts
-├── docs/           # Images used in this README
+├── LICENSE.txt     # License and usage terms (All Rights Reserved)
 ├── SECURITY.md     # Security policy
 └── README.md       # Project overview and documentation
 ```
@@ -150,6 +150,8 @@ DS18B20 (temp),MPU-6050 (tilt)                             JSS-860H ► NEMA 34
 ---
 
 ## 📄 License
+
+Full license text: [LICENSE.txt](./LICENSE.txt)
 
 **Copyright © 2026 Rashad Rahimzade. All rights reserved.**
 
