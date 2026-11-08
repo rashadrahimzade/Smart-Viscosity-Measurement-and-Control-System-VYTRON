@@ -1,3 +1,23 @@
+# KiCad local history
 /.history
-Electronics/Screenshot 2026-05-04 110541.png
 Electronics/.history/
+
+# Arduino IDE / PlatformIO build artifacts
+*.hex
+*.elf
+*.eep
+*.bin
+build/
+.vscode/
+.platformio/
+*.orig
+*.bak
+
+# OS generated files
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+
+# Electronics specific
+Electronics/Screenshot 2026-05-04 110541.png

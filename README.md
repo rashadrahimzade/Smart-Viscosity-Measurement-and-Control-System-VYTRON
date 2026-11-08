@@ -108,6 +108,9 @@ DS18B20 (temp),MPU-6050 (tilt)                             JSS-860H ► NEMA 34
 ├── docs/           # Centralized documentation (user guides, assembly, calibration, etc.)
 ├── LICENSE.txt     # License and usage terms (All Rights Reserved)
 ├── SECURITY.md     # Security policy
+├── CONTRIBUTING.md # Contribution guidelines
+├── CODE_OF_CONDUCT.md # Community standards
+├── CHANGELOG.md    # Version history
 └── README.md       # Project overview and documentation
 ```
 
@@ -157,6 +160,11 @@ All detailed guides are centralized under the `docs/` folder:
 
 | Document | Path | Description |
 |----------|------|-------------|
+| Getting Started | `docs/getting-started.md` | Step-by-step setup, wiring, and first run |
+| Mechanical Assembly | `docs/assembly-guide.md` | Step-by-step mechanical build and sealing |
+| Wiring & Pinout | `docs/wiring-guide.md` | Detailed pin tables and wiring diagrams |
+| Calibration Procedure | `docs/calibration.md` | Reference-fluid calibration and validation |
+| Safety Warnings | `docs/safety.md` | 220V, heater, and SSR safety precautions |
 | Software Architecture & Firmware | `docs/software/software-architecture.md` | Dual-MCU roles, libraries, pin definitions, and flow |
 | Mechanical Design & Fluid Dynamics | `docs/mechanical/mechanical-design.md` | CAD, sealing system, Stokes' Law basis |
 | CFD & Flow Analysis | `docs/cfd/cfd-analysis.md` | Ansys Fluent simulation setup and findings |
