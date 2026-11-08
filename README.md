@@ -111,6 +111,7 @@ DS18B20 (temp),MPU-6050 (tilt)                             JSS-860H ► NEMA 34
 ├── CONTRIBUTING.md # Contribution guidelines
 ├── CODE_OF_CONDUCT.md # Community standards
 ├── CHANGELOG.md    # Version history
+├── .github/        # GitHub issue templates & CI workflows
 └── README.md       # Project overview and documentation
 ```
 
@@ -165,6 +166,8 @@ All detailed guides are centralized under the `docs/` folder:
 | Elektronik Malzeme Listesi | `docs/electronics/electronics-bom.md` | MCU, sensör, motor, sürücü, ekran, güç parçaları |
 | Mekanik Malzeme Listesi | `docs/mechanical/mechanical-bom.md` | Cam tüp, contalar, vida, montaj parçaları |
 | Ürün Fiyatlandırması | `docs/pricing.md` | BOM maliyeti, komersiyel karşılaştırma ve fiyat önerileri |
+| Karşılaştırma | `docs/comparison.md` | VYTRON vs komersiyel viskozimetreler |
+| Kullanım Senaryoları | `docs/use-cases/` | Gıda, petrokimya, ilaç, otomotiv ve akademik laboratuvar |
 | Mechanical Assembly | `docs/assembly-guide.md` | Step-by-step mechanical build and sealing |
 | Wiring & Pinout | `docs/wiring-guide.md` | Detailed pin tables and wiring diagrams |
 | Calibration Procedure | `docs/calibration.md` | Reference-fluid calibration and validation |
@@ -175,6 +178,14 @@ All detailed guides are centralized under the `docs/` folder:
 | Interference Mitigation | `docs/electronics/interference-mitigation.md` | EMI/RFI filtering, I2C timeout, glitch filtering |
 
 Each document can be read directly on GitHub by clicking the links above.
+
+### 🛠️ Project Management (`.github/`)
+
+| Öge | Açıklama |
+|-----|----------|
+| Issue Template: Bug Report | `.github/ISSUE_TEMPLATE/bug_report.md` |
+| Issue Template: Feature Request | `.github/ISSUE_TEMPLATE/feature_request.md` |
+| CI Workflow (Arduino Derleme) | `.github/workflows/arduino-ci.yml` |
 
 ---
 
