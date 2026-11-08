@@ -1,4 +1,14 @@
-# 🔩 Mekanik Malzeme Listesi (BOM)
+# 🔩 Mekanik Malzeme Listesi (BOM) — Şablon
+
+VYTRON sisteminin mekanik parçaları, contaları ve montaj malzemeleri için **şablon** alışveriş listesi. Parça kodları, miktarları ve fiyatları sizin projenize göre doldurmalısınız. 3D CAD modeller `Mechanical/3D Model/`, teknik çizimler `Mechanical/Techincal_Drawing/` klasörlerinde mevcuttur.
+
+## 📁 Excel Dosyası
+
+Gerçek mekanik BOM'nızı şu klasöre ekleyebilirsiniz:
+
+- `docs/bom/files/mekanik-bom.xlsx`
+
+---
 
 VYTRON sisteminin mekanik parçaları, contaları ve montaj malzemeleri için detaylı alış�veriş listesi. 3D CAD modeller `Mechanical/3D Model/`, teknik çizimler `Mechanical/Techincal_Drawing/` klasörlerinde mevcuttur.
 

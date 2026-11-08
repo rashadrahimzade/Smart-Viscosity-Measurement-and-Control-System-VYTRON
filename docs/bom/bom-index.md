@@ -9,6 +9,17 @@ Bu sayfa, VYTRON sistemi için gerekli tüm malzemelerin üst düzey özetini i�
 | **Elektronik Malzemeler** | Arduino, sensörler, motor, sürücü, ekran, röle, kablolar | `docs/electronics/electronics-bom.md` |
 | **Mekanik Malzemeler** | CAD parçalar, contalar, vidalar, cam tüp, montaj parçaları | `docs/mechanical/mechanical-bom.md` |
 
+## 📁 Excel Dosyaları
+
+Gerçek parça listelerinizi (Excel) aşağıdaki klasöre ekleyebilirsiniz:
+
+| Dosya | Açıklama | Konum |
+|-------|----------|-------|
+| `elektronik-bom.xlsx` | Elektronik parçaların detaylı listesi | `docs/bom/files/` |
+| `mekanik-bom.xlsx` | Mekanik parçaların detaylı listesi | `docs/bom/files/` |
+
+> **Not:** Excel dosyaları bu klasörde mevcut değil; sizin projenize göre hazırlayıp buraya eklemeniz gerekir.
+
 ## 💰 Yaklaşık Toplam Maliyet (Örnek)
 
 > Bu rakamlar 2026 ortalamalarıdır; satıcı, ülke ve miktara göre değişebilir.
