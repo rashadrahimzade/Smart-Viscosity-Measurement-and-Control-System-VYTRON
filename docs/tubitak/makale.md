@@ -2,13 +2,14 @@
 
 Bu klasörde, VYTRON projesi kapsamında yazılan ve yayınlanan makale bulunmaktadır.
 
-## 📎 Dosya
+## 📎 Makale Linki
 
-| Dosya | Açıklama |
-|-------|----------|
-| `vytron-makale.pdf` | Proje makalesi (PDF) |
+| Kaynak | Açıklama | Link |
+|--------|----------|------|
+| Makale (Yayıncı Web Sitesi) | Tribology Applications: A Mechatronics-Assisted Approach to Traditional Viscometers | [lubricant-world.com](https://lubricant-world.com/tribology-applications-a-mechatronics-assisted-approach-to-traditional-viscometers/?lang=en) |
+| Makale PDF (Yerel Dosya) | PDF dosyası depoda mevcut | [`vytron-makale.pdf`](./vytron-makale.pdf) |
 
-> **Not:** PDF dosyasını bu klasörün içine kopyalayın. Dosya adı `vytron-makale.pdf` olmalıdır.
+> **Not:** Yerel PDF dosyasını (`vytron-makale.pdf`) bu klasörün içine kopyalayın.
 
 ## 🔗 İlgili Bağlantılar
 
