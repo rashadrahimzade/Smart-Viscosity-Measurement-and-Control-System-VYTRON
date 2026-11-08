@@ -19,6 +19,7 @@ This repository contains the **firmware, circuit schematics, and mechanical CAD 
 - [System Architecture](#-system-architecture)
 - [Hardware](#-hardware)
 - [Repository Structure](#-repository-structure)
+- [Documentation](#-documentation)
 - [Getting Started](#-getting-started)
 - [Usage](#️-usage)
 - [Roadmap](#️-roadmap)
@@ -104,6 +105,7 @@ DS18B20 (temp),MPU-6050 (tilt)                             JSS-860H ► NEMA 34
 ├── Mechanical/     # SolidWorks CAD files (.sldprt, .sldasm), STEP models, technical drawings
 ├── Software/       # Embedded C++ (.ino) firmware for Arduino Mega 2560 and Arduino Nano
 ├── Electronics/    # Circuit schematics, wiring diagrams, pinouts
+├── docs/           # Centralized documentation (user guides, assembly, calibration, etc.)
 ├── LICENSE.txt     # License and usage terms (All Rights Reserved)
 ├── SECURITY.md     # Security policy
 └── README.md       # Project overview and documentation
@@ -146,6 +148,21 @@ DS18B20 (temp),MPU-6050 (tilt)                             JSS-860H ► NEMA 34
 - [ ] Data logging (SD card / PC)
 - [ ] Temperature-controlled measurement chamber
 - [ ] Wiring diagram and photos of the finished prototype
+
+---
+
+## 📖 Documentation
+
+All detailed guides are centralized under the `docs/` folder:
+
+| Document | Path | Description |
+|----------|------|-------------|
+| Software Architecture & Firmware | `docs/software/software-architecture.md` | Dual-MCU roles, libraries, pin definitions, and flow |
+| Mechanical Design & Fluid Dynamics | `docs/mechanical/mechanical-design.md` | CAD, sealing system, Stokes' Law basis |
+| CFD & Flow Analysis | `docs/cfd/cfd-analysis.md` | Ansys Fluent simulation setup and findings |
+| Interference Mitigation | `docs/electronics/interference-mitigation.md` | EMI/RFI filtering, I2C timeout, glitch filtering |
+
+Each document can be read directly on GitHub by clicking the links above.
 
 ---
 
