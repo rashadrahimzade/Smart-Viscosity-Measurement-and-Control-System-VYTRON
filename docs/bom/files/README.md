@@ -6,7 +6,7 @@ Add your actual BOM (material list) Excel files to this folder.
 
 | File | Description | Location |
 |------|-------------|----------|
-| `electronics-bom.xlsx` | Electronic parts BOM | `docs/bom/files/electronics-bom.xlsx` |
-| `mechanical-bom.xlsx` | Mechanical parts BOM | `docs/bom/files/mechanical-bom.xlsx` |
+| `BOM_Electronic_VYTRON.xlsx` | Electronic parts BOM | `docs/bom/files/BOM_Electronic_VYTRON.xlsx` |
+| `BOM_Mechanic_VYTRON.xlsx` | Mechanical parts BOM | `docs/bom/files/BOM_Mechanic_VYTRON.xlsx` |
 
 **Price note:** All prices in the Excel files are **VAT included, May 2026 prices**.

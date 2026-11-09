@@ -1,74 +1,107 @@
 ﻿# 🛠️ Mechanical Assembly Guide
 
-This guide explains step by step the mechanical assembly of the VYTRON falling-ball viscometer. All 3D CAD models are in the `Mechanical/3D Model/` folder, and technical drawings are in `Mechanical/Techincal_Drawing/`.
+This guide explains step by step the mechanical assembly of the VYTRON falling-ball viscometer. All 3D CAD models are in the `Mechanical/3D Model/` folder, and technical drawings are in `Mechanical/Technical_Drawing/`.
 
 ## 1. Required Tools and Materials
 
-- Allen key set (M3, M4, M5)
+- Allen key set (M3, M4, M5, M6, M8)
 - Screwdriver set (Phillips and flathead)
 - Calibrated wrench (10 mm, 13 mm)
-- Silicone gasket or suitable sealant (optional)
-- NBR O-ring and Viton (FKM) gaskets (included with the system)
+- Silicone sealant (high-temperature resistant)
+- NBR O-rings and Viton (FKM) gaskets (included with the system)
+- Compressed Fiber Gasket
 - Cleaner (isopropyl alcohol)
 - Gloves and eye protection
 
 ## 2. Assembly Order
 
-### Step 1: Base Housing and Tube Fixing
-1. Place the lower cover part on a flat and stable surface.
-2. Carefully insert the glass tube (inner and outer) into the seat channel.
-3. Clean the NBR O-ring channel on the tube and place the O-ring in position.
-4. Place the upper cover part over the tube. Insert the Viton (FKM) gasket into the appropriate channel.
-5. Fasten the covers together with screws. Do not overtighten; the glass tube can break.
+### Step 1: Sigma Profile Base Mounting
+1. Start with the sigma profile.
+2. Mount the first surface using **DIN 7991 M8x20 Phosphate** screws.
+3. Use **40×40 Flat Corner Bracket** and **T-head M8** for corner connections.
+4. Mount two sigma profiles (210 mm each) for the bearings. **Ensure both profiles are at the same height level.** This is critical for proper bearing alignment.
 
-### Step 2: Stepper Motor and Tube Rotation Mechanism
-1. Mount the NEMA 34 stepper motor to the motor mounting plate (4 × M5 screws).
-2. Connect the belt or coupling on the motor shaft to the tube rotation mechanism.
-3. Secure the motor mounting plate to the main chassis.
-4. Ensure the tube does not vibrate during motor movement; add a damper or insulation material if necessary.
+### Step 2: Bearing Mounting
+1. Mount **2 × UCP-201** bearings onto the sigma profiles.
+2. Ensure the bearings are properly aligned and secured.
 
-### Step 3: Sensor Assembly
-**MPU-6050 (Tilt/Position):**
-- Mount on the side of the tube body. The sensor must be on a flat surface and securely mounted.
-- Protect the cable path with aluminum shielded cable (against EMI).
+### Step 3: Upper Cover Assembly
+1. Take the **Upper Cover** part.
+2. Mount the **threaded heater** into its channel.
+3. Use **Compressed Fiber Gasket** and high-temperature resistant **silicone** for sealing.
+4. Insert the **temperature sensor** into its hole and mount it with silicone.
 
-**Optical Sensors (SENSOR_A and SENSOR_B):**
-- Mount at two different points along the tube's falling path.
-- The points where the ball enters and exits the optical area must be precisely aligned.
-- The sensor's light source and receiver must face each other without obstruction.
+### Step 4: Lower Cover Assembly
+1. Take the **Lower Cover** part.
+2. Mount the heater in the same way as the Upper Cover.
+3. Install the **Threaded Bushing (Drain Port)** into the other channel.
+4. Use **NBR flat washer** and silicone for sealing.
 
-**DS18B20 (Temperature):**
-- Pass the probe through the tube's loosening or sealing channel so it enters the liquid.
-- Ensure the probe contacts the liquid and air is excluded.
+### Step 5: Glass Tube and Clamp Assembly
+1. Take the **Glass Tube Borosilicate 3.3** (100 × 212 mm).
+2. Pass the **Clamp** part through the glass from the inside.
+3. Place the glass into the channels of the **Lower Cover** and **Upper Cover** (ABS covers).
+4. Insert **4 × M8 Threaded Rod** (260 mm) through the assembly.
+5. Use **M8 washers** and **M8 nuts** on both ends.
+6. Place the **empty rods** between the Clamp and the covers, then pass the Threaded Rod through them.
+7. Tighten the nuts. **Critical detail:** Tighten until the empty rods stop rotating between the Clamp and covers.
+   - **Too tight:** Risk of cracking the glass.
+   - **Too loose:** Risk of leakage.
+   - **Correct:** Tighten until the empty rods cannot rotate freely.
 
-### Step 4: Heater and Safety
-1. Mount the 220V 200W heater to the designated location.
-2. Ensure the heater does not come into direct contact with the glass tube (or that proper insulation is in place if contact is required by design).
-3. Mount the SSR (Solid State Relay) assembly in a ventilated location.
-4. All 220V connections must be insulated and enclosed in a box.
+### Step 6: Shaft Support Assembly
+1. Mount **SHF 12 Shaft Supports** into the slots on the Clamp part.
+2. Secure them with **M6 nuts and bolts**.
 
-### Step 5: User Interface Assembly
-1. Mount the ILI9341 TFT LCD to the Mega control panel.
-2. Mount the 4×4 keypads to the Mega and Nano panels.
-3. Place the 20×4 I2C LCD on the Nano in the motion control panel.
+### Step 7: Calculation System Assembly
+1. Place the **calculation system** between the **UCP-201** bearings.
+2. Pass the **aluminum miller** through the calculation system.
+3. Tighten the bolts on the UCP-201 bearings.
+4. Tighten the bolts on the SHF supports mounted on the calculation system.
+5. The system is now mechanically stable.
 
-## 3. Sealing Leak Test
+### Step 8: Sealing and Final Steps
+1. Place **O-rings** into the O-ring channels on the covers.
+2. Insert the **small tube** through the center hole. It must be **flush with the surface level**.
+3. Take the **Cover Sensor** part and mount the **proximity sensors** on it.
 
-After full assembly:
-- Fill the tube with water and wait a few hours.
-- Check for leaks at cover edges, O-ring channels, and tube entry/exit points.
-- If there is a leak, repeat the assembly and check the gaskets.
+---
+
+## 3. Critical Warnings
+
+| Warning | Detail |
+|---------|--------|
+| Glass tightening | Do not overtighten the M8 nuts; the glass tube can crack. |
+| Glass looseness | Do not leave nuts too loose; the system can leak. |
+| Alignment | Both 210 mm sigma profiles must be at the same height. |
+| Small tube | Must be level with the surface (flush). |
+
+---
 
 ## 4. Checklist
 
-- [ ] Glass tube is not cracked or damaged
-- [ ] NBR O-ring and Viton gaskets are in place and undamaged
-- [ ] Tube is tightly and vibration-free mounted
-- [ ] MPU-6050 is fixed on a flat surface
-- [ ] Optical sensors are parallel and aligned
-- [ ] DS18B20 contacts the liquid
-- [ ] 220V connections are insulated and boxed
-- [ ] All screws are tight (not overtightened)
+- [ ] Sigma profiles mounted with DIN 7991 M8x20 Phosphate
+- [ ] 40×40 Flat Corner Bracket and T-head M8 installed
+- [ ] Two 210 mm sigma profiles at same height level
+- [ ] Two UCP-201 bearings mounted
+- [ ] Upper Cover with heater, Compressed Fiber Gasket, and silicone
+- [ ] Temperature sensor mounted with silicone
+- [ ] Lower Cover with heater, Threaded Bushing, NBR washer, and silicone
+- [ ] Glass Tube Borosilicate 3.3 (100 × 212 mm) installed
+- [ ] Clamp part passed through glass from inside
+- [ ] 4 × M8 Threaded Rod (260 mm) installed with washers and nuts
+- [ ] Empty rods between Clamp and covers, Threaded Rod passed through
+- [ ] Nuts tightened until empty rods stop rotating
+- [ ] SHF 12 Shaft Supports mounted with M6 nuts and bolts
+- [ ] Calculation system placed between UCP-201s
+- [ ] Aluminum miller passed through calculation system
+- [ ] UCP bolts tightened
+- [ ] SHF bolts tightened
+- [ ] O-rings placed in cover channels
+- [ ] Small tube inserted flush with surface level
+- [ ] Cover Sensor part mounted with proximity sensors
+
+---
 
 ## 5. Notes
 

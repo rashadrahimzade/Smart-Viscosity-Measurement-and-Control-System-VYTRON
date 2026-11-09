@@ -15,8 +15,8 @@ Actual part lists (Excel) are located in the `docs/bom/files/` folder:
 
 | File | Description | Location |
 |------|-------------|----------|
-| `electronics-bom.xlsx` | Detailed list of electronic parts | `docs/bom/files/electronics-bom.xlsx` |
-| `mechanical-bom.xlsx` | Detailed list of mechanical parts | `docs/bom/files/mechanical-bom.xlsx` |
+| `BOM_Electronic_VYTRON.xlsx` | Detailed list of electronic parts | `docs/bom/files/BOM_Electronic_VYTRON.xlsx` |
+| `BOM_Mechanic_VYTRON.xlsx` | Detailed list of mechanical parts | `docs/bom/files/BOM_Mechanic_VYTRON.xlsx` |
 
 > **Price note:** All prices in the Excel files are **VAT included, May 2026 prices**.
 
