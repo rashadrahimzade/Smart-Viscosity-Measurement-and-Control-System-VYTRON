@@ -4,9 +4,11 @@ VYTRON sisteminin mekanik parçaları, contaları ve montaj malzemeleri için **
 
 ## 📁 Excel Dosyası
 
-Gerçek mekanik BOM'nızı şu klasöre ekleyebilirsiniz:
+Gerçek mekanik BOM'nız şu konumda mevcuttur:
 
-- `docs/bom/files/mekanik-bom.xlsx`
+- `docs/bom/files/mekanik-bom.xlsx` (kaynak: `BOM_Mechanic_VYTRON.xlsx`)
+
+> Dosya Masaüstünden projeye kopyalanmıştır. İçerik güncellemesi gerekiyorsa doğrudan bu dosyada düzenleme yapabilirsiniz.
 
 ---
 

@@ -11,14 +11,14 @@ Bu sayfa, VYTRON sistemi için gerekli tüm malzemelerin üst düzey özetini i�
 
 ## 📁 Excel Dosyaları
 
-Gerçek parça listelerinizi (Excel) aşağıdaki klasöre ekleyebilirsiniz:
+Gerçek parça listeleri (Excel) aşağıdaki klasörde mevcuttur:
 
 | Dosya | Açıklama | Konum |
 |-------|----------|-------|
-| `elektronik-bom.xlsx` | Elektronik parçaların detaylı listesi | `docs/bom/files/` |
-| `mekanik-bom.xlsx` | Mekanik parçaların detaylı listesi | `docs/bom/files/` |
+| `elektronik-bom.xlsx` | Elektronik parçaların detaylı listesi | `docs/bom/files/elektronik-bom.xlsx` |
+| `mekanik-bom.xlsx` | Mekanik parçaların detaylı listesi | `docs/bom/files/mekanik-bom.xlsx` |
 
-> **Not:** Excel dosyaları bu klasörde mevcut değil; sizin projenize göre hazırlayıp buraya eklemeniz gerekir.
+> **Not:** Dosyalar Masaüstündeki `BOM_Electronic_VYTRON.xlsx` ve `BOM_Mechanic_VYTRON.xlsx` dosyasından kopyalanmıştır. Güncelleme yapmanız gerekiyorsa bu dosyaları düzenleyebilirsiniz.
 
 ## 💰 Yaklaşık Toplam Maliyet (Örnek)
 

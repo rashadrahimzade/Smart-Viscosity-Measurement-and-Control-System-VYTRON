@@ -4,9 +4,11 @@ VYTRON sisteminin elektronik bileşenleri için **şablon** alışveriş listesi
 
 ## 📁 Excel Dosyası
 
-Gerçek elektronik BOM'nızı şu klasöre ekleyebilirsiniz:
+Gerçek elektronik BOM'nız şu konumda mevcuttur:
 
-- `docs/bom/files/elektronik-bom.xlsx`
+- `docs/bom/files/elektronik-bom.xlsx` (kaynak: `BOM_Electronic_VYTRON.xlsx`)
+
+> Dosya Masaüstünden projeye kopyalanmıştır. İçerik güncellemesi gerekiyorsa doğrudan bu dosyada düzenleme yapabilirsiniz.
 
 ---
 
