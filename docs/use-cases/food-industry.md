@@ -1,4 +1,4 @@
-# ?? Use Case: Food Industry
+Ôªø# üçØ Use Case: Food Industry
 
 The VYTRON falling-ball viscometer can be used in the food industry for viscosity control of liquids and semi-liquids.
 
@@ -6,11 +6,11 @@ The VYTRON falling-ball viscometer can be used in the food industry for viscosit
 
 | Product | Important Viscosity Range | Why Important |
 |---------|--------------------------|---------------|
-| Olive oil | ~30ñ100 cP | Quality classification and storability |
-| Honey | ~2000ñ10000 cP | Liquefaction rate and adulteration detection |
-| Syrup | ~100ñ1000 cP | Concentration and filling speed control |
-| Sauces (ketchup, mayonnaise) | ~500ñ5000 cP | Flow behavior and packaging |
-| Milk and dairy products | ~1ñ10 cP | Concentration and quality |
+| Olive oil | ~30‚Äì100 cP | Quality classification and storability |
+| Honey | ~2000‚Äì10000 cP | Liquefaction rate and adulteration detection |
+| Syrup | ~100‚Äì1000 cP | Concentration and filling speed control |
+| Sauces (ketchup, mayonnaise) | ~500‚Äì5000 cP | Flow behavior and packaging |
+| Milk and dairy products | ~1‚Äì10 cP | Concentration and quality |
 
 ## 2. VYTRON Advantages
 
@@ -26,6 +26,6 @@ The VYTRON falling-ball viscometer can be used in the food industry for viscosit
 
 ## 4. Related Files
 
-- `docs/calibration.md` ó Reference fluid calibration
-- `docs/safety.md` ó Heater and 220V safety
-- `docs/mechanical/mechanical-bom.md` ó Gaskets and sealing materials
+- `docs/calibration.md` ‚Äî Reference fluid calibration
+- `docs/safety.md` ‚Äî Heater and 220V safety
+- `docs/mechanical/mechanical-bom.md` ‚Äî Gaskets and sealing materials

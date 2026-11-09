@@ -1,31 +1,30 @@
-# ?? Product Pricing and Cost Analysis
+ï»¿# ðŸ’° Product Pricing and Cost Analysis
 
 This document summarizes the estimated BOM cost of the VYTRON system, assembly and calibration expenses, and price advantage compared to industrial competitors. All figures are **2026 averages** and may vary by supplier, region, and quantity.
 
 ## 1. BOM Cost Summary
 
-| Category | Description | Estimated Cost (TL) |
-|----------|-------------|---------------------|
-| **Electronics** | Arduino Mega 2560, Arduino Nano, NEMA 34, JSS-860H, DS18B20, MPU-6050, ILI9341 TFT, 2×4×4 Keypad, 20×4 LCD, SSR, 200W Heater, power supplies, cables, ferrites | — |
-| **Mechanical** | Glass tube (inner/outer), NBR O-ring, Viton gasket, aluminum chassis, screws-nuts, motor mount, bearing | — |
-| **Other** | Assembly tools, sealant, test fluids | — |
-| **Total BOM** | — | **—** |
+| Category | Description |
+|----------|-------------|
+| **Electronics** | Arduino Mega 2560, Arduino Nano, NEMA 34, JSS-860H, DS18B20, MPU-6050, ILI9341 TFT, 4Ã—4 Keypad, 20Ã—4 LCD, SSR, 200W Heater, power supplies, cables, ferrites |
+| **Mechanical** | Glass tube (inner/outer), NBR O-ring, Viton gasket, aluminum chassis, screws-nuts, motor mount, bearing |
+| **Other** | Assembly tools, sealant, test fluids |
 
-> Detailed part-by-part prices:  
-> - docs/electronics/electronics-bom.md  
-> - docs/mechanical/mechanical-bom.md
+> Each BOM table contains its own subtotal; there is no grand total for the entire machine.
+> Detailed part-by-part prices:
+> - `docs/electronics/electronics-bom.md`
+> - `docs/mechanical/mechanical-bom.md`
 
 ---
 
 ## 2. Additional Cost Items
 
-| Item | Description | Estimated Cost (TL) |
-|------|-------------|---------------------|
-| Assembly labor | Mechanical assembly, wiring, first run (hourly basis) | — |
-| Calibration equipment | Reference viscosity fluids (silicone oil, etc.), thermometer, stationery | — |
-| Software development | Firmware, interface, calibration procedures (developer hours) | — |
-| Documentation | User manual, assembly guide, safety documents | — |
-| **Total Additional Cost** | — | **—** |
+| Item | Description |
+|------|-------------|
+| Assembly labor | Mechanical assembly, wiring, first run (hourly basis) |
+| Calibration equipment | Reference viscosity fluids (silicone oil, etc.), thermometer, stationery |
+| Software development | Firmware, interface, calibration procedures (developer hours) |
+| Documentation | User manual, assembly guide, safety documents |
 
 ---
 
@@ -57,25 +56,25 @@ If VYTRON is brought to market as a product, the following multipliers can be ap
 
 | Pricing Model | Calculation Logic | Suggested Range |
 |--------------|-------------------|-----------------|
-| **Cost + 20%** | Total BOM + Additional Cost + 20% profit | — TL |
-| **40% of Competitor** | Approximately 40% of Commercial Model A | — TL |
-| **Academic Discount** | Special discount for university laboratories | — TL |
+| **Cost + 20%** | Total BOM + Additional Cost + 20% profit | â€” TL |
+| **40% of Competitor** | Approximately 40% of Commercial Model A | â€” TL |
+| **Academic Discount** | Special discount for university laboratories | â€” TL |
 
 > These figures are just an example template. Actual pricing should be updated once supplier quotes and labor hours are finalized.
 
 ---
 
-## 5. Budget Tracking Form (For TÜBITAK Projects)
+## 5. Budget Tracking Form (For TÃœBÄ°TAK Projects)
 
 | Item | Planned (TL) | Actual (TL) | Difference (TL) | Approved |
 |------|--------------|-------------|-----------------|----------|
-| Electronic parts | — | — | — | ? |
-| Mechanical parts | — | — | — | ? |
-| Assembly and labor | — | — | — | ? |
-| Calibration fluids | — | — | — | ? |
-| Software development | — | — | — | ? |
-| Documentation | — | — | — | ? |
-| **Total** | **—** | **—** | **—** | ? |
+| Electronic parts | â€” | â€” | â€” | ? |
+| Mechanical parts | â€” | â€” | â€” | ? |
+| Assembly and labor | â€” | â€” | â€” | ? |
+| Calibration fluids | â€” | â€” | â€” | ? |
+| Software development | â€” | â€” | â€” | ? |
+| Documentation | â€” | â€” | â€” | ? |
+| **Total** | **â€”** | **â€”** | **â€”** | ? |
 
 ---
 
@@ -90,7 +89,7 @@ If VYTRON is brought to market as a product, the following multipliers can be ap
 
 ## 7. Related Files
 
-- docs/bom/bom-index.md — General BOM summary
-- docs/electronics/electronics-bom.md — Detailed electronic list
-- docs/mechanical/mechanical-bom.md — Detailed mechanical list
-- docs/calibration.md — Reference fluid calibration (additional cost item)
+- `docs/bom/bom-index.md` â†’ General BOM summary
+- `docs/electronics/electronics-bom.md` â†’ Detailed electronic list
+- `docs/mechanical/mechanical-bom.md` â†’ Detailed mechanical list
+- `docs/calibration.md` â†’ Reference fluid calibration (additional cost item)

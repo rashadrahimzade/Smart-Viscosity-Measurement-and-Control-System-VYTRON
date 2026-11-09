@@ -1,4 +1,4 @@
-# ?? CFD & Flow Analysis
+﻿# 🌊 CFD & Flow Analysis
 
 This section presents numerical fluid flow simulations conducted to analyze the hydrodynamic behavior, velocity profiles, and drag forces acting on the falling sphere within the viscometer column.
 
@@ -13,7 +13,7 @@ This section presents numerical fluid flow simulations conducted to analyze the 
 
 ## 2. Key Verification & Findings
 
-- **Drag Force Comparison**: Simulated hydrodynamic drag force was cross-verified against the analytical Stokes' Law equation (F_d = 6p�rv).
+- **Drag Force Comparison**: Simulated hydrodynamic drag force was cross-verified against the analytical Stokes' Law equation (F_d = 6πμrv).
 - **Wall-Effect Evaluation**: Quantified the velocity retardation caused by column wall proximity, validating the empirical correction factors (f) applied in system firmware.
 - **Visual Output**:
   - Velocity contours demonstrating wake formation behind the falling sphere.

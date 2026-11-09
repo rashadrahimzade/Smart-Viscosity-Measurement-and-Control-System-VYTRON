@@ -1,4 +1,4 @@
-# ?? Software-Level Noise Mitigation & Signal Conditioning
+﻿# 🧮 Software-Level Noise Mitigation & Signal Conditioning
 
 This directory documents the firmware algorithms, interrupt debouncing strategies, and signal filtering techniques implemented in software to handle sensor noise and communication instability.
 

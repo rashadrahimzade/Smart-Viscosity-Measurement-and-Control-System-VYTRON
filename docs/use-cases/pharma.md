@@ -1,4 +1,4 @@
-# ?? Use Case: Pharmaceutical Industry
+ï»¿# ðŸ’Š Use Case: Pharmaceutical Industry
 
 Viscosity is used in drug formulations (syrups, gels, creams, suspensions) for dosage and stability control.
 
@@ -6,9 +6,9 @@ Viscosity is used in drug formulations (syrups, gels, creams, suspensions) for d
 
 | Product | Viscosity Range | Importance |
 |---------|----------------|------------|
-| Drug syrups | ~100–1000 cP | Filling speed and dosage |
-| Gel creams | ~1000–10000 cP | Spreadability and stability |
-| Suspensions | ~500–5000 cP | Liquefaction and homogeneity |
+| Drug syrups | ~100â€“1000 cP | Filling speed and dosage |
+| Gel creams | ~1000â€“10000 cP | Spreadability and stability |
+| Suspensions | ~500â€“5000 cP | Liquefaction and homogeneity |
 
 ## 2. VYTRON Advantages
 
@@ -24,6 +24,6 @@ Viscosity is used in drug formulations (syrups, gels, creams, suspensions) for d
 
 ## 4. Related Files
 
-- `docs/calibration.md` — Reference fluid calibration
-- `docs/safety.md` — Heater safety
-- `docs/bom/bom-index.md` — Material list
+- `docs/calibration.md` â€” Reference fluid calibration
+- `docs/safety.md` â€” Heater safety
+- `docs/bom/bom-index.md` â€” Material list

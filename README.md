@@ -1,4 +1,4 @@
-# 🔬 VYTRON: Smart Viscosity Measurement and Control System
+﻿# 🔬 VYTRON: Smart Viscosity Measurement and Control System
 
 ![Platform](https://img.shields.io/badge/MCU-Arduino%20Mega%202560%20%2B%20Nano-00979D?logo=arduino&logoColor=white)
 ![Language](https://img.shields.io/badge/Firmware-C%2B%2B%20(.ino)-blue)
@@ -9,20 +9,19 @@ VYTRON is an automated **falling-ball viscometer** developed as a **TÜBİTAK 22
 
 This repository contains the **firmware, circuit schematics, and mechanical CAD files** of the system.
 
-<img width="675" height="540" alt="Adsız Proje" src="https://github.com/user-attachments/assets/8b889f8e-9948-4315-9d08-34bf66bbcde4" />
-
 ---
 
 ## 📑 Table of Contents
-- [How It Works](#️-how-it-works)
+
+- [How It Works](#-how-it-works)
 - [Key Features](#-key-features)
 - [System Architecture](#-system-architecture)
 - [Hardware](#-hardware)
 - [Repository Structure](#-repository-structure)
 - [Documentation](#-documentation)
 - [Getting Started](#-getting-started)
-- [Usage](#️-usage)
-- [Roadmap](#️-roadmap)
+- [Usage](#-usage)
+- [Roadmap](#-roadmap)
 - [License](#-license)
 - [Acknowledgements](#-acknowledgements)
 
@@ -32,9 +31,9 @@ This repository contains the **firmware, circuit schematics, and mechanical CAD 
 
 A sphere of known size and density falls through the sample fluid in a sealed tube. The time it takes to travel between two reference points gives its terminal velocity, from which dynamic viscosity is derived with Stokes' Law:
 
-```
-η = 2 · (ρs − ρf) · g · r² / (9 · v)
-```
+$$
+\eta = \frac{2 \cdot (\rho_s - \rho_f) \cdot g \cdot r^2}{9 \cdot v}
+$$
 
 | Symbol | Meaning |
 |--------|---------|
@@ -69,16 +68,16 @@ Because the ball falls in a bounded tube, the result is multiplied by a **wall-e
 
 | Controller | Role |
 |------------|------|
-| **Arduino Mega 2560** (main MCU) | Master control logic, temperature tracking, viscosity calculation, Rotational position via MPU-6050, mesurement sequencing |
+| **Arduino Mega 2560** (main MCU) | Master control logic, temperature tracking, viscosity calculation, Rotational position via MPU-6050, measurement sequencing |
 | **Arduino Nano** (motion MCU) | Controls tube position and drives the stepper driver |
 
 ```
- ┌──────────────┐                                            ┌──────────────┐
- │ Arduino Mega │ ◄────────────────────────────────────────► │ Arduino Nano │
- │  (Master)    │          serial communication              │  (Motion)    │
- └──────┬───────┘                                            └──────┬───────┘
-        │                                                           │
-DS18B20 (temp),MPU-6050 (tilt)                             JSS-860H ► NEMA 34
+┌──────────────┐                                            ┌──────────────┐
+│ Arduino Mega │ ◄────────────────────────────────────────► │ Arduino Nano │
+│  (Master)    │          serial communication              │  (Motion)    │
+└──────┬───────┘                                            └──────┬───────┘
+       │                                                           │
+ DS18B20 (temp),MPU-6050 (tilt)                             JSS-860H ► NEMA 34
 ```
 
 ---
@@ -117,44 +116,6 @@ DS18B20 (temp),MPU-6050 (tilt)                             JSS-860H ► NEMA 34
 
 ---
 
-## 🚀 Getting Started
-
-### Prerequisites
-- [Arduino IDE](https://www.arduino.cc/en/software) 2.x (or PlatformIO)
-- Required Arduino libraries (see the `#include` lines at the top of each sketch)
-- Assembled hardware following the schematics in `Electronics/`
-
-### Build & Upload
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/rashadrahimzade/Smart-Viscosity-Measurement-and-Control-System-VYTRON.git
-   cd Smart-Viscosity-Measurement-and-Control-System-VYTRON
-   ```
-2. Wire the system according to the diagrams in `Electronics/`.
-3. Open the Mega sketch from `Software/`, select **Arduino Mega or Mega 2560**, and upload.
-4. Open the Nano sketch from `Software/`, select **Arduino Nano** (check the bootloader option), and upload.
-5. Power the system and verify the sensor readings on the serial monitor.
-
----
-
-## 🕹️ Usage
-
-1. Fill the tube with the sample fluid and seal it.
-2. Enter the ball and fluid parameters (sphere radius and density, fluid density).
-3. Start the measurement cycle.
-4. Read the viscosity and temperature values.
-
----
-
-## 🗺️ Roadmap
-
-- [ ] Calibration with reference-viscosity fluids and accuracy report
-- [ ] Data logging (SD card / PC)
-- [ ] Temperature-controlled measurement chamber
-- [ ] Wiring diagram and photos of the finished prototype
-
----
-
 ## 📖 Documentation
 
 All detailed guides are centralized under the `docs/` folder:
@@ -162,12 +123,12 @@ All detailed guides are centralized under the `docs/` folder:
 | Document | Path | Description |
 |----------|------|-------------|
 | Getting Started | `docs/getting-started.md` | Step-by-step setup, wiring, and first run |
-| BOM Index (Genel Özet) | `docs/bom/bom-index.md` | Toplam malzeme özeti ve alt bölümlere linkler |
-| Elektronik Malzeme Listesi | `docs/electronics/electronics-bom.md` | MCU, sensör, motor, sürücü, ekran, güç parçaları |
-| Mekanik Malzeme Listesi | `docs/mechanical/mechanical-bom.md` | Cam tüp, contalar, vida, montaj parçaları |
+| BOM Index (General Overview) | `docs/bom/bom-index.md` | Material summary and links to sub-sections |
+| Electronic Material List | `docs/electronics/electronics-bom.md` | MCU, sensor, motor, driver, screen, power parts |
+| Mechanical Material List | `docs/mechanical/mechanical-bom.md` | Glass tube, gaskets, screws, mounting parts |
 | Product Pricing | `docs/pricing.md` | BOM cost, commercial comparison and price suggestions |
-| Karşılaştırma | `docs/comparison.md` | VYTRON vs komersiyel viskozimetreler |
-| Kullanım Senaryoları | `docs/use-cases/` | Gıda, petrokimya, ilaç, otomotiv ve akademik laboratuvar |
+| Comparison | `docs/comparison.md` | VYTRON vs commercial viscometers |
+| Use Cases | `docs/use-cases/` | Food, petrochemical, pharma, automotive, academic laboratory |
 | Mechanical Assembly | `docs/assembly-guide.md` | Step-by-step mechanical build and sealing |
 | Wiring & Pinout | `docs/wiring-guide.md` | Detailed pin tables and wiring diagrams |
 | Calibration Procedure | `docs/calibration.md` | Reference-fluid calibration and validation |
@@ -176,18 +137,18 @@ All detailed guides are centralized under the `docs/` folder:
 | Mechanical Design & Fluid Dynamics | `docs/mechanical/mechanical-design.md` | CAD, sealing system, Stokes' Law basis |
 | CFD & Flow Analysis | `docs/cfd/cfd-analysis.md` | Ansys Fluent simulation setup and findings |
 | Interference Mitigation | `docs/electronics/interference-mitigation.md` | EMI/RFI filtering, I2C timeout, glitch filtering |
-| T�BITAK Result Report | `docs/tubitak/sonuc-raporu.md` | T�BITAK 2209-A Result Report info |
+| TÜBİTAK Result Report | `docs/tubitak/sonuc-raporu.md` | TÜBİTAK 2209-A Result Report info |
 | Project Article | `docs/tubitak/makale.md` | Project article info |
 
 Each document can be read directly on GitHub by clicking the links above.
 
 ### 🛠️ Project Management (`.github/`)
 
-| Öge | Açıklama |
-|-----|----------|
+| Item | Description |
+|------|-------------|
 | Issue Template: Bug Report | `.github/ISSUE_TEMPLATE/bug_report.md` |
 | Issue Template: Feature Request | `.github/ISSUE_TEMPLATE/feature_request.md` |
-| CI Workflow (Arduino Derleme) | `.github/workflows/arduino-ci.yml` |
+| CI Workflow (Arduino Build) | `.github/workflows/arduino-ci.yml` |
 
 ---
 
@@ -203,23 +164,21 @@ To request permission, please contact the author by email: **rahimzaderashad1@gm
 
 ---
 
-## ?? Acknowledgements & Support
+## 🙏 Acknowledgements & Support
 
 This project was realized with the following support and contributions:
 
 - **TÜBİTAK 2209-A** University Students Research Projects Support Program
-- **Prof. Dr. Ertugrul Durak** (Project Advisor / Support)
+- **Prof. Dr. Ertuğrul Durak** (Project Advisor / Support)
 - **SDU YETEM** (Suleyman Demirel University Research Center Support)
 
 **Author:** [@rashadrahimzade](https://github.com/rashadrahimzade)
 
-### 📄 TÜBİtaK Belgeleri
+### 📄 TÜBİTAK Documents
 
-| Belge | Açıklama | Dosya |
-|-------|----------|-------|
-| Result Report | T�BITAK 2209-A Result Report | [`docs/tubitak/sonuc-raporu.md`](./docs/tubitak/sonuc-raporu.md) |
+| Document | Description | File |
+|----------|-------------|------|
+| Result Report | TÜBİTAK 2209-A Result Report | [`docs/tubitak/sonuc-raporu.md`](./docs/tubitak/sonuc-raporu.md) |
 | Article | Project article (PDF) | [`docs/tubitak/makale.md`](./docs/tubitak/makale.md) |
 
-> PDF dosyaları ilgili klasörlerin içine eklenmelidir.
-
-
+> PDF files must be placed in the respective folders.

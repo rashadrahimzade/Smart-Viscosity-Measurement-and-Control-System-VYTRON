@@ -1,4 +1,4 @@
-# ?? Safety Guide
+﻿# ⚠️ Safety Guide
 
 This guide explains the safe use of the VYTRON system. The system contains 220V AC, high temperature, and moving mechanical parts. Reading and applying this guide is mandatory.
 
@@ -56,7 +56,7 @@ If a problem occurs (heater not heating, motor spinning out of control, smoke, e
 
 ## 7. Disclaimer
 
-This project is licensed under "All Rights Reserved" terms (LICENSE.txt). The author cannot be held responsible for damages arising from incomplete or incorrect application of this guide. All risks arising from system use belong to the user.
+This project is licensed under "All Rights Reserved" terms (`LICENSE.txt`). The author cannot be held responsible for damages arising from incomplete or incorrect application of this guide. All risks arising from system use belong to the user.
 
 ## 8. Contact
 

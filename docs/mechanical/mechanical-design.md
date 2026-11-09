@@ -1,4 +1,4 @@
-# ?? Mechanical Design & Fluid Dynamics
+﻿# 📐 Mechanical Design & Fluid Dynamics
 
 This directory contains the 3D CAD assemblies, STEP models, technical drawings, and fluid mechanics calculations for the VYTRON system.
 

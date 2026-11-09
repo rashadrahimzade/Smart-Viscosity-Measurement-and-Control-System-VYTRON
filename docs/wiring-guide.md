@@ -1,4 +1,4 @@
-# 🔌 Wiring Guide
+﻿# 🔌 Wiring Guide
 
 This guide explains the electronic wiring and pin connections of the VYTRON system. All schematics are available in KiCad format in the `Electronics/` folder.
 

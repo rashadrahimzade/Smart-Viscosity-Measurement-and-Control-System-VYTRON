@@ -1,6 +1,6 @@
-# ??? Mechanical Assembly Guide
+﻿# 🛠️ Mechanical Assembly Guide
 
-This guide explains step by step the mechanical assembly of the VYTRON falling-ball viscometer. All 3D CAD models are in the Mechanical/3D Model/ folder, and technical drawings are in Mechanical/Techincal_Drawing/.
+This guide explains step by step the mechanical assembly of the VYTRON falling-ball viscometer. All 3D CAD models are in the `Mechanical/3D Model/` folder, and technical drawings are in `Mechanical/Techincal_Drawing/`.
 
 ## 1. Required Tools and Materials
 
@@ -22,7 +22,7 @@ This guide explains step by step the mechanical assembly of the VYTRON falling-b
 5. Fasten the covers together with screws. Do not overtighten; the glass tube can break.
 
 ### Step 2: Stepper Motor and Tube Rotation Mechanism
-1. Mount the NEMA 34 stepper motor to the motor mounting plate (4 � M5 screws).
+1. Mount the NEMA 34 stepper motor to the motor mounting plate (4 × M5 screws).
 2. Connect the belt or coupling on the motor shaft to the tube rotation mechanism.
 3. Secure the motor mounting plate to the main chassis.
 4. Ensure the tube does not vibrate during motor movement; add a damper or insulation material if necessary.
@@ -49,8 +49,8 @@ This guide explains step by step the mechanical assembly of the VYTRON falling-b
 
 ### Step 5: User Interface Assembly
 1. Mount the ILI9341 TFT LCD to the Mega control panel.
-2. Mount the 4�4 keypads to the Mega and Nano panels.
-3. Place the 20�4 I2C LCD on the Nano in the motion control panel.
+2. Mount the 4×4 keypads to the Mega and Nano panels.
+3. Place the 20×4 I2C LCD on the Nano in the motion control panel.
 
 ## 3. Sealing Leak Test
 
@@ -74,4 +74,4 @@ After full assembly:
 
 - All CAD files were prepared in SolidWorks; STEP format is also available.
 - Do not force any parts during assembly; glass components are especially sensitive.
-- After assembly, follow the docs/getting-started.md guide for the first run.
+- After assembly, follow the `docs/getting-started.md` guide for the first run.

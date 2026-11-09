@@ -1,4 +1,4 @@
-# ?? Use Case: Academic Laboratories
+ï»¿# ðŸŽ“ Use Case: Academic Laboratories
 
 Used in university and R&D laboratories for research, student experiments, and thesis studies.
 
@@ -15,7 +15,7 @@ Used in university and R&D laboratories for research, student experiments, and t
 
 - **Open code and open hardware**: All firmware, CAD, and schematic files are modifiable and learnable.
 - **Dual-MCU architecture**: Arduino Mega and Nano communication is ideal for teaching embedded systems to students.
-- **TÜBITAK 2209-A support**: Suitable reference system for academic projects.
+- **TÃœBÄ°TAK 2209-A support**: Suitable reference system for academic projects.
 - **Bilingual (TR/EN)**: Turkish and English interface, usable in international environments.
 - **Low cost**: Suitable for university budgets.
 
@@ -26,7 +26,7 @@ Used in university and R&D laboratories for research, student experiments, and t
 
 ## 4. Related Files
 
-- `docs/getting-started.md` — Initial setup and first run
-- `docs/assembly-guide.md` — Mechanical assembly
-- `docs/software/software-architecture.md` — Software architecture
-- `docs/cfd/cfd-analysis.md` — Flow analysis (reference for research)
+- `docs/getting-started.md` â€” Initial setup and first run
+- `docs/assembly-guide.md` â€” Mechanical assembly
+- `docs/software/software-architecture.md` â€” Software architecture
+- `docs/cfd/cfd-analysis.md` â€” Flow analysis (reference for research)

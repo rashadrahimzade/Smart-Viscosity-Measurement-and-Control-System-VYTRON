@@ -1,4 +1,4 @@
-# ?? Getting Started
+ï»¿# ðŸš€ Getting Started
 
 This guide walks you through assembling, wiring, and running the VYTRON system for the first time.
 
@@ -7,28 +7,28 @@ This guide walks you through assembling, wiring, and running the VYTRON system f
 ### Software
 - [Arduino IDE](https://www.arduino.cc/en/software) 2.x (or PlatformIO)
 - Required Arduino libraries (install via Library Manager):
-  - Adafruit_ILI9341 & Adafruit_GFX
-  - DallasTemperature & OneWire
-  - AccelStepper
-  - LiquidCrystal_I2C
-  - Keypad
+  - `Adafruit_ILI9341` & `Adafruit_GFX`
+  - `DallasTemperature` & `OneWire`
+  - `AccelStepper`
+  - `LiquidCrystal_I2C`
+  - `Keypad`
 
 ### Hardware
-- Assembled VYTRON prototype (see docs/mechanical/mechanical-design.md and docs/electronics/interference-mitigation.md)
+- Assembled VYTRON prototype (see `docs/mechanical/mechanical-design.md` and `docs/electronics/interference-mitigation.md`)
 - Arduino Mega 2560
 - Arduino Nano
 - NEMA 34 stepper motor + JSS-860H driver
 - DS18B20 temperature sensor
 - MPU-6050 tilt sensor
 - ILI9341 TFT LCD (SPI)
-- 4×4 matrix keypad × 2
-- 20×4 I2C character LCD
+- 4Ã—4 matrix keypad Ã— 2
+- 20Ã—4 I2C character LCD
 - Solid State Relay (SSR)
-- 220V / 200W heater (observe safety warnings in docs/safety.md — not yet created)
+- 220V / 200W heater (observe safety warnings in `docs/safety.md`)
 
 ## 2. Wiring Overview
 
-Connect components according to the schematics in Electronics/ and the pin definitions in each sketch:
+Connect components according to the schematics in `Electronics/` and the pin definitions in each sketch:
 
 **Arduino Mega (Master):**
 | Pin | Function |
@@ -51,17 +51,17 @@ Connect components according to the schematics in Electronics/ and the pin defin
 | 2 | Stepper direction |
 | 4, 5, 6, 7 | Keypad rows |
 | 8, 9, 10, 11 | Keypad cols |
-| I2C (A4/A5) | 20×4 LCD |
+| I2C (A4/A5) | 20Ã—4 LCD |
 | Serial (TX/RX) | Communication to Mega |
 
 ## 3. Upload Firmware
 
 1. Connect the **Arduino Mega** to your PC.
-2. Open Software/Mega_IDE.ino in Arduino IDE.
+2. Open `Software/Mega_IDE.ino` in Arduino IDE.
 3. Select **Board: Arduino Mega or Mega 2560** and the correct COM port.
 4. Upload.
 5. Connect the **Arduino Nano**.
-6. Open Software/Nano_IDE.ino.
+6. Open `Software/Nano_IDE.ino`.
 7. Select **Board: Arduino Nano** (choose the correct bootloader for your clone) and COM port.
 8. Upload.
 
@@ -80,7 +80,7 @@ Connect components according to the schematics in Electronics/ and the pin defin
 ## 5. Verification Checklist
 
 - [ ] TFT shows VYTRON logo, then language selection
-- [ ] DS18B20 reads a plausible room temperature (~20–25 °C)
+- [ ] DS18B20 reads a plausible room temperature (~20â€“25 Â°C)
 - [ ] MPU-6050 shows stable roll/pitch values
 - [ ] Nano LCD shows ball selection screen
 - [ ] Stepper responds to Mega serial commands (H / G / S)
@@ -91,14 +91,14 @@ Connect components according to the schematics in Electronics/ and the pin defin
 | Problem | Possible Cause | Fix |
 |---------|----------------|-----|
 | TFT remains black | Wiring or power issue | Check TFT_CS/DC/RST pins and 5V supply |
-| Temperature reads -127 °C or 85 °C | DS18B20 not connected / short | Check OneWire bus and 4.7K pull-up |
-| Stepper does not move | Nano not receiving commands | Check Serial1 wiring (TX1?RX, RX1?TX) |
+| Temperature reads -127 Â°C or 85 Â°C | DS18B20 not connected / short | Check OneWire bus and 4.7K pull-up |
+| Stepper does not move | Nano not receiving commands | Check Serial1 wiring (TX1â†’RX, RX1â†’TX) |
 | Ball fall time not detected | Optical sensors misaligned | Adjust sensor positions; check sensorAktif flag |
-| I2C bus hangs | Electrical noise | Ensure Wire.setWireTimeout(3000, true) is active |
+| I2C bus hangs | Electrical noise | Ensure `Wire.setWireTimeout(3000, true)` is active |
 
 ## 7. Next Steps
 
 After successful first run, proceed to:
-- docs/mechanical/mechanical-design.md — mechanical assembly details
-- docs/electronics/interference-mitigation.md — EMI/RFI hardening
+- `docs/mechanical/mechanical-design.md` â†’ mechanical assembly details
+- `docs/electronics/interference-mitigation.md` â†’ EMI/RFI hardening
 - Calibration with reference-viscosity fluids (planned feature)

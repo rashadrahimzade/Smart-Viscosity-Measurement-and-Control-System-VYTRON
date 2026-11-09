@@ -1,4 +1,4 @@
-# Excel Files
+﻿# 📁 Excel Files
 
 Add your actual BOM (material list) Excel files to this folder.
 

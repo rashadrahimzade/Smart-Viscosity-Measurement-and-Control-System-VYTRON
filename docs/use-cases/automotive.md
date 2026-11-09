@@ -1,4 +1,4 @@
-# ?? Use Case: Automotive Industry
+ï»¿# ðŸš— Use Case: Automotive Industry
 
 Used for viscosity control of automotive fluids such as engine oil, brake fluid, transmission oil.
 
@@ -6,10 +6,10 @@ Used for viscosity control of automotive fluids such as engine oil, brake fluid,
 
 | Fluid | Viscosity Range | Importance |
 |-------|----------------|------------|
-| Engine oil (5W30, 10W40, etc.) | ~50–200 cP | Engine protection and classification |
-| Brake fluid (DOT 3, 4, 5.1) | ~10–30 cP | Brake system performance |
-| Transmission oil | ~100–500 cP | Gear system operation |
-| Coolant | ~1–5 cP | Cooling efficiency |
+| Engine oil (5W30, 10W40, etc.) | ~50â€“200 cP | Engine protection and classification |
+| Brake fluid (DOT 3, 4, 5.1) | ~10â€“30 cP | Brake system performance |
+| Transmission oil | ~100â€“500 cP | Gear system operation |
+| Coolant | ~1â€“5 cP | Cooling efficiency |
 
 ## 2. VYTRON Advantages
 
@@ -25,6 +25,6 @@ Used for viscosity control of automotive fluids such as engine oil, brake fluid,
 
 ## 4. Related Files
 
-- `docs/calibration.md` — Reference fluid calibration
-- `docs/mechanical/mechanical-design.md` — Mechanical CAD and design
-- `docs/safety.md` — 220V and heater safety
+- `docs/calibration.md` â€” Reference fluid calibration
+- `docs/mechanical/mechanical-design.md` â€” Mechanical CAD and design
+- `docs/safety.md` â€” 220V and heater safety

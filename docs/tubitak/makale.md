@@ -1,8 +1,8 @@
-# ?? Project Article
+﻿# 📑 Project Article
 
 This folder contains the article written and published within the scope of the VYTRON project.
 
-## ?? Article Link
+## 📎 Article Link
 
 | Source | Description | Link |
 |--------|-------------|------|
@@ -11,11 +11,11 @@ This folder contains the article written and published within the scope of the V
 
 > **Note:** Copy the local PDF file (`vytron-makale.pdf`) into this folder.
 
-## ?? Related Links
+## 🔗 Related Links
 
-- T�BITAK Result Report: [`docs/tubitak/sonuc-raporu.md`](./sonuc-raporu.md)
+- TÜBİTAK Result Report: [`docs/tubitak/sonuc-raporu.md`](./sonuc-raporu.md)
 - Project Repository: [GitHub Repository](https://github.com/rashadrahimzade/Smart-Viscosity-Measurement-and-Control-System-VYTRON)
 
-## ?? License
+## 📜 License
 
 This article is protected under the "All Rights Reserved" terms specified in `LICENSE.txt`. Unauthorized copying or distribution is prohibited.

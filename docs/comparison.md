@@ -1,4 +1,4 @@
-# ?? Comparison: VYTRON vs Commercial Falling-Ball Viscometers
+﻿# ⚖️ Comparison: VYTRON vs Commercial Falling-Ball Viscometers
 
 This document compares the VYTRON system with industrial and laboratory-level commercial falling-ball viscometers. All values are approximate and for reference purposes.
 
@@ -23,14 +23,14 @@ This document compares the VYTRON system with industrial and laboratory-level co
 
 ## 2. Advantages and Disadvantages
 
-### ? Advantages of VYTRON
-- **Cost**: Approximately 20�40% of commercial device cost.
+### ✅ Advantages of VYTRON
+- **Cost**: Approximately 20–40% of commercial device cost.
 - **Transparency**: All CAD files, schematics, and firmware are open; users can modify and improve them.
-- **Learning / Research**: Ideal for university laboratories and student experiments as a T�BITAK 2209-A project.
+- **Learning / Research**: Ideal for university laboratories and student experiments as a TÜBİTAK 2209-A project.
 - **Flexibility**: Ball diameter, liquid type, measurement range, and calibration parameters can be changed by the user.
 - **Local Production Potential**: Mechanical parts can be manufactured locally; electronics can be sourced from local suppliers.
 
-### ? Disadvantages of VYTRON
+### ❌ Disadvantages of VYTRON
 - **Data Logging**: Automatic data logging with SD card or PC connection is not yet available (on the roadmap).
 - **Service Warranty**: Commercial devices have factory warranty and service network; VYTRON maintenance is done by the user.
 - **Quality Certificate**: Industrial quality certificate (ISO, CE, etc.) may not yet be obtained.
@@ -46,6 +46,6 @@ This document compares the VYTRON system with industrial and laboratory-level co
 
 ## 4. Related Files
 
-- docs/bom/bom-index.md � BOM summary
-- docs/pricing.md � Cost and pricing analysis
-- docs/calibration.md � Calibration procedure
+- `docs/bom/bom-index.md` → BOM summary
+- `docs/pricing.md` → Cost and pricing analysis
+- `docs/calibration.md` → Calibration procedure

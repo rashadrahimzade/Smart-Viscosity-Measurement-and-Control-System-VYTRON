@@ -1,15 +1,15 @@
-# ?? Bill of Materials (BOM) - General Overview
+﻿# 📦 Bill of Materials (BOM) - General Overview
 
 This page contains a high-level summary of all materials required for the VYTRON system. For detailed part numbers, suppliers, and notes, see the sub-pages.
 
-## ?? Sub-sections
+## 🔗 Sub-sections
 
 | Section | Description | File |
 |---------|-------------|------|
 | **Electronic Materials** | Arduino, sensors, motor, driver, screen, relay, cables | `docs/electronics/electronics-bom.md` |
 | **Mechanical Materials** | CAD parts, gaskets, screws, glass tube, mounting parts | `docs/mechanical/mechanical-bom.md` |
 
-## ?? Excel Files
+## 📁 Excel Files
 
 Actual part lists (Excel) are located in the `docs/bom/files/` folder:
 
@@ -20,7 +20,7 @@ Actual part lists (Excel) are located in the `docs/bom/files/` folder:
 
 > **Price note:** All prices in the Excel files are **VAT included, May 2026 prices**.
 
-## ?? Approximate Costs (Example)
+## 💰 Approximate Costs (Example)
 
 > These figures are 2026 averages; they may vary by supplier, country, and quantity. Each BOM table contains its own subtotal; there is no grand total for the entire machine.
 
@@ -29,7 +29,7 @@ Actual part lists (Excel) are located in the `docs/bom/files/` folder:
 | Electronics | MCU, sensors, motor, driver, screen, relay, cables |
 | Mechanical | Gaskets, screws, glass tube, mounting parts |
 
-## ?? Shopping List Checklist
+## 🛒 Shopping List Checklist
 
 Confirm before placing an order:
 
@@ -39,7 +39,7 @@ Confirm before placing an order:
 - [ ] Is the stepper motor flange/coupling suitable for the tube diameter?
 - [ ] Is 220V insulation material (box, shielded cable) purchased?
 
-## ?? Notes
+## 📬 Notes
 
 - Part numbers (MPN) and supplier information should be kept up to date in sub-pages.
 - Prices are for reference only; contact the supplier for an official quote.

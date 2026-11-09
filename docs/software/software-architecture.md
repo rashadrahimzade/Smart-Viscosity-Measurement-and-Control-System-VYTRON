@@ -1,4 +1,4 @@
-# ?? Embedded Software Architecture & Firmware
+﻿# 💻 Embedded Software Architecture & Firmware
 
 This directory contains the modular C/C++ embedded firmware running on the dual-microcontroller architecture (Arduino Mega 2560 & Arduino Nano) of the VYTRON system.
 
@@ -16,7 +16,7 @@ This directory contains the modular C/C++ embedded firmware running on the dual-
 - **Motion Profiling**: Controls the **NEMA 34** motor via **JSS-860H** driver using `AccelStepper` for acceleration/deceleration curves.
 - **Inter-MCU Communication**: Listens to UART Serial commands (`H`, `G`, `S`) sent by the Arduino Mega.
 - **Secondary UI & Keypad**: Manages 4x4 Keypad inputs and updates system status on a 20x4 I2C LCD display.
-- **Mixing Cycle**: Executes automated 180� back-and-forth oscillation routines during fluid preparation.
+- **Mixing Cycle**: Executes automated 180° back-and-forth oscillation routines during fluid preparation.
 
 ## 2. Required Dependencies & Libraries
 

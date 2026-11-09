@@ -1,4 +1,4 @@
-# ? Use Case: Petrochemical Industry
+ï»¿# â›½ Use Case: Petrochemical Industry
 
 Viscosity plays a critical role in processability and quality control of petrochemical products (oils, additives, polymer solutions).
 
@@ -6,10 +6,10 @@ Viscosity plays a critical role in processability and quality control of petroch
 
 | Product | Viscosity Range | Importance |
 |---------|----------------|------------|
-| Motor oil | ~50–200 cP (at 40 °C) | Classification and performance |
-| Hydraulic fluid | ~30–100 cP | System efficiency |
-| Polymer solution | ~100–5000 cP | Processability and quality |
-| Additive | ~10–500 cP | Dosage in recipe |
+| Motor oil | ~50â€“200 cP (40 Â°C'de) | Classification and performance |
+| Hydraulic fluid | ~30â€“100 cP | System efficiency |
+| Polymer solution | ~100â€“5000 cP | Processability and quality |
+| Additive | ~10â€“500 cP | Dosage in recipe |
 
 ## 2. VYTRON Advantages
 
@@ -25,6 +25,6 @@ Viscosity plays a critical role in processability and quality control of petroch
 
 ## 4. Related Files
 
-- `docs/calibration.md` — Reference fluid calibration
-- `docs/electronics/interference-mitigation.md` — EMI/RFI mitigation
-- `docs/cfd/cfd-analysis.md` — Flow analysis
+- `docs/calibration.md` â€” Reference fluid calibration
+- `docs/electronics/interference-mitigation.md` â€” EMI/RFI mitigation
+- `docs/cfd/cfd-analysis.md` â€” Flow analysis
