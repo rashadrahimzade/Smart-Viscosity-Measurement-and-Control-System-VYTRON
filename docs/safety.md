@@ -1,63 +1,63 @@
-# ⚠️ Safety Guide
+# ?? Safety Guide
 
-Bu rehber, VYTRON sisteminin güvenli kullanımını açıklar. Sistem 220V AC, yüksek sıcaklık ve hareketli mekanik parçalar içerir. Okunup uygulanması zorunludur.
+This guide explains the safe use of the VYTRON system. The system contains 220V AC, high temperature, and moving mechanical parts. Reading and applying this guide is mandatory.
 
-## 1. Elektrik Güvenliği
+## 1. Electrical Safety
 
-### 220V AC Tehlikesi
-- Sistemde 220V AC voltajı bulunan 200W ısıtıcısı ve güç kaynağı vardır.
-- **Yalnızca yetkili ve yetkin personel 220V bağlantılarını yapabilir.**
-- Tüm 220V kabloları çift izolasyonlu olmalı ve uygun bir kutu içinde saklanmalıdır.
-- Çalışma esnasında 220V hatlarına asla el atılmamalıdır.
+### 220V AC Hazard
+- The system contains 220V AC voltage in the 200W heater and power supply.
+- **Only qualified and competent personnel may make 220V connections.**
+- All 220V cables must be double-insulated and kept in a suitable enclosure.
+- Never touch 220V lines during operation.
 
 ### Solid State Relay (SSR)
-- SSR, 220V AC akımını anahtalar. Yanlış bağlanması veya bozuk olması durumunda ısıtıcının sürekli açık kalması (runaway heating) riski vardır.
-- SSR montaj parçasının havalandırıldığından emin olun; sıcaklık artışı olabilir.
-- Güç kesildiğindeSSR'ın içindeki gerinim kalabilir; bakım öncesi en az 5 dakika bekleyin.
+- SSR switches 220V AC current. Incorrect connection or a fault may cause the heater to remain on continuously (runaway heating).
+- Ensure the SSR mounting location is ventilated; temperature rise may occur.
+- After power is cut, residual charge may remain inside the SSR; wait at least 5 minutes before maintenance.
 
-### Arduino ve Lojik Devre
-- Arduino Mega ve Nano 5V ile çalışır. 220V ile doğrudan bağlantı yoktur.
-- Tüm lojik bağlantıların (Serial1, I2C, keypad) GND ortaklı olduğundan emin olun.
+### Arduino and Logic Circuits
+- Arduino Mega and Nano operate at 5V. There is no direct connection to 220V.
+- Ensure all logic connections (Serial1, I2C, keypad) share a common GND.
 
-## 2. Isı ve Sıcaklık Güvenliği
+## 2. Heat and Temperature Safety
 
-- Isıtıcı 200W güçtedir ve sıvıyı yüksek sıcaklıklara ısıtabilir.
-- Sıvı ve tüp cam yüzeyi yakma riski oluşturabilir. Isıtıcı çalışırken elinizle tüp veya ısıtıcıya temas etmeyin.
-- Hedef sıcaklık ayarlanırken, sıvı kaynama noktasının üzerinde olmamasını sağlayın.
-- SSR kilitlenirse (sürekli açık kalırsa) Isıtıcı sürekli ısıtmaya devam edebilir. Acil durumda güç kaynağından kesin.
+- The heater is 200W and can heat the liquid to high temperatures.
+- The liquid and glass tube surface pose a burn risk. Do not touch the tube or heater with your hand while the heater is operating.
+- When setting the target temperature, ensure the liquid does not exceed its boiling point.
+- If the SSR locks (remains on continuously), the heater will continue to heat. Cut power from the source in an emergency.
 
-## 3. Mekanik Güvenlik
+## 3. Mechanical Safety
 
-- NEMA 34 stepper motoru yüksek tork üretmektedir. Elinizi veya giyimcinizi motor dönüş bölgesine yaklaştırmayın.
-- Tüp döndürme mekanizması çalışırken kapağı açmayın.
-- Cam tüp hassastır; çarpma veya düşme sonucu kırılabilir. Kırık tüp ile sistemin çalıştırılmaması gerekir.
+- The NEMA 34 stepper motor produces high torque. Do not bring your hand or clothing near the motor rotation area.
+- Do not open the cover while the tube rotation mechanism is operating.
+- The glass tube is fragile; it can break due to impact or dropping. Do not operate the system with a broken tube.
 
-## 4. Kimyasal ve Sıvı Güvenliği
+## 4. Chemical and Liquid Safety
 
-- Ölçülecek sıvının kimyasal özelliklerini bilin; alguns sıvılar NBR O-ring veya Viton contalarla uyumlu olmayabilir.
-- Sıvı doldururken koruyucu eldiven ve göz koruyucu kullanın.
-- Dökülen sıvı temizlenmeden elektrikli parçalara yaklaşmayın.
+- Know the chemical properties of the liquid to be measured; some liquids may not be compatible with NBR O-rings or Viton gaskets.
+- Use protective gloves and eye protection when filling liquid.
+- Do not approach electrical parts before cleaning spilled liquid.
 
-## 5. Acil Durum Prosedürü
+## 5. Emergency Procedure
 
-Bir sorun oluştuğunda (ısıtıcı sıkmıyor, motor kontrolsüz dönüyor, duman çıkıyor vb.):
+If a problem occurs (heater not heating, motor spinning out of control, smoke, etc.):
 
-1. **Hemen güç kaynağından 220V'yi kesin.**
-2. Arduino'ları USB'den çıkarın.
-3. Sıcak parçaların soğumasını bekleyin.
-4. Sorunun kaynağını belirledikten sonra tekrar çalıştırın.
+1. **Immediately cut 220V from the power source.**
+2. Disconnect Arduinos from USB.
+3. Wait for hot parts to cool down.
+4. Restart only after identifying the source of the problem.
 
-## 6. Bakım ve Kontrol
+## 6. Maintenance and Inspection
 
-- Her kullanım öncesi kabloların bozulup bozulmadığını kontrol edin.
-- O-ring ve Viton contaların的にはzirvalarını kontrol edin; bozuksa değiştirin.
-- Sensörlerin temiz olduğundan emin olun (özellikle optik sensörler).
-- 12 ayda bir tüm elektrik bağlantılarının sıkı olduğundan emin olun.
+- Check cables for damage before each use.
+- Inspect O-ring and Viton gasket surfaces; replace if damaged.
+- Ensure sensors are clean (especially optical sensors).
+- Check all electrical connections are tight once every 12 months.
 
-## 7. Sorumluluk Reddi
+## 7. Disclaimer
 
-Bu proje "tüm hakları saklıdır" şartlarıyla lisanslanmıştır (`LICENSE.txt`). Yazar, bu rehberin eksik veya yanlış uygulanmasından doğacak zararlardan sorumlu tutulamaz. Sistem kullanımından doğacak tüm risk kullanıcıya aittir.
+This project is licensed under "All Rights Reserved" terms (LICENSE.txt). The author cannot be held responsible for damages arising from incomplete or incorrect application of this guide. All risks arising from system use belong to the user.
 
-## 8. İletişim
+## 8. Contact
 
-Güvenlikle ilgili sorular veya bildirimler için: **rahimzaderashad1@gmail.com**
+For safety questions or notifications: **rahimzaderashad1@gmail.com**

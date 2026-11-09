@@ -211,7 +211,7 @@ Bu proje aşağıdaki destek ve katkılar ile gerçekleştirilmiştir:
 - **Prof. Dr. Ertuğrul Durak** (Proje Danışmanı / Destek)
 - **SDU YETEM** (Süleyman Demirel Üniversitesi Araştırma Merkezi Destek)
 
-**Yazar:** [@rashadrahimzade](https://github.com/rashadrahimzade)
+**Author:** [@rashadrahimzade](https://github.com/rashadrahimzade)
 
 ### 📄 TÜBİtaK Belgeleri
 

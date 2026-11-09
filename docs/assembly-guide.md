@@ -1,77 +1,77 @@
-# 🛠️ Mechanical Assembly Guide
+# ??? Mechanical Assembly Guide
 
-Bu rehber, VYTRON düşen-toplık viskozimetresinin mekanik montajını adım adım açıklar. Tüm 3D CAD modelleri `Mechanical/3D Model/` klasöründe, teknik çizimler ise `Mechanical/Techincal_Drawing/` klasöründe bulunmaktadır.
+This guide explains step by step the mechanical assembly of the VYTRON falling-ball viscometer. All 3D CAD models are in the Mechanical/3D Model/ folder, and technical drawings are in Mechanical/Techincal_Drawing/.
 
-## 1. Gerekli Araçlar ve Malzemeler
+## 1. Required Tools and Materials
 
-- Inbus anahtar seti (M3, M4, M5)
-- Tornavida seti (Philips ve シングル düzgün)
-- Kalibreli anahtar (10 mm, 13 mm)
-- Silikon conta veya uygun sızdırmazlık macunu (isteğe bağlı)
-- NBR O-ring ve Viton (FKM) contalar (depo ile birlikte)
-- Temizleyici (isopropol alkol)
-- Eldiven ve göz koruyucu
+- Allen key set (M3, M4, M5)
+- Screwdriver set (Phillips and flathead)
+- Calibrated wrench (10 mm, 13 mm)
+- Silicone gasket or suitable sealant (optional)
+- NBR O-ring and Viton (FKM) gaskets (included with the system)
+- Cleaner (isopropyl alcohol)
+- Gloves and eye protection
 
-## 2. Montaj Sırası
+## 2. Assembly Order
 
-### Adım 1: Alt Gövde ve Tüp Sabitleme
-1. Alt kapak parçasını düz ve stabil bir yüzeye yerleştirin.
-2. Cam tüp (iç ve dış) yerleşim kanalına dikkatlice oturtun.
-3. Tüp borusu üzerindeki NBR O-ring kanalını temizleyin ve O-ring'i yerine oturtun.
-4. Üst kapak parçasını tüp üzerine yerleştirin. Viton (FKM) contayı uygun kanalın içine yerleştirin.
-5. Kapakları birbirine civatalayın. Aşırı sıkınmaktan kaçının; cam tüp kırılabilir.
+### Step 1: Base Housing and Tube Fixing
+1. Place the lower cover part on a flat and stable surface.
+2. Carefully insert the glass tube (inner and outer) into the seat channel.
+3. Clean the NBR O-ring channel on the tube and place the O-ring in position.
+4. Place the upper cover part over the tube. Insert the Viton (FKM) gasket into the appropriate channel.
+5. Fasten the covers together with screws. Do not overtighten; the glass tube can break.
 
-### Adım 2: Stepper Motor ve Tüp Döndürme Mekanizması
-1. NEMA 34 stepper motorunu motor montaj parasına sabitleyin (4 adet M5 civata).
-2. Motorun şaftındaki kemer veya bağlayıcıyı tüp döndürme mekanizmasıyla bağlantılı hale getirin.
-3. Motor montaj paranasını ana çatıya sabitleyin.
-4. Motorun hareketi sırasında tüpün titreşmediğinden emin olun; gerekirse damper veya yalıtım materiaisini ekleyin.
+### Step 2: Stepper Motor and Tube Rotation Mechanism
+1. Mount the NEMA 34 stepper motor to the motor mounting plate (4 � M5 screws).
+2. Connect the belt or coupling on the motor shaft to the tube rotation mechanism.
+3. Secure the motor mounting plate to the main chassis.
+4. Ensure the tube does not vibrate during motor movement; add a damper or insulation material if necessary.
 
-### Adım 3: Sensör Montajı
-**MPU-6050 (Eğim/pozisyon):**
-- Tüp gövdesinin tarafına sabitleyin. Sensör düz yüzeyde ve sağlam şekilde monte edilmelidir.
-- Kablo yolunu alüminyum ekranlı kablo ile koruyun (EMI'ye karşı).
+### Step 3: Sensor Assembly
+**MPU-6050 (Tilt/Position):**
+- Mount on the side of the tube body. The sensor must be on a flat surface and securely mounted.
+- Protect the cable path with aluminum shielded cable (against EMI).
 
-**Optik Sensörler (SENSOR_A ve SENSOR_B):**
-- Tüpün düşme yolunun iki farklı noktasına monte edin.
-- Topun optik alana girdiği ve çıktığı noktalar tam olarak hizalanmalıdır.
-- Sensörlerin ışık kaynağı ve alıcısı karşı karşıya olmalı, engel olmamalıdır.
+**Optical Sensors (SENSOR_A and SENSOR_B):**
+- Mount at two different points along the tube's falling path.
+- The points where the ball enters and exits the optical area must be precisely aligned.
+- The sensor's light source and receiver must face each other without obstruction.
 
-**DS18B20 (Sıcaklık):**
-- Sondunu sıvının içine girecek şekilde tüp gevşeme veya sızdırmazlık kanalı üzerinden geçirin.
-- Sondunun sıvı ile temas ettiğinden ve hava kesildiğinden emin olun.
+**DS18B20 (Temperature):**
+- Pass the probe through the tube's loosening or sealing channel so it enters the liquid.
+- Ensure the probe contacts the liquid and air is excluded.
 
-### Adım 4: Isıtıcı ve Güvenlik
-1. 220V 200W ısıtıcıyı tasarlanan yere monte edin.
-2. Isıtıcının cam tüple doğrudan temas etmediğinden (veya tasarım gereği temas ediyorsa uygun yalıtım olduğundan) emin olun.
-3. SSR (Solid State Relay) montaj parçasını havalandırılabilir bir yere sabitleyin.
-4. Tüm 220V bağlantıları izole edilmeli ve kutu içine alınmalıdır.
+### Step 4: Heater and Safety
+1. Mount the 220V 200W heater to the designated location.
+2. Ensure the heater does not come into direct contact with the glass tube (or that proper insulation is in place if contact is required by design).
+3. Mount the SSR (Solid State Relay) assembly in a ventilated location.
+4. All 220V connections must be insulated and enclosed in a box.
 
-### Adım 5: Kullanıcı Arayüzü Montajı
-1. ILI9341 TFT LCD'yi Mega kontrol panelinde sabitleyin.
-2. 4×4 keypad'leri Mega ve Nano panellerine monte edin.
-3. Nano üzerindeki 20×4 I2C LCD'yi hareket kontrol panelinde yerleştirin.
+### Step 5: User Interface Assembly
+1. Mount the ILI9341 TFT LCD to the Mega control panel.
+2. Mount the 4�4 keypads to the Mega and Nano panels.
+3. Place the 20�4 I2C LCD on the Nano in the motion control panel.
 
-## 3. Sızdırmazlık Kontrolü
+## 3. Sealing Leak Test
 
-Tüm montaj tamamlandıktan sonra:
-- Tübe su doldurun ve birkaç saat bekleyin.
-- Kapak kenarları, O-ring kanalları ve boru giriş çıkış noktalarından sızdırmazlık olup olmadığını kontrol edin.
-- Sızdırmazlık varsa montajı tekrar yapın ve contaları kontrol edin.
+After full assembly:
+- Fill the tube with water and wait a few hours.
+- Check for leaks at cover edges, O-ring channels, and tube entry/exit points.
+- If there is a leak, repeat the assembly and check the gaskets.
 
-## 4. Kontrol Listesi
+## 4. Checklist
 
-- [ ] Cam tüp kırık veya hasarlı değil
-- [ ] NBR O-ring ve Viton kontalar yerinde ve bozuk değil
-- [ ] Tüp sıkı ve titreşimsiz monte edilmiş
-- [ ] MPU-6050 düz yüzeyde sabit
-- [ ] Optik sensörler paralel ve hizalı
-- [ ] DS18B20 sıvı ile temas ediyor
-- [ ] 220V bağlantıları izole ve kutu içinde
-- [ ] Tüm civatalar sıkı (aşırı sıkılmamış)
+- [ ] Glass tube is not cracked or damaged
+- [ ] NBR O-ring and Viton gaskets are in place and undamaged
+- [ ] Tube is tightly and vibration-free mounted
+- [ ] MPU-6050 is fixed on a flat surface
+- [ ] Optical sensors are parallel and aligned
+- [ ] DS18B20 contacts the liquid
+- [ ] 220V connections are insulated and boxed
+- [ ] All screws are tight (not overtightened)
 
-## 5. Notlar
+## 5. Notes
 
-- Tüm cad dosyaları SolidWorks'te hazırlanmıştır; STEP formatında da mevcuttur.
-- Montaj sırasında herhangi bir parçayı zorlamayın; cam parçalar özellikle hassastır.
-- Montajdan sonra ilk çalıştırmada `docs/getting-started.md` rehberini takip edin.
+- All CAD files were prepared in SolidWorks; STEP format is also available.
+- Do not force any parts during assembly; glass components are especially sensitive.
+- After assembly, follow the docs/getting-started.md guide for the first run.
