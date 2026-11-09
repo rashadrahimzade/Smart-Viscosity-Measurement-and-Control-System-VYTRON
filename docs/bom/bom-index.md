@@ -1,47 +1,47 @@
-# 📦 Malzeme Listesi (BOM) - Genel Özet
+# ?? Bill of Materials (BOM) - General Overview
 
-Bu sayfa, VYTRON sistemi için gerekli tüm malzemelerin üst düzey özetini içerir. Detaylı parça kodları, satıcılar ve notlar için alt sayfalara göz atın.
+This page contains a high-level summary of all materials required for the VYTRON system. For detailed part numbers, suppliers, and notes, see the sub-pages.
 
-## 🔗 Alt Bölümler
+## ?? Sub-sections
 
-| Bölüm | Açıklama | Dosya |
-|-------|----------|-------|
-| **Elektronik Malzemeler** | Arduino, sensörler, motor, sürücü, ekran, röle, kablolar | `docs/electronics/electronics-bom.md` |
-| **Mekanik Malzemeler** | CAD parçalar, contalar, vidalar, cam tüp, montaj parçaları | `docs/mechanical/mechanical-bom.md` |
+| Section | Description | File |
+|---------|-------------|------|
+| **Electronic Materials** | Arduino, sensors, motor, driver, screen, relay, cables | `docs/electronics/electronics-bom.md` |
+| **Mechanical Materials** | CAD parts, gaskets, screws, glass tube, mounting parts | `docs/mechanical/mechanical-bom.md` |
 
-## 📁 Excel Dosyaları
+## ?? Excel Files
 
-Gerçek parça listeleri (Excel) aşağıdaki klasörde mevcuttur:
+Actual part lists (Excel) are located in the following folder:
 
-| Dosya | Açıklama | Konum |
-|-------|----------|-------|
-| `elektronik-bom.xlsx` | Elektronik parçaların detaylı listesi | `docs/bom/files/elektronik-bom.xlsx` |
-| `mekanik-bom.xlsx` | Mekanik parçaların detaylı listesi | `docs/bom/files/mekanik-bom.xlsx` |
+| File | Description | Location |
+|------|-------------|----------|
+| `electronics-bom.xlsx` | Detailed list of electronic parts | `docs/bom/files/electronics-bom.xlsx` |
+| `mechanical-bom.xlsx` | Detailed list of mechanical parts | `docs/bom/files/mechanical-bom.xlsx` |
 
-> **Not:** Dosyalar Masaüstündeki `BOM_Electronic_VYTRON.xlsx` ve `BOM_Mechanic_VYTRON.xlsx` dosyasından kopyalanmıştır. Güncelleme yapmanız gerekiyorsa bu dosyaları düzenleyebilirsiniz.
+> **Note:** Files copied from `BOM_Electronic_VYTRON.xlsx` and `BOM_Mechanic_VYTRON.xlsx` on the Desktop. If updates are needed, you can edit these files directly.
 
-## 💰 Yaklaşık Toplam Maliyet (Örnek)
+## ?? Approximate Total Cost (Example)
 
-> Bu rakamlar 2026 ortalamalarıdır; satıcı, ülke ve miktara göre değişebilir.
+> These figures are 2026 averages; they may vary by supplier, country, and quantity.
 
-| Kategori | Tahmini Maliyet (TL) | Not |
-|----------|----------------------|-----|
-| Elektronik (MCU, sensör, motor, sürücü, ekran, vb.) | — | `docs/electronics/electronics-bom.md` |
-| Mekanik (contalar, vidalar, cam tüp, montaj) | — | `docs/mechanical/mechanical-bom.md` |
-| **Toplam** | **—** | |
+| Category | Estimated Cost (TL) | Note |
+|----------|---------------------|------|
+| Electronics (MCU, sensor, motor, driver, screen, etc.) | � | `docs/electronics/electronics-bom.md` |
+| Mechanical (gaskets, screws, glass tube, mounting) | � | `docs/mechanical/mechanical-bom.md` |
+| **Total** | **�** | |
 
-## 🛒 Alışveriş Listesi Kontrolü
+## ?? Shopping List Checklist
 
-Sipariş vermeden önce şunları onaylayın:
+Confirm before placing an order:
 
-- [ ] Tüm elektronik parçalar stoğu var mı?
-- [ ] NBR O-ring ve Viton contalar sıvıya uygun mu?
-- [ ] DS18B20 için 4.7K pull-up direnci eklendi mi?
-- [ ] Stepper motor jantı/bağlayıcı tüp çapına uygun mu?
-- [ ] 220V izolasyon malzemesi (kutu, contalı kablo) alındı mı?
+- [ ] Are all electronic parts in stock?
+- [ ] Are NBR O-ring and Viton gaskets suitable for the liquid?
+- [ ] Is the 4.7K pull-up resistor added for DS18B20?
+- [ ] Is the stepper motor flange/coupling suitable for the tube diameter?
+- [ ] Is 220V insulation material (box, shielded cable) purchased?
 
-## 📬 Notlar
+## ?? Notes
 
-- Parça kodları (MPN) ve satıcı bilgileri alt sayfalarda güncel tutulmalıdır.
-- Fiyatlar sadece referans içindir; resmi teklif için satıcıyla iletişime geçin.
-- Bu liste `docs/pricing.md` (maliyet analizi) ile bağlantılı tutulabilir.
+- Part numbers (MPN) and supplier information should be kept up to date in sub-pages.
+- Prices are for reference only; contact the supplier for an official quote.
+- This list can be linked with `docs/pricing.md` (cost analysis).

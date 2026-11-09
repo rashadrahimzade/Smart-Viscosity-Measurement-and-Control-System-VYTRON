@@ -1,65 +1,63 @@
-# 🔩 Mekanik Malzeme Listesi (BOM) — Şablon
+# ?? Mechanical Material List (BOM) � Template
 
-VYTRON sisteminin mekanik parçaları, contaları ve montaj malzemeleri için **şablon** alışveriş listesi. Parça kodları, miktarları ve fiyatları sizin projenize göre doldurmalısınız. 3D CAD modeller `Mechanical/3D Model/`, teknik çizimler `Mechanical/Techincal_Drawing/` klasörlerinde mevcuttur.
+This is a **template** shopping list for the mechanical parts, gaskets, and mounting materials of the VYTRON system. You must fill in part numbers, quantities, and prices according to your project. 3D CAD models are in `Mechanical/3D Model/`, technical drawings in `Mechanical/Techincal_Drawing/`.
 
-## 📁 Excel Dosyası
+## ?? Excel File
 
-Gerçek mekanik BOM'nız şu konumda mevcuttur:
+Your actual mechanical BOM is located here:
 
-- `docs/bom/files/mekanik-bom.xlsx` (kaynak: `BOM_Mechanic_VYTRON.xlsx`)
+- `docs/bom/files/mechanical-bom.xlsx` (source: `BOM_Mechanic_VYTRON.xlsx`)
 
-> Dosya Masaüstünden projeye kopyalanmıştır. İçerik güncellemesi gerekiyorsa doğrudan bu dosyada düzenleme yapabilirsiniz.
+> File copied from Desktop to the project. If content update is needed, you can edit this file directly.
 
 ---
 
-VYTRON sisteminin mekanik parçaları, contaları ve montaj malzemeleri için detaylı alış�veriş listesi. 3D CAD modeller `Mechanical/3D Model/`, teknik çizimler `Mechanical/Techincal_Drawing/` klasörlerinde mevcuttur.
+## 1. Glass and Tube Parts (Example Template)
 
-## 1. Cam ve Tüp Parçaları
+| Part | Qty | Part Code (MPN) | Supplier | Unit Price | Total Price | Note |
+|------|-----|-----------------|----------|------------|-------------|------|
+| Outer Glass Tube | 1 | | | | | Technical drawing: `Dis Cam T�p N.PDF` |
+| Inner Glass Tube | 1 | | | | | Technical drawing: `I� Cam T�p N.PDF` |
 
-| Parça | Adet | Parça Kodu (Örnek) | Satıcı | Not |
-|-------|------|--------------------|--------|-----|
-| Dış Cam Tüp | 1 | - | - | Teknik çizim: `Dış Cam Tüp N.PDF` |
-| İç Cam Tüp | 1 | - | - | Teknik çizim: `İç Cam Tüp N.PDF` |
+## 2. Sealing (Example Template)
 
-## 2. Sızdırmazlık (Sealing)
+| Part | Qty | Part Code (MPN) | Supplier | Unit Price | Total Price | Note |
+|------|-----|-----------------|----------|------------|-------------|------|
+| NBR O-Ring | � | | | | | Suitable for liquid, sealing channel |
+| Viton (FKM) Gasket | � | | | | | Chemically resistant, upper cover |
 
-| Parça | Adet | Parça Kodu (Örnek) | Satıcı | Not |
-|-------|------|--------------------|--------|-----|
-| NBR O-Ring | set | - | - | Sıvıya uygun, sızdırmazlık kanalı |
-| Viton (FKM) Conta | set | - | - | Kimyasal dayanıklı, üst kapak |
+## 3. Assembly and Connection Parts (Example Template)
 
-## 3. Montaj ve Bağlantı Parçaları
+| Part | Qty | Part Code (MPN) | Supplier | Unit Price | Total Price | Note |
+|------|-----|-----------------|----------|------------|-------------|------|
+| Aluminum profile / chassis | � | | | | | Main body |
+| NEMA 34 Motor Mounting Part | 1 | | | | | `nema_34_motor_mount.PDF` |
+| UCP-201 Bearing | 1 | | | | | `UCP-201.PDF` |
+| Clamp | � | | | | | `Kelep�e N.PDF` |
+| Screw, nut, washer (M3, M4, M5) | � | | | | | Assembly |
 
-| Parça | Adet | Parça Kodu (Örnek) | Satıcı | Not |
-|-------|------|--------------------|--------|-----|
-| Alüminyum profil / çatı | set | - | - | Ana gövde |
-| NEMA 34 Motor Montaj Parçası | 1 | - | - | `nema_34_motor_mount.PDF` |
-| UCP-201 Yatak | 1 | - | - | `UCP-201.PDF` |
-| Kelepçe | set | - | - | `Kelepçe N.PDF` |
-| Vida, somun, rondela (M3, M4, M5) | set | - | - | Montaj |
+## 4. Other Mechanical Parts (Example Template)
 
-## 4. Diğer Mekanik Parçalar
+| Part | Qty | Part Code (MPN) | Supplier | Unit Price | Total Price | Note |
+|------|-----|-----------------|----------|------------|-------------|------|
+| Lower Cover | 1 | | | | | `ALT KAPAK N.PDF` |
+| Upper Cover | 1 | | | | | `Kapak UST N.PDF` |
+| Upper Cover Sensor | 1 | | | | | `�ST KAPAK SENS�R.SLDPRT` |
+| Blank Bar | 1 | | | | | `Bos �ubuk.PDF` |
+| SHF-12 | 1 | | | | | `SHF-12.PDF` |
 
-| Parça | Adet | Parça Kodu (Örnek) | Satıcı | Not |
-|-------|------|--------------------|--------|-----|
-| Alt Kapak | 1 | - | - | `ALT KAPAK N.PDF` |
-| Üst Kapak | 1 | - | - | `Kapak UST N.PDF` |
-| Üst Kapak Sensör | 1 | - | - | `ÜST KAPAK SENSÖR.SLDPRT` |
-| Boş Çubuk | 1 | - | - | `Boş Çubuk.PDF` |
-| SHF-12 | 1 | - | - | `SHF-12.PDF` |
+## 5. Assembly Tools (Recommended)
 
-## 5. Montaj Araçları (Önerilen)
+| Tool | Qty | Note |
+|------|-----|------|
+| Allen key set | 1 | M3, M4, M5 |
+| Screwdriver set | 1 | Phillips and flathead |
+| Calibrated wrench | 1 | 10 mm, 13 mm |
+| Silicone gasket / sealant | 1 | Optional |
 
-| Araç | Adet | Not |
-|------|------|-----|
-| Inbus anahtar seti | 1 | M3, M4, M5 |
-| Tornavida seti | 1 | Philips ve düz |
-| Kalibreli anahtar | 1 | 10 mm, 13 mm |
-| Silikon conta / sızdırmazlık macunu | 1 | İsteğe bağlı |
+## ?? Related Files
 
-## 📎 İlgili Dosyalar
-
-- Teknik Çizimler: `Mechanical/Techincal_Drawing/`
-- 3D CAD Modeller: `Mechanical/3D Model/`
-- Montaj Rehberi: `docs/assembly-guide.md`
-- CFD Analizi: `docs/cfd/cfd-analysis.md`
+- Technical Drawings: `Mechanical/Techincal_Drawing/`
+- 3D CAD Models: `Mechanical/3D Model/`
+- Assembly Guide: `docs/assembly-guide.md`
+- CFD Analysis: `docs/cfd/cfd-analysis.md`

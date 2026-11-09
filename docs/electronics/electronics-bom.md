@@ -1,71 +1,71 @@
-# ⚡ Elektronik Malzeme Listesi (BOM) — Şablon
+# ? Electronic Material List (BOM) � Template
 
-VYTRON sisteminin elektronik bileşenleri için **şablon** alışveriş listesi. Parça kodları, miktarları ve fiyatları sizin projenize göre doldurmalısınız. Tüm şemalar `Electronics/` klasöründeki KiCad dosyalarında mevcuttur.
+This is a **template** shopping list for the electronic components of the VYTRON system. You must fill in part numbers, quantities, and prices according to your project. All schematics are available in KiCad files in the `Electronics/` folder.
 
-## 📁 Excel Dosyası
+## ?? Excel File
 
-Gerçek elektronik BOM'nız şu konumda mevcuttur:
+Your actual electronic BOM is located here:
 
-- `docs/bom/files/elektronik-bom.xlsx` (kaynak: `BOM_Electronic_VYTRON.xlsx`)
+- `docs/bom/files/electronics-bom.xlsx` (source: `BOM_Electronic_VYTRON.xlsx`)
 
-> Dosya Masaüstünden projeye kopyalanmıştır. İçerik güncellemesi gerekiyorsa doğrudan bu dosyada düzenleme yapabilirsiniz.
+> File copied from Desktop to the project. If content update is needed, you can edit this file directly.
 
 ---
 
-## 1. Mikrokontrolörler (Örnek Şablon)
+## 1. Microcontrollers (Example Template)
 
-| Parça | Adet | Parça Kodu (MPN) | Satıcı | Birim Fiyat | Toplam Fiyat | Not |
-|-------|------|------------------|--------|-------------|--------------|-----|
-| Arduino Mega 2560 | 1 | | | | | Master kontrol |
-| Arduino Nano | 1 | | | | | Motion kontrol (bootloader dikkat) |
-| USB kablosu (A-Micro / A-Mini) | 2 | | | | | Programlama ve güç |
+| Part | Qty | Part Code (MPN) | Supplier | Unit Price | Total Price | Note |
+|------|-----|-----------------|----------|------------|-------------|------|
+| Arduino Mega 2560 | 1 | | | | | Master control |
+| Arduino Nano | 1 | | | | | Motion control (bootloader caution) |
+| USB cable (A-Micro / A-Mini) | 2 | | | | | Programming and power |
 
-## 2. Sensörler (Örnek Şablon)
+## 2. Sensors (Example Template)
 
-| Parça | Adet | Parça Kodu (MPN) | Satıcı | Birim Fiyat | Toplam Fiyat | Not |
-|-------|------|------------------|--------|-------------|--------------|-----|
-| DS18B20 sıcaklık sensörü (waterproof) | 1 | | | | | 4.7K pull-up direnci gerekli |
-| MPU-6050 (6 eksen IMU) | 1 | | | | | I2C, eğim/pozisyon |
-| Optik sensör (düşen top tespiti) | 2 | | | | | SENSOR_A, SENSOR_B |
+| Part | Qty | Part Code (MPN) | Supplier | Unit Price | Total Price | Note |
+|------|-----|-----------------|----------|------------|-------------|------|
+| DS18B20 temperature sensor (waterproof) | 1 | | | | | 4.7K pull-up resistor required |
+| MPU-6050 (6-axis IMU) | 1 | | | | | I2C, tilt/position |
+| Optical sensor (falling ball detection) | 2 | | | | | SENSOR_A, SENSOR_B |
 
-## 3. Ekranlar ve Giriş (Örnek Şablon)
+## 3. Screens and Input (Example Template)
 
-| Parça | Adet | Parça Kodu (MPN) | Satıcı | Birim Fiyat | Toplam Fiyat | Not |
-|-------|------|------------------|--------|-------------|--------------|-----|
-| ILI9341 TFT LCD (240×320, SPI) | 1 | | | | | Mega üzerinde ana arayüz |
-| 20×4 I2C Karakter LCD | 1 | | | | | Nano üzerinde durum ekranı |
-| 4×4 Matris Keypad | 2 | | | | | Bir tane Mega, bir tane Nano |
+| Part | Qty | Part Code (MPN) | Supplier | Unit Price | Total Price | Note |
+|------|-----|-----------------|----------|------------|-------------|------|
+| ILI9341 TFT LCD (240�320, SPI) | 1 | | | | | Main interface on Mega |
+| 20�4 I2C Character LCD | 1 | | | | | Status screen on Nano |
+| 4�4 Matrix Keypad | 2 | | | | | One for Mega, one for Nano |
 
-## 4. Motor ve Güç (Örnek Şablon)
+## 4. Motor and Power (Example Template)
 
-| Parça | Adet | Parça Kodu (MPN) | Satıcı | Birim Fiyat | Toplam Fiyat | Not |
-|-------|------|------------------|--------|-------------|--------------|-----|
-| NEMA 34 Stepper Motor | 1 | | | | | Yüksek tork, tüp döndürme |
-| JSS-860H Stepper Sürücüsü | 1 | | | | | 48V besleme |
-| 48V Güç Kaynağı | 1 | | | | | Motor beslemesi |
-| 5V Güç Kaynağı | 1 | | | | | MCU ve sensör beslemesi |
-| Solid State Relay (SSR) | 1 | | | | | 220V Isıtıcı kontrolü |
-| 200W Isıtıcı (220V) | 1 | | | | | Sıvı ısıtma |
+| Part | Qty | Part Code (MPN) | Supplier | Unit Price | Total Price | Note |
+|------|-----|-----------------|----------|------------|-------------|------|
+| NEMA 34 Stepper Motor | 1 | | | | | High torque, tube rotation |
+| JSS-860H Stepper Driver | 1 | | | | | 48V power |
+| 48V Power Supply | 1 | | | | | Motor power |
+| 5V Power Supply | 1 | | | | | MCU and sensor power |
+| Solid State Relay (SSR) | 1 | | | | | 220V Heater control |
+| 200W Heater (220V) | 1 | | | | | Liquid heating |
 
-## 5. Elektrik Parçaları (Örnek Şablon)
+## 5. Electrical Parts (Example Template)
 
-| Parça | Adet | Parça Kodu (MPN) | Satıcı | Birim Fiyat | Toplam Fiyat | Not |
-|-------|------|------------------|--------|-------------|--------------|-----|
-| 4.7K Ω Direnç | 1 | | | | | DS18B20 OneWire pull-up |
-| Ferrit Çekirdek | — | | | | | EMI azaltma |
-| Alüminyum Ekranlı Kablo | — | | | | | Sensör ve motor hatları |
-| Kondansatör (güç filtresi) | — | | | | | Power rail dips önleme |
-| Kablo, konnektor, klemens | — | | | | | 220V ve lojik ayrı |
+| Part | Qty | Part Code (MPN) | Supplier | Unit Price | Total Price | Note |
+|------|-----|-----------------|----------|------------|-------------|------|
+| 4.7K O Resistor | 1 | | | | | DS18B20 OneWire pull-up |
+| Ferrite Core | � | | | | | EMI reduction |
+| Aluminum Shielded Cable | � | | | | | Sensor and motor lines |
+| Capacitor (power filter) | � | | | | | Power rail dip prevention |
+| Cable, connector, terminal | � | | | | | 220V and logic separation |
 
-## 6. Kontrol Listesi
+## 6. Checklist
 
-- [ ] Arduino Mega ve Nano doğru bootloader'a sahip mi?
-- [ ] TFT_CS/DC/RST pinleri şemaya uygun mu?
-- [ ] 220V kabloları izole ve kutu içinde mi?
-- [ ] Stepper motor kabloları sensör kablolarından yeterli mesafede mi?
+- [ ] Do Arduino Mega and Nano have the correct bootloader?
+- [ ] Are TFT_CS/DC/RST pins compliant with the schematic?
+- [ ] Are 220V cables insulated and inside a box?
+- [ ] Are stepper motor cables at a sufficient distance from sensor cables?
 
-## 📎 İlgili Dosyalar
+## ?? Related Files
 
-- KiCad Şema: `Electronics/Smart Viscosity Measurement and Control System.kicad_sch`
-- EMI/RFI Rehberi: `docs/electronics/interference-mitigation.md`
-- Kablolama Rehberi: `docs/wiring-guide.md`
+- KiCad Schematic: `Electronics/Smart Viscosity Measurement and Control System.kicad_sch`
+- EMI/RFI Guide: `docs/electronics/interference-mitigation.md`
+- Wiring Guide: `docs/wiring-guide.md`

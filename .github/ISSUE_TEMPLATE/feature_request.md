@@ -6,22 +6,22 @@ labels: ['enhancement']
 assignees: ''
 ---
 
-## 🚀 Feature Request
+## ?? Feature Request
 
-### İstek / Request
-Ne eklenmesini veya değiştirilmesini istiyorsunuz?
+### Request / Request
+What would you like to add or change?
 
-### Neden / Motivation
-Bu özellik neden gerekli? Hangi problemi çözer?
+### Why / Motivation
+Why is this feature needed? What problem does it solve?
 
-### Önerilen Çözüm / Proposed Solution
-Nasıl uygulanması gerektiği hakkında fikriniz varsa yazın.
+### Proposed Solution / Proposed Solution
+Write your ideas on how it should be implemented.
 
-### Alternatifler / Alternatives
-Başka bir çözüm düşündünüz mü?
+### Alternatives / Alternatives
+Did you think of another solution?
 
-### Ek Bilgi / Additional Context
-Ekran tasarımı, şema değişikliği veya ek malzeme ihtiyacı varsa belirtin.
+### Additional Context / Additional Context
+Specify if there is a screen design, schematic change, or additional material requirement.
 
-### Lisans / License
-Bu proje **All Rights Reserved** lisansı ile korunmaktadır (`LICENSE.txt`). Özellik talebi göndermek, katkıda bulunma izni anlamına gelmez.
+### License / License
+This project is protected under the **All Rights Reserved** license (`LICENSE.txt`). Submitting a feature request does not imply permission to contribute.
