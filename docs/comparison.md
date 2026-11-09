@@ -1,51 +1,51 @@
-# ⚖️ Karşılaştırma: VYTRON vs Komersiyel Düşen-Topluk Viskozimetreler
+# ?? Comparison: VYTRON vs Commercial Falling-Ball Viscometers
 
-Bu belge, VYTRON sisteminin endüstriyel ve laboratuvar seviyesindeki komersiyel düşen-topluk viskozimetrelerle karşılaştırılmasını içerir. Tüm değerler yaklaşık ve referans amaçlıdır.
+This document compares the VYTRON system with industrial and laboratory-level commercial falling-ball viscometers. All values are approximate and for reference purposes.
 
-## 1. Özellik Karşılaştırma Tablosu
+## 1. Feature Comparison Table
 
-| Özellik | VYTRON | Komersiyel Model A | Komersiyel Model B |
+| Feature | VYTRON | Commercial Model A | Commercial Model B |
 |---------|--------|-------------------|-------------------|
-| **Fiyat** | Düşük (BOM + işçilik) | Yüksek | Çok Yüksek |
-| **Otomatikasyon** | Dual MCU, tam otomatik | Manuel / Yarı otomatik | Tam otomatik |
-| **Gerçek Zamanlı ETA** | Var (ısıtıcıyla) | Yok | Var |
-| **Çift Dil Arayüzü (TR/EN)** | Var | Yabancı dil | Yabancı dil |
-| **Açık Donanım / Şema** | Evet (KiCad) | Hayır | Hayır |
-| **Açık Kaynak Firmware** | Evet (Arduino .ino) | Hayır | Hayır |
-| **Kullanıcı Kalibrasyonu** | Kullanıcı tanımlı | Fabrika kalibre | Fabrika kalibre |
-| **Sızdırmazlık Sistemi** | NBR O-ring + Viton (FKM) | Standart conta | Özel conta |
-| **CFD Doğrulanmış Tasarım** | Evet (Ansys Fluent) | Genelde yok | Evet |
-| **Veri Kaydı** | Yok (planlı) | Var | Var |
-| **220V Isıtıcı Kontrolü** | SSR + PID planlı | Var | Var |
-| **MPU-6050 Eğim İzleme** | Var | Yok | Var |
-| **Optik Top Tespiti** | Donanım kesmesi ile mikro-saniye | Foto optik | Foto optik |
-| **Montaj Kolaylığı** | Kullanıcı monte edilebilir | Fabrika monte | Fabrika monte |
+| **Price** | Low (BOM + labor) | High | Very High |
+| **Automation** | Dual MCU, fully automated | Manual / Semi-automatic | Fully automatic |
+| **Real-time ETA** | Yes (with heater) | No | Yes |
+| **Bilingual Interface (TR/EN)** | Yes | Foreign language | Foreign language |
+| **Open Hardware / Schematic** | Yes (KiCad) | No | No |
+| **Open Source Firmware** | Yes (Arduino .ino) | No | No |
+| **User Calibration** | User-defined | Factory calibrated | Factory calibrated |
+| **Sealing System** | NBR O-ring + Viton (FKM) | Standard gasket | Special gasket |
+| **CFD-Validated Design** | Yes (Ansys Fluent) | Generally no | Yes |
+| **Data Logging** | No (planned) | Yes | Yes |
+| **220V Heater Control** | SSR + PID planned | Yes | Yes |
+| **MPU-6050 Tilt Measurement** | Yes | No | Yes |
+| **Optical Ball Detection** | Microsecond with hardware interrupt | Photo optical | Photo optical |
+| **Assembly Ease** | User-assemblable | Factory assembled | Factory assembled |
 
-## 2. Avantajlar ve Dezavantajlar
+## 2. Advantages and Disadvantages
 
-### ✅ VYTRON'un Avantajları
-- **Maliyet**: Komersiyel cihazların yaklaşık %20–%40'ı civarında tahmini maliyet.
-- **Şeffaflık**: Tüm CAD dosyaları, şemalar ve firmware açık; kullanıcı değiştirebilir, iyileştirebilir.
-- **Öğrenme / Araştırma**: TÜBİTAK 2209-A projesi olarak üniversite laboratuvarları ve öğrenci deneyleri için ideal.
-- **Esneklik**: Top çapı, sıvı türü, 측정 aralığı ve kalibrasyon parametreleri kullanıcı tarafından değiştirilebilir.
-- **Yerli Üretim Potansiyeli**: Mekanik parçalar yerli işlenebilir, elektronik yerli satıcılardan temin edilebilir.
+### ? Advantages of VYTRON
+- **Cost**: Approximately 20�40% of commercial device cost.
+- **Transparency**: All CAD files, schematics, and firmware are open; users can modify and improve them.
+- **Learning / Research**: Ideal for university laboratories and student experiments as a T�BITAK 2209-A project.
+- **Flexibility**: Ball diameter, liquid type, measurement range, and calibration parameters can be changed by the user.
+- **Local Production Potential**: Mechanical parts can be manufactured locally; electronics can be sourced from local suppliers.
 
-### ❌ VYTRON'un Dezavantajları
-- **Veri Kaydı**: SD kart veya PC bağlantısıyla otomatik veri kaydı henüz yok (roadmap'te var).
-- **Servis Garantisi**: Komersiyel cihazlarda fabrika garanti ve servis ağrı mevcut; VYTRON'da kullanıcı kendisi bakım yapar.
-- **Kalite Sertifikası**: Endüstriyel kalite sertifikası (ISO, CE vb.) henüz alınmamış olabilir.
+### ? Disadvantages of VYTRON
+- **Data Logging**: Automatic data logging with SD card or PC connection is not yet available (on the roadmap).
+- **Service Warranty**: Commercial devices have factory warranty and service network; VYTRON maintenance is done by the user.
+- **Quality Certificate**: Industrial quality certificate (ISO, CE, etc.) may not yet be obtained.
 
-## 3. Ne Zaman Hangisi Seçilmeli?
+## 3. When to Choose Which?
 
-| Senaryo | Önerilen Çözüm |
-|---------|---------------|
-| Üniversite laboratuvarı, öğrenci projesi | **VYTRON** (düşük maliyet, açık kaynak, öğrenme odaklı) |
-| Endüstriyel üretim hattı, kesinlik garanti | Komersiyel Model A / B |
-| Ar-Ge merkezi, özelleştirilmiş ölçüm | **VYTRON** (firmware ve CAD'de değişiklik yapılabilir) |
-| Kalibre sertifikalı rapor gerekiyor | Komersiyel (fabrika kalibrasyonu) |
+| Scenario | Recommended Solution |
+|----------|---------------------|
+| University laboratory, student project | **VYTRON** (low cost, open source, learning-focused) |
+| Industrial production line, precision guarantee | Commercial Model A / B |
+| R&D center, customized measurement | **VYTRON** (firmware and CAD can be modified) |
+| Calibrated certificate required | Commercial (factory calibration) |
 
-## 4. İlgili Dosyalar
+## 4. Related Files
 
-- `docs/bom/bom-index.md` — Malzeme listesi
-- `docs/pricing.md` — Maliyet ve fiyatlandırma analizi
-- `docs/calibration.md` — Kalibrasyon prosedürü
+- docs/bom/bom-index.md � BOM summary
+- docs/pricing.md � Cost and pricing analysis
+- docs/calibration.md � Calibration procedure

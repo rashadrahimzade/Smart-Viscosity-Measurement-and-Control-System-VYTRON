@@ -1,96 +1,96 @@
-# 💰 Ürün Fiyatlandırması ve Maliyet Analizi
+# ?? Product Pricing and Cost Analysis
 
-Bu dosya, VYTRON sisteminin tahmini BOM maliyetini, montaj ve kalibrasyon giderlerini ve endüstriyel rakiplere göre fiyat avantajını özetlemektedir. Tüm rakamlar **2026 ortalamaları**dır ve satıcıya, bölgeye ve miktara göre değişebilir.
+This document summarizes the estimated BOM cost of the VYTRON system, assembly and calibration expenses, and price advantage compared to industrial competitors. All figures are **2026 averages** and may vary by supplier, region, and quantity.
 
-## 1. BOM Maliyet Özeti
+## 1. BOM Cost Summary
 
-| Kategori | Açıklama | Tahmini Maliyet (TL) |
-|----------|----------|---------------------|
-| **Elektronik** | Arduino Mega 2560, Arduino Nano, NEMA 34, JSS-860H, DS18B20, MPU-6050, ILI9341 TFT, 2×4×4 Keypad, 20×4 LCD, SSR, 200W Isıtıcı, güç kaynakları, kablolar, ferritler | — |
-| **Mekanik** | Cam tüp (iç/dış), NBR O-ring, Viton conta, alüminyum çatı, vida-somun, motor montaj, yatak | — |
-| **Diğer** | Montaj araçları, sızdırmazlık macunu, test sıvıları | — |
-| **Toplam BOM** | — | **—** |
+| Category | Description | Estimated Cost (TL) |
+|----------|-------------|---------------------|
+| **Electronics** | Arduino Mega 2560, Arduino Nano, NEMA 34, JSS-860H, DS18B20, MPU-6050, ILI9341 TFT, 2�4�4 Keypad, 20�4 LCD, SSR, 200W Heater, power supplies, cables, ferrites | � |
+| **Mechanical** | Glass tube (inner/outer), NBR O-ring, Viton gasket, aluminum chassis, screws-nuts, motor mount, bearing | � |
+| **Other** | Assembly tools, sealant, test fluids | � |
+| **Total BOM** | � | **�** |
 
-> Detaylı parça bazlı fiyatlar için:  
-> - `docs/electronics/electronics-bom.md`  
-> - `docs/mechanical/mechanical-bom.md`
-
----
-
-## 2. Ek Maliyet Kalemleri
-
-| Kalem | Açıklama | Tahmini Maliyet (TL) |
-|-------|----------|---------------------|
-| Montaj işçiliği | Mekanik montaj, kablolama, ilk çalıştırma (saat bazlı) | — |
-| Kalibrasyon ekipmanı | Referans viskozite sıvıları (silikon yağı vb.), termometre, stasyoner | — |
-| Yazılım geliştirme | Firmware, arayüz, kalibrasyon prosedürleri (geliştirici saati) | — |
-| Dokümantasyon | Kullanım kılavuzu, montaj rehberi, güvenlik dosyası | — |
-| **Toplam Ek Maliyet** | — | **—** |
+> Detailed part-by-part prices:  
+> - docs/electronics/electronics-bom.md  
+> - docs/mechanical/mechanical-bom.md
 
 ---
 
-## 3. Endüstriyel Karşılaştırma
+## 2. Additional Cost Items
 
-VYTRON'un komersiyel düşen-toplık viskozimetreler karşılaştırmada hangi konuda önde olduğu:
+| Item | Description | Estimated Cost (TL) |
+|------|-------------|---------------------|
+| Assembly labor | Mechanical assembly, wiring, first run (hourly basis) | � |
+| Calibration equipment | Reference viscosity fluids (silicone oil, etc.), thermometer, stationery | � |
+| Software development | Firmware, interface, calibration procedures (developer hours) | � |
+| Documentation | User manual, assembly guide, safety documents | � |
+| **Total Additional Cost** | � | **�** |
 
-| Özellik | VYTRON | Komersiyel Model A | Komersiyel Model B |
+---
+
+## 3. Industrial Comparison
+
+How VYTRON stands against commercial falling-ball viscometers:
+
+| Feature | VYTRON | Commercial Model A | Commercial Model B |
 |---------|--------|-------------------|-------------------|
-| **Tahmini Fiyat** | Düşük (BOM + işçilik) | Yüksek | Çok Yüksek |
-| **Otomatikasyon** | Dual MCU, tam otomatik | Manuel / Yarı otomatik | Tam otomatik |
-| **Gerçek Zamanlı ETA** | Var (Isıtıcı ile) | Yok | Var |
-| **Çift Dil Arayüzü** | TR / EN | Yabancı dil | Yabancı dil |
-| **Açık Donanım / Şema** | Evet (KiCad) | Hayır | Hayır |
-| **Kullanıcı Kalibrasyonu** | Kullanıcı tanımlı | Fabrika kalibre | Fabrika kalibre |
-| **Sızdırmazlık** | NBR O-ring + Viton | Standart conta | Özel conta |
-| **CFD Doğrulanmış Tasarım** | Evet (Ansys Fluent) | Genelde yok | Evet |
+| **Estimated Price** | Low (BOM + labor) | High | Very High |
+| **Automation** | Dual MCU, fully automatic | Manual / Semi-automatic | Fully automatic |
+| **Real-time ETA** | Yes (with heater) | No | Yes |
+| **Bilingual Interface (TR / EN)** | Yes | Foreign language | Foreign language |
+| **Open Hardware / Schematic** | Yes (KiCad) | No | No |
+| **User Calibration** | User-defined | Factory calibrated | Factory calibrated |
+| **Sealing System** | NBR O-ring + Viton | Standard gasket | Special gasket |
+| **CFD-Validated Design** | Yes (Ansys Fluent) | Generally no | Yes |
 
-### Değer Teklifi
-- **Maliyet avantajı**: Komersiyel cihazların bir fraksiyonu maliyetle benzer.performansa ulaşabilir.
-- **Öğrenme / Araştırma**: Açık kod ve şema sayesinde üniversite laboratuvarları için ideal.
-- **Esneklik**: Top çapı, sıvı türü ve ölçüm aralığı kullanıcı tarafından değiştirilebilir.
+### Value Proposition
+- **Cost advantage**: Can reach similar performance at a fraction of commercial device cost.
+- **Learning / Research**: Open code and schematics make it ideal for university laboratories.
+- **Flexibility**: Ball diameter, liquid type, and measurement range can be changed by the user.
 
 ---
 
-## 4. Önerilen Satış Fiyatı (Komersiyelleştirme Durumunda)
+## 4. Suggested Selling Price (If Commercialized)
 
-Eğer VYTRON bir ürün olarak piyasaya sürülürse, aşağıdaki çarpanlar uygulanabilir:
+If VYTRON is brought to market as a product, the following multipliers can be applied:
 
-| Fiyat Modeli | Hesaplama Mantığı | Önerilen Aralık |
+| Pricing Model | Calculation Logic | Suggested Range |
 |--------------|-------------------|-----------------|
-| **Maliyet + %20** | Toplam BOM + Ek Maliyet + %20 kâr | — TL |
-| **Rakiplerin %40'u** | Komersiyel Model A'nın yaklaşık %40'ı | — TL |
-| **Akademik İndirimli** | Üniversite laboratuvarlarına özel indirim | — TL |
+| **Cost + 20%** | Total BOM + Additional Cost + 20% profit | � TL |
+| **40% of Competitor** | Approximately 40% of Commercial Model A | � TL |
+| **Academic Discount** | Special discount for university laboratories | � TL |
 
-> Bu rakamlar sadece örnek bir şablondur. Gerçek fiyatlandırma, satıcı teklifleri ve işçilik saatleri netleşince güncellenmelidir.
-
----
-
-## 5. Bütçe Takip Formu (TÜBİTAK Projesi İçin)
-
-| Kalem | Planlanan (TL) | Gerçekleşen (TL) | Fark (TL) | Onay |
-|-------|----------------|------------------|-----------|------|
-| Elektronik parçalar | — | — | — | □ |
-| Mekanik parçalar | — | — | — | □ |
-| Montaj ve işçilik | — | — | — | □ |
-| Kalibrasyon sıvıları | — | — | — | □ |
-| Yazılım geliştirme | — | — | — | □ |
-| Dokümantasyon | — | — | — | □ |
-| **Toplam** | **—** | **—** | **—** | □ |
+> These figures are just an example template. Actual pricing should be updated once supplier quotes and labor hours are finalized.
 
 ---
 
-## 6. Maliyet İyileştirme Önerileri
+## 5. Budget Tracking Form (For T�BITAK Projects)
 
-1. **Toplu satın alma**: Arduino, sensör ve O-ring parçalarını büyük miktarda almak birim fiyatı düşürür.
-2. **Alternatif satıcılar**: Aynı spesifikasyondaki yerli üreticilerden besleme ve sensör temin edilebilir.
-3. **PCB entegrasyonu**: Breadboard üzerinden devreye geçiş yerine özel bir PCB tasarlanarak kablo maliyeti ve montaj süresi azaltılabilir.
-4. **CAD parçalarının yerli üretilmesi**: Alüminyum çatı ve montaj parçaları yerli işlenebilir.
+| Item | Planned (TL) | Actual (TL) | Difference (TL) | Approved |
+|------|--------------|-------------|-----------------|----------|
+| Electronic parts | � | � | � | ? |
+| Mechanical parts | � | � | � | ? |
+| Assembly and labor | � | � | � | ? |
+| Calibration fluids | � | � | � | ? |
+| Software development | � | � | � | ? |
+| Documentation | � | � | � | ? |
+| **Total** | **�** | **�** | **�** | ? |
 
 ---
 
-## 7. İlgili Dosyalar
+## 6. Cost Optimization Suggestions
 
-- `docs/bom/bom-index.md` — Genel BOM özeti
-- `docs/electronics/electronics-bom.md` — Elektronik detaylı liste
-- `docs/mechanical/mechanical-bom.md` — Mekanik detaylı liste
-- `docs/calibration.md` — Referans sıvı kalibrasyonu (ek maliyet kalemi için)
+1. **Bulk purchasing**: Buying Arduino, sensors, and O-rings in large quantities reduces unit price.
+2. **Alternative suppliers**: Same-specification components can be sourced from local manufacturers for power supply and sensors.
+3. **PCB integration**: Instead of breadboard, designing a custom PCB reduces cable cost and assembly time.
+4. **Local production of CAD parts**: Aluminum chassis and mounting parts can be machined locally.
+
+---
+
+## 7. Related Files
+
+- docs/bom/bom-index.md � General BOM summary
+- docs/electronics/electronics-bom.md � Detailed electronic list
+- docs/mechanical/mechanical-bom.md � Detailed mechanical list
+- docs/calibration.md � Reference fluid calibration (additional cost item)

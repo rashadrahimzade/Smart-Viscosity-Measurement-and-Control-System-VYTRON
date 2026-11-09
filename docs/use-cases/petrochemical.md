@@ -1,30 +1,30 @@
-# ⛽ Kullanım Senaryosu: Petrokimya Endüstrisi
+# ? Use Case: Petrochemical Industry
 
-Petrokimya ürünlerinde (yağlar, süreyiciler, polymer çözeltileri) viskozite, işlenebilirlik ve kalite kontrolünde kritik rol oynar.
+Viscosity plays a critical role in processability and quality control of petrochemical products (oils, additives, polymer solutions).
 
-## 1. Uygulama Alanları
+## 1. Application Areas
 
-| Ürün | Viskozite Aralığı | Önem |
-|------|------------------|------|
-| Motor yağı | ~50–200 cP (40 °C'de) | Sınıflandırma ve performans |
-| Hidrolik sıvısı | ~30–100 cP | Sistem verimliliği |
-| Polymer çözeltisi | ~100–5000 cP | İşlenebilirlik ve kalite |
-| Süreyici | ~10–500 cP | Reçetede dozaj |
+| Product | Viscosity Range | Importance |
+|---------|----------------|------------|
+| Motor oil | ~50�200 cP (at 40 �C) | Classification and performance |
+| Hydraulic fluid | ~30�100 cP | System efficiency |
+| Polymer solution | ~100�5000 cP | Processability and quality |
+| Additive | ~10�500 cP | Dosage in recipe |
 
-## 2. VYTRON'daki Avantajlar
+## 2. VYTRON Advantages
 
-- **Geniş sıcaklık aralığı**: DS18B20 ve SSR ile sıcaklıktan bağımsız ölçüm imkanı.
-- **Alüminyum ekranlı kablo ve ferritler**: Endüstriyel ortamdaki elektromanyetik gürültüye karşı koruma (`docs/electronics/interference-mitigation.md`).
-- **CFD doğrulamalı tasarım**: Farklı sıvı türleri için akış analizi yapılmış (`docs/cfd/cfd-analysis.md`).
-- **Kullanıcı tanımlı kalibrasyon**: Farklı polymer ya da yağ türleri için `fSabiti` (duvar-et katsayısı) değiştirilebilir.
+- **Wide temperature range**: DS18B20 and SSR allow measurement independent of temperature.
+- **Aluminum shielded cable and ferrites**: Protection against electromagnetic noise in industrial environment (`docs/electronics/interference-mitigation.md`).
+- **CFD-validated design**: Flow analysis performed for different liquid types (`docs/cfd/cfd-analysis.md`).
+- **User-defined calibration**: Wall-effect factor (`fSabiti`) can be changed for different polymer or oil types.
 
-## 3. Kısıtlamalar
+## 3. Limitations
 
-- Kimyasal sıvıların contalara (NBR, Viton) karşı direnci testi yapılmalıdır.
-- Ateşli sıvılar için exter güvenlik önlemleri (gazlı ortam uyumluluğu) gerekli olabilir.
+- Chemical resistance of gaskets (NBR, Viton) against liquids must be tested.
+- Flammable liquids may require explosion-proof safety measures.
 
-## 4. İlgili Dosyalar
+## 4. Related Files
 
-- `docs/calibration.md` — Referans sıvı kalibrasyonu
-- `docs/electronics/interference-mitigation.md` — EMI/RFI azaltma
-- `docs/cfd/cfd-analysis.md` — Akış analizi
+- `docs/calibration.md` � Reference fluid calibration
+- `docs/electronics/interference-mitigation.md` � EMI/RFI mitigation
+- `docs/cfd/cfd-analysis.md` � Flow analysis

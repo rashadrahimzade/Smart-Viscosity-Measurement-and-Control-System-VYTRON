@@ -1,8 +1,8 @@
-# Excel Dosyaları
+# Excel Files
 
-Bu klasöre gerçek BOM (malzeme listesi) Excel dosyalarınızı ekleyin:
+Add your actual BOM (material list) Excel files to this folder:
 
-- `elektronik-bom.xlsx` — Elektronik parçalar
-- `mekanik-bom.xlsx` — Mekanik parçalar
+- `elektronik-bom.xlsx` � Electronic parts
+- `mekanik-bom.xlsx` � Mechanical parts
 
-Dosyalar `docs/bom/bom-index.md` sayfasından buraya bağlantı verilmiştir.
+Files are linked from `docs/bom/bom-index.md` page.

@@ -1,30 +1,30 @@
-# 🚗 Kullanım Senaryosu: Otomotiv Endüstrisi
+# ?? Use Case: Automotive Industry
 
-Motor yağı, fren sıvısı, transmission yağı gibi otomotiv sıvılarının viskozite kontrolünde kullanılır.
+Used for viscosity control of automotive fluids such as engine oil, brake fluid, transmission oil.
 
-## 1. Uygulama Alanları
+## 1. Application Areas
 
-| Sıvı | Viskozite Aralığı | Önem |
-|------|------------------|------|
-| Motor yağı (5W30, 10W40 vb.) | ~50–200 cP | Motor Koruması ve sınıflandırma |
-| Fren sıvısı (DOT 3, 4, 5.1) | ~10–30 cP | Fren sistemi performansı |
-| Transmission yağı | ~100–500 cP | Vites sistemi çalışması |
-| Soğutma sıvısı | ~1–5 cP | Soğutma verimliliği |
+| Fluid | Viscosity Range | Importance |
+|-------|----------------|------------|
+| Engine oil (5W30, 10W40, etc.) | ~50�200 cP | Engine protection and classification |
+| Brake fluid (DOT 3, 4, 5.1) | ~10�30 cP | Brake system performance |
+| Transmission oil | ~100�500 cP | Gear system operation |
+| Coolant | ~1�5 cP | Cooling efficiency |
 
-## 2. VYTRON'daki Avantajlar
+## 2. VYTRON Advantages
 
-- **NEMA 34 stepper motoru**: Yüksek torklu, kesin konumlama ile tüp döndürme ve ölçüm pozisyonu ayarı.
-- **MPU-6050 eğim sensörü**: Tüpün ölçüm pozisyonunda doğru açıda tutulmasını sağlar.
-- **Isıtıcı ve ETA**: Sıcaklığa bağlı viskozite değişimi ölçümünde ETA (kalan süre) gösterimi.
-- **Optik sensörler**: Mikro-saniye hassasiyetle topun düşme süresi ölçülür.
+- **NEMA 34 stepper motor**: High torque, precise positioning for tube rotation and measurement position adjustment.
+- **MPU-6050 tilt sensor**: Ensures tube is kept at correct angle in measurement position.
+- **Heater and ETA**: ETA (remaining time) display in viscosity measurement dependent on temperature.
+- **Optical sensors**: Ball fall time measured with microsecond precision.
 
-## 3. Kısıtlamalar
+## 3. Limitations
 
-- Otomotiv standartları (ISO, SAE vb.) ile uyumluluk için ek sertifikasyon gerekebilir.
-- Yağ ve fren sıvıları için kimyasal direnci test edilmelidir.
+- Compliance with automotive standards (ISO, SAE, etc.) may require additional certification.
+- Chemical resistance must be tested for oil and brake fluids.
 
-## 4. İlgili Dosyalar
+## 4. Related Files
 
-- `docs/calibration.md` — Referans sıvı kalibrasyonu
-- `docs/mechanical/mechanical-design.md` — Mekanik CAD ve tasarım
-- `docs/safety.md` — 220V ve ısıtıcı güvenliği
+- `docs/calibration.md` � Reference fluid calibration
+- `docs/mechanical/mechanical-design.md` � Mechanical CAD and design
+- `docs/safety.md` � 220V and heater safety

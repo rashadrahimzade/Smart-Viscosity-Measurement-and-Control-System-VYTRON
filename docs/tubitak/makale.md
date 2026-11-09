@@ -1,21 +1,21 @@
-# 📑 Proje Makalesi
+# ?? Project Article
 
-Bu klasörde, VYTRON projesi kapsamında yazılan ve yayınlanan makale bulunmaktadır.
+This folder contains the article written and published within the scope of the VYTRON project.
 
-## 📎 Makale Linki
+## ?? Article Link
 
-| Kaynak | Açıklama | Link |
-|--------|----------|------|
-| Makale (Yayıncı Web Sitesi) | Tribology Applications: A Mechatronics-Assisted Approach to Traditional Viscometers | [lubricant-world.com](https://lubricant-world.com/tribology-applications-a-mechatronics-assisted-approach-to-traditional-viscometers/?lang=en) |
-| Makale PDF (Yerel Dosya) | PDF dosyası depoda mevcut | [`vytron-makale.pdf`](./vytron-makale.pdf) |
+| Source | Description | Link |
+|--------|-------------|------|
+| Article (Publisher Website) | Tribology Applications: A Mechatronics-Assisted Approach to Traditional Viscometers | [lubricant-world.com](https://lubricant-world.com/tribology-applications-a-mechatronics-assisted-approach-to-traditional-viscometers/?lang=en) |
+| Article PDF (Local File) | PDF file available in repository | [`vytron-makale.pdf`](./vytron-makale.pdf) |
 
-> **Not:** Yerel PDF dosyasını (`vytron-makale.pdf`) bu klasörün içine kopyalayın.
+> **Note:** Copy the local PDF file (`vytron-makale.pdf`) into this folder.
 
-## 🔗 İlgili Bağlantılar
+## ?? Related Links
 
-- TÜBİTAK Sonuç Raporu: [`docs/tubitak/sonuc-raporu.md`](./sonuc-raporu.md)
-- Proje Deposu: [GitHub Repository](https://github.com/rashadrahimzade/Smart-Viscosity-Measurement-and-Control-System-VYTRON)
+- T�BITAK Result Report: [`docs/tubitak/sonuc-raporu.md`](./sonuc-raporu.md)
+- Project Repository: [GitHub Repository](https://github.com/rashadrahimzade/Smart-Viscosity-Measurement-and-Control-System-VYTRON)
 
-## 📜 Lisans
+## ?? License
 
-Bu makale `LICENSE.txt` ile belirlenen "All Rights Reserved" şartları kapsamında korunmaktadır. İzinsiz kopyalama veya dağıtım yasaktır.
+This article is protected under the "All Rights Reserved" terms specified in `LICENSE.txt`. Unauthorized copying or distribution is prohibited.

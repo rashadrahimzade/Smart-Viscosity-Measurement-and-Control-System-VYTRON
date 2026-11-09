@@ -1,32 +1,32 @@
-# 🎓 Kullanım Senaryosu: Akademik Laboratuvarlar
+# ?? Use Case: Academic Laboratories
 
-Üniversite ve Ar-Ge laboratuvarlarında araştırma, öğrenci deneyleri ve tez çalışmaları için kullanılır.
+Used in university and R&D laboratories for research, student experiments, and thesis studies.
 
-## 1. Uygulama Alanları
+## 1. Application Areas
 
-| Kullanım Amacı | Açıklama |
-|---------------|----------|
-| Stokes' Yasası deneyi | Düşen-topluk viskozimetre prensibinin gösterimi |
-| Viskozite-sıcaklık ilişkisi | Farklı sıcaklıklarda sıvı viskozite değişimi araştırması |
-| Kalibrasyon çalışması | Referans sıvılarla sistem doğrulanması |
-| Öğrenci projesi | Mekatronik, endüstri Mühendisliği, kimya mühendisliği deneyleri |
+| Usage Purpose | Description |
+|---------------|-------------|
+| Stokes' Law experiment | Demonstration of falling-ball viscometer principle |
+| Viscosity-temperature relationship | Research on liquid viscosity change at different temperatures |
+| Calibration study | System validation with reference fluids |
+| Student project | Mechatronics, industrial engineering, chemical engineering experiments |
 
-## 2. VYTRON'daki Avantajlar
+## 2. VYTRON Advantages
 
-- **Açık kod ve açık donanım**: Tüm firmware, CAD ve şema dosyaları değiştirilebilir ve öğrenilebilir.
-- **Dual-MCU mimarisi**: Arduino Mega ve Nano arasındaki iletişim, öğrencilere embedded sistem öğretmek için idealdir.
-- **TÜBİTAK 2209-A desteği**: Akademik projeler için uygun bir referans sistem.
-- **Çift dil (TR/EN)**: Türkçe ve İngilizce arayüz, uluslararası ortamlarda kullanılabilir.
-- **Düşük maliyet**: Üniversite bütçelerine uygun.
+- **Open code and open hardware**: All firmware, CAD, and schematic files are modifiable and learnable.
+- **Dual-MCU architecture**: Arduino Mega and Nano communication is ideal for teaching embedded systems to students.
+- **T�BITAK 2209-A support**: Suitable reference system for academic projects.
+- **Bilingual (TR/EN)**: Turkish and English interface, usable in international environments.
+- **Low cost**: Suitable for university budgets.
 
-## 3. Kısıtlamalar
+## 3. Limitations
 
-- Veri kaydı (SD kart / PC bağlantısı) henüz yok; manuel not alma gerekebilir.
-- Fabrika kalibrasyon sertifikası yok; kullanıcı kendi kalibrasyonunu yapmalıdır.
+- Data logging (SD card / PC connection) is not yet available; manual note-taking required.
+- No factory calibration certificate; user must perform own calibration.
 
-## 4. İlgili Dosyalar
+## 4. Related Files
 
-- `docs/getting-started.md` — İlk kurulum ve çalıştırma
-- `docs/assembly-guide.md` — Mekanik montaj
-- `docs/software/software-architecture.md` — Yazılım mimarisi
-- `docs/cfd/cfd-analysis.md` — Akış analizi (araştırma için referans)
+- `docs/getting-started.md` � Initial setup and first run
+- `docs/assembly-guide.md` � Mechanical assembly
+- `docs/software/software-architecture.md` � Software architecture
+- `docs/cfd/cfd-analysis.md` � Flow analysis (reference for research)

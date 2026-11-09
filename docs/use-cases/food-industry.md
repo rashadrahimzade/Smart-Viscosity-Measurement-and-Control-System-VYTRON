@@ -1,31 +1,31 @@
-# 🍯 Kullanım Senaryosu: Gıda Endüstrisi
+# ?? Use Case: Food Industry
 
-VYTRON düşen-topluk viskozimetresi, gıda endüstrisinde sıvı ve halbelerin viskozite kontrolünde kullanılabilir.
+The VYTRON falling-ball viscometer can be used in the food industry for viscosity control of liquids and semi-liquids.
 
-## 1. Uygulama Alanları
+## 1. Application Areas
 
-| Ürün | Önemli Viskozite Aralığı | Neden Önemli |
-|------|-------------------------|--------------|
-| Zeytin yağı | ~30–100 cP | Kalite sınıflandırması ve saklanabilirlik |
-| Bal | ~2000–10000 cP | Sıvılaşma oranı ve karışıklık tespiti |
-| Şurup | ~100–1000 cP | Konsantrasyon ve dolum hızı kontrolü |
-| Soslar (ketçap, mayonez) | ~500–5000 cP | Akım davranışı ve ambalajlama |
-| Süt ve süt ürünleri | ~1–10 cP | Konsantrasyon ve kalite |
+| Product | Important Viscosity Range | Why Important |
+|---------|--------------------------|---------------|
+| Olive oil | ~30�100 cP | Quality classification and storability |
+| Honey | ~2000�10000 cP | Liquefaction rate and adulteration detection |
+| Syrup | ~100�1000 cP | Concentration and filling speed control |
+| Sauces (ketchup, mayonnaise) | ~500�5000 cP | Flow behavior and packaging |
+| Milk and dairy products | ~1�10 cP | Concentration and quality |
 
-## 2. VYTRON'daki Avantajlar
+## 2. VYTRON Advantages
 
-- **NBR O-ring ve Viton conta**: Gıda ile temas eden kısımlarda kimyasal uyumlu ve sızdırmaz.
-- **Çift dil arayüzü (TR/EN)**: İhracatçı firmalar içinEnglish arayüzü avantaj sağlar.
-- **Sıcaklık kontrolü**: Isıtıcı ve DS18B20 ile sıvı istenen sıcaklıkta tutulabilir (gıda viskozitesi sıcaklığa çok hassastır).
-- **Düşük maliyet**: Küçük ve orta ölçekli gıda işletmeleri için uygun fiyatlı.
+- **NBR O-ring and Viton gasket**: Food-contact parts are chemically compatible and leak-proof.
+- **Bilingual interface (TR/EN)**: English interface provides advantage for exporting companies.
+- **Temperature control**: Heater and DS18B20 allow measuring liquid at desired temperature (food viscosity is highly temperature-sensitive).
+- **Low cost**: Suitable price for small and medium-sized food businesses.
 
-## 3. Kısıtlamalar
+## 3. Limitations
 
-- Gıda kontaktlu parçalar için yemek uygunluğunda (food-grade) malzeme sertifikası gerekli olabilir.
-- Tüm parçalar gıda endüstrisi hijyen standartlarına (HACCP vb.) uygun olmalıdır.
+- Food-contact parts may require food-grade material certification.
+- All parts must comply with food industry hygiene standards (HACCP, etc.).
 
-## 4. İlgili Dosyalar
+## 4. Related Files
 
-- `docs/calibration.md` — Referans sıvı ile kalibrasyon
-- `docs/safety.md` — Isıtıcı ve 220V güvenliği
-- `docs/mechanical/mechanical-bom.md` — Contalar ve sızdırmazlık malzemeleri
+- `docs/calibration.md` � Reference fluid calibration
+- `docs/safety.md` � Heater and 220V safety
+- `docs/mechanical/mechanical-bom.md` � Gaskets and sealing materials

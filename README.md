@@ -165,7 +165,7 @@ All detailed guides are centralized under the `docs/` folder:
 | BOM Index (Genel Özet) | `docs/bom/bom-index.md` | Toplam malzeme özeti ve alt bölümlere linkler |
 | Elektronik Malzeme Listesi | `docs/electronics/electronics-bom.md` | MCU, sensör, motor, sürücü, ekran, güç parçaları |
 | Mekanik Malzeme Listesi | `docs/mechanical/mechanical-bom.md` | Cam tüp, contalar, vida, montaj parçaları |
-| Ürün Fiyatlandırması | `docs/pricing.md` | BOM maliyeti, komersiyel karşılaştırma ve fiyat önerileri |
+| Product Pricing | `docs/pricing.md` | BOM cost, commercial comparison and price suggestions |
 | Karşılaştırma | `docs/comparison.md` | VYTRON vs komersiyel viskozimetreler |
 | Kullanım Senaryoları | `docs/use-cases/` | Gıda, petrokimya, ilaç, otomotiv ve akademik laboratuvar |
 | Mechanical Assembly | `docs/assembly-guide.md` | Step-by-step mechanical build and sealing |
@@ -176,8 +176,8 @@ All detailed guides are centralized under the `docs/` folder:
 | Mechanical Design & Fluid Dynamics | `docs/mechanical/mechanical-design.md` | CAD, sealing system, Stokes' Law basis |
 | CFD & Flow Analysis | `docs/cfd/cfd-analysis.md` | Ansys Fluent simulation setup and findings |
 | Interference Mitigation | `docs/electronics/interference-mitigation.md` | EMI/RFI filtering, I2C timeout, glitch filtering |
-| TÜBİTAK Sonuç Raporu | `docs/tubitak/sonuc-raporu.md` | TÜBİTAK 2209-A sonuç raporu bilgisi |
-| Proje Makalesi | `docs/tubitak/makale.md` | Proje makalesi bilgisi |
+| T�BITAK Result Report | `docs/tubitak/sonuc-raporu.md` | T�BITAK 2209-A Result Report info |
+| Project Article | `docs/tubitak/makale.md` | Project article info |
 
 Each document can be read directly on GitHub by clicking the links above.
 
@@ -203,13 +203,13 @@ To request permission, please contact the author by email: **rahimzaderashad1@gm
 
 ---
 
-## 🙏 Acknowledgements & Destek
+## ?? Acknowledgements & Support
 
-Bu proje aşağıdaki destek ve katkılar ile gerçekleştirilmiştir:
+This project was realized with the following support and contributions:
 
 - **TÜBİTAK 2209-A** University Students Research Projects Support Program
-- **Prof. Dr. Ertuğrul Durak** (Proje Danışmanı / Destek)
-- **SDU YETEM** (Süleyman Demirel Üniversitesi Araştırma Merkezi Destek)
+- **Prof. Dr. Ertugrul Durak** (Project Advisor / Support)
+- **SDU YETEM** (Suleyman Demirel University Research Center Support)
 
 **Author:** [@rashadrahimzade](https://github.com/rashadrahimzade)
 
@@ -217,7 +217,9 @@ Bu proje aşağıdaki destek ve katkılar ile gerçekleştirilmiştir:
 
 | Belge | Açıklama | Dosya |
 |-------|----------|-------|
-| Sonuç Raporu | TÜBİTAK 2209-A sonuç raporu | [`docs/tubitak/sonuc-raporu.md`](./docs/tubitak/sonuc-raporu.md) |
-| Makale | Proje makalesi (PDF) | [`docs/tubitak/makale.md`](./docs/tubitak/makale.md) |
+| Result Report | T�BITAK 2209-A Result Report | [`docs/tubitak/sonuc-raporu.md`](./docs/tubitak/sonuc-raporu.md) |
+| Article | Project article (PDF) | [`docs/tubitak/makale.md`](./docs/tubitak/makale.md) |
 
 > PDF dosyaları ilgili klasörlerin içine eklenmelidir.
+
+

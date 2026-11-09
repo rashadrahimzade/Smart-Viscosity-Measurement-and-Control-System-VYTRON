@@ -1,29 +1,29 @@
-# 💊 Kullanım Senaryosu: İlaç Endüstrisi
+# ?? Use Case: Pharmaceutical Industry
 
-İlaç formülasyonlarında (şurup, jel, krem, suspansiyon) viskozite, dozaj ve kararlılık kontrolünde kullanılır.
+Viscosity is used in drug formulations (syrups, gels, creams, suspensions) for dosage and stability control.
 
-## 1. Uygulama Alanları
+## 1. Application Areas
 
-| Ürün | Viskozite Aralığı | Önem |
-|------|------------------|------|
-| İlaç şurupları | ~100–1000 cP | Dolum hızı ve dozaj |
-| Jel kremler | ~1000–10000 cP | Yayılabilirlik ve kararlılık |
-| Suspansiyonlar | ~500–5000 cP | Sıvılaşma ve homojenlik |
+| Product | Viscosity Range | Importance |
+|---------|----------------|------------|
+| Drug syrups | ~100�1000 cP | Filling speed and dosage |
+| Gel creams | ~1000�10000 cP | Spreadability and stability |
+| Suspensions | ~500�5000 cP | Liquefaction and homogeneity |
 
-## 2. VYTRON'daki Avantajlar
+## 2. VYTRON Advantages
 
-- **Hassas sıcaklık kontrolü**: İlaç viskozitesi sıcaklığa çok hassastır; hedef sıcaklıkta ölçüm yapılabilir.
-- **Açık kalibrasyon**: Referans ilaç çözeltileriyle kalibrasyon yapılabilir ve tekrarlanabilir sonuç elde edilebilir.
-- **Dil desteği**: Türkçe arayüz, yerli laboratuvarlar için kolay kullanım.
-- **Düşük maliyet**: Küçük ölçekli ilaç Ar-Ge laboratuvarları için uygun.
+- **Precise temperature control**: Drug viscosity is highly temperature-sensitive; measurement can be performed at target temperature.
+- **Open calibration**: Can be calibrated with reference drug solutions to obtain repeatable results.
+- **Language support**: Turkish interface, easy to use for local laboratories.
+- **Low cost**: Suitable price for small-scale pharmaceutical R&D laboratories.
 
-## 3. Kısıtlamalar
+## 3. Limitations
 
-- GMP (İyi Üretim Uygulamaları) standartlarına uygunluk için ek dokümantasyon ve doğrulama gerekebilir.
-- Tüm contact yüzeyleri ilaç uygunluğunda malzemeden oluşmalıdır.
+- Compliance with GMP (Good Manufacturing Practices) standards may require additional documentation and validation.
+- All contact surfaces must be made of drug-compatible materials.
 
-## 4. İlgili Dosyalar
+## 4. Related Files
 
-- `docs/calibration.md` — Referans sıvı kalibrasyonu
-- `docs/safety.md` — Isıtıcı güvenliği
-- `docs/bom/bom-index.md` — Malzeme listesi
+- `docs/calibration.md` � Reference fluid calibration
+- `docs/safety.md` � Heater safety
+- `docs/bom/bom-index.md` � Material list
