@@ -2,8 +2,8 @@
 
 For the detailed mechanical parts list, see the Excel file in `docs/bom/files/`:
 
-- **File:** `mechanical-bom.xlsx`
-- **Location:** `docs/bom/files/mechanical-bom.xlsx`
+- **File:** `BOM_Mechanic_VYTRON.xlsx`
+- **Location:** `docs/bom/files/BOM_Mechanic_VYTRON.xlsx`
 - **Price note:** VAT included, May 2026 prices
 
 ## 📎 Related Files
