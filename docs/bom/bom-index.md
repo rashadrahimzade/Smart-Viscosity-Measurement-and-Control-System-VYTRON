@@ -11,24 +11,23 @@ This page contains a high-level summary of all materials required for the VYTRON
 
 ## ?? Excel Files
 
-Actual part lists (Excel) are located in the following folder:
+Actual part lists (Excel) are located in the `docs/bom/files/` folder:
 
 | File | Description | Location |
 |------|-------------|----------|
 | `electronics-bom.xlsx` | Detailed list of electronic parts | `docs/bom/files/electronics-bom.xlsx` |
 | `mechanical-bom.xlsx` | Detailed list of mechanical parts | `docs/bom/files/mechanical-bom.xlsx` |
 
-> **Note:** Files copied from `BOM_Electronic_VYTRON.xlsx` and `BOM_Mechanic_VYTRON.xlsx` on the Desktop. If updates are needed, you can edit these files directly.
+> **Price note:** All prices in the Excel files are **VAT included, May 2026 prices**.
 
-## ?? Approximate Total Cost (Example)
+## ?? Approximate Costs (Example)
 
-> These figures are 2026 averages; they may vary by supplier, country, and quantity.
+> These figures are 2026 averages; they may vary by supplier, country, and quantity. Each BOM table contains its own subtotal; there is no grand total for the entire machine.
 
-| Category | Estimated Cost (TL) | Note |
-|----------|---------------------|------|
-| Electronics (MCU, sensor, motor, driver, screen, etc.) | — | `docs/electronics/electronics-bom.md` |
-| Mechanical (gaskets, screws, glass tube, mounting) | — | `docs/mechanical/mechanical-bom.md` |
-| **Total** | **—** | |
+| Category | Description |
+|----------|-------------|
+| Electronics | MCU, sensors, motor, driver, screen, relay, cables |
+| Mechanical | Gaskets, screws, glass tube, mounting parts |
 
 ## ?? Shopping List Checklist
 
@@ -44,4 +43,4 @@ Confirm before placing an order:
 
 - Part numbers (MPN) and supplier information should be kept up to date in sub-pages.
 - Prices are for reference only; contact the supplier for an official quote.
-- This list can be linked with `docs/pricing.md` (cost analysis).
+- This list is linked with `docs/pricing.md` (cost analysis).
