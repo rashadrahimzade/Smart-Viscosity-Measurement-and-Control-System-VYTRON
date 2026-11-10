@@ -135,7 +135,7 @@ All detailed guides are centralized under the `docs/` folder:
 | Safety Warnings | `docs/safety.md` | 220V, heater, and SSR safety precautions |
 | Software Architecture & Firmware | `docs/software/software-architecture.md` | Dual-MCU roles, libraries, pin definitions, and flow |
 | Mechanical Design & Fluid Dynamics | `docs/mechanical/mechanical-design.md` | CAD, sealing system, Stokes' Law basis |
-| CFD & Flow Analysis | `docs/cfd/cfd-analysis.md` | Ansys Fluent simulation setup and findings |
+| CFD & Flow Analysis | `docs/cfd-analysis.md` | Ansys Fluent simulation setup and findings |
 | Interference Mitigation | `docs/electronics/interference-mitigation.md` | EMI/RFI filtering, I2C timeout, glitch filtering |
 | TÜBİTAK Result Report | `docs/tubitak/sonuc-raporu.md` | TÜBİTAK 2209-A Result Report info |
 | Project Article | `docs/tubitak/makale.md` | Project article info |
@@ -182,3 +182,4 @@ This project was realized with the following support and contributions:
 | Article | Project article (PDF) | [`docs/tubitak/makale.md`](./docs/tubitak/makale.md) |
 
 > PDF files must be placed in the respective folders.
+
