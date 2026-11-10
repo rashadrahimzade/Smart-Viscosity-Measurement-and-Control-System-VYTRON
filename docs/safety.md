@@ -29,7 +29,6 @@ This guide explains the safe use of the VYTRON system. The system contains 220V 
 ## 3. Mechanical Safety
 
 - The NEMA 34 stepper motor produces high torque. Do not bring your hand or clothing near the motor rotation area.
-- Do not open the cover while the tube rotation mechanism is operating.
 - The glass tube is fragile; it can break due to impact or dropping. Do not operate the system with a broken tube.
 
 ## 4. Chemical and Liquid Safety
@@ -43,9 +42,15 @@ This guide explains the safe use of the VYTRON system. The system contains 220V 
 If a problem occurs (heater not heating, motor spinning out of control, smoke, etc.):
 
 1. **Immediately cut 220V from the power source.**
-2. Disconnect Arduinos from USB.
-3. Wait for hot parts to cool down.
-4. Restart only after identifying the source of the problem.
+2. **For motor-related faults:** Use the **emergency switch mounted on top of the wooden box** to directly cut motor power.
+3. Disconnect Arduinos from USB.
+4. Wait for hot parts to cool down.
+5. Restart only after identifying the source of the problem.
+
+**SSR Lock Prevention:**
+- Heating resistors have been added to prevent SSR locking caused by parasitic signals.
+- The heater operates **only on the temperature control screen**.
+- In other operating stages, there is **no voltage sent to the SSR**.
 
 ## 6. Maintenance and Inspection
 
@@ -61,3 +66,9 @@ This project is licensed under "All Rights Reserved" terms (`LICENSE.txt`). The 
 ## 8. Contact
 
 For safety questions or notifications: **rahimzaderashad1@gmail.com**
+
+---
+
+## ⚠️ Warning Sign
+
+A warning sign (**Do not touch sign.jpeg**) is available for measurement operations to prevent touching the heater. Place this file in `docs/images/` if needed.
