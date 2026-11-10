@@ -141,3 +141,4 @@ You can keep this table as an Excel or CSV file under `docs/`.
 - Measurement history (last 5 times) is stored on screen but deleted when power is cut.
 - The system blocks progression to the next step if MPU-6050 tilt is outside ±1° tolerance.
 - Ball selection affects measurement accuracy; always use the ball matched to the fluid viscosity range.
+
