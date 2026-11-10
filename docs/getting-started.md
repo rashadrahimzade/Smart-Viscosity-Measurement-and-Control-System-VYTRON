@@ -14,7 +14,7 @@ This guide walks you through assembling, wiring, and running the VYTRON system f
   - `Keypad`
 
 ### Hardware
-- Assembled VYTRON prototype (see `docs/mechanical/mechanical-design.md` and `docs/electronics/interference-mitigation.md`)
+- Assembled VYTRON prototype (see `docs/assembly-guide.md` and `docs/electronics/interference-mitigation.md`)
 - Arduino Mega 2560
 - Arduino Nano
 - NEMA 34 stepper motor + JSS-860H driver

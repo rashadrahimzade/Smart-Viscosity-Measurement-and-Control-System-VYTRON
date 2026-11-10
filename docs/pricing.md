@@ -1,95 +1,66 @@
-﻿# 💰 Product Pricing and Cost Analysis
+﻿# 💰 Production Cost Analysis
 
-This document summarizes the estimated BOM cost of the VYTRON system, assembly and calibration expenses, and price advantage compared to industrial competitors. All figures are **2026 averages** and may vary by supplier, region, and quantity.
+This document summarizes the estimated production cost of the VYTRON system based on the Bill of Materials (BOM). **This system is NOT for sale.** The figures below represent the estimated cost to build the prototype, not a retail price.
 
-## 1. BOM Cost Summary
+## 1. Estimated Production Cost
 
-| Category | Description |
-|----------|-------------|
-| **Electronics** | Arduino Mega 2560, Arduino Nano, NEMA 34, JSS-860H, DS18B20, MPU-6050, ILI9341 TFT, 4×4 Keypad, 20×4 LCD, SSR, 200W Heater, power supplies, cables, ferrites |
-| **Mechanical** | Glass tube (inner/outer), NBR O-ring, Viton gasket, aluminum chassis, screws-nuts, motor mount, bearing |
-| **Other** | Assembly tools, sealant, test fluids |
+| Item | Estimated Cost (TL) | Notes |
+|------|---------------------|-------|
+| Electronic parts | — | See `docs/electronics/electronics-bom.md` |
+| Mechanical parts | — | See `docs/mechanical/mechanical-bom.md` |
+| Assembly labor | — | Mechanical assembly, wiring, first run |
+| Calibration fluids | — | Reference viscosity fluids, thermometer |
+| Software development | — | Firmware, interface, calibration procedures |
+| Documentation | — | User manual, assembly guide, safety documents |
+| **Total Production Cost** | **~25,000 TL** | **Estimated, VAT included, May 2026** |
 
-> Each BOM table contains its own subtotal; there is no grand total for the entire machine.
-> Detailed part-by-part prices:
-> - `docs/electronics/electronics-bom.md`
-> - `docs/mechanical/mechanical-bom.md`
-
----
-
-## 2. Additional Cost Items
-
-| Item | Description |
-|------|-------------|
-| Assembly labor | Mechanical assembly, wiring, first run (hourly basis) |
-| Calibration equipment | Reference viscosity fluids (silicone oil, etc.), thermometer, stationery |
-| Software development | Firmware, interface, calibration procedures (developer hours) |
-| Documentation | User manual, assembly guide, safety documents |
+> **Note:** Detailed part-by-part prices are in the Excel BOM files under `docs/bom/files/`:
+> - `BOM_Electronic_VYTRON.xlsx`
+> - `BOM_Mechanic_VYTRON.xlsx`
 
 ---
 
-## 3. Industrial Comparison
+## 2. Important Notice
 
-How VYTRON stands against commercial falling-ball viscometers:
-
-| Feature | VYTRON | Commercial Model A | Commercial Model B |
-|---------|--------|-------------------|-------------------|
-| **Estimated Price** | Low (BOM + labor) | High | Very High |
-| **Automation** | Dual MCU, fully automatic | Manual / Semi-automatic | Fully automatic |
-| **Real-time ETA** | Yes (with heater) | No | Yes |
-| **Bilingual Interface (TR / EN)** | Yes | Foreign language | Foreign language |
-| **Open Hardware / Schematic** | Yes (KiCad) | No | No |
-| **User Calibration** | User-defined | Factory calibrated | Factory calibrated |
-| **Sealing System** | NBR O-ring + Viton | Standard gasket | Special gasket |
-| **CFD-Validated Design** | Yes (Ansys Fluent) | Generally no | Yes |
-
-### Value Proposition
-- **Cost advantage**: Can reach similar performance at a fraction of commercial device cost.
-- **Learning / Research**: Open code and schematics make it ideal for university laboratories.
-- **Flexibility**: Ball diameter, liquid type, and measurement range can be changed by the user.
+**VYTRON is not a commercial product.** It is a research prototype developed under the TÜBİTAK 2209-A University Students Research Projects Support Program. There is **no sales price**, **no retail distribution**, and **no commercial warranty**.
 
 ---
 
-## 4. Suggested Selling Price (If Commercialized)
+## 3. Comparison with Laboratory Viscometers
 
-If VYTRON is brought to market as a product, the following multipliers can be applied:
+| Feature | VYTRON | Conventional Laboratory Viscometer (Manual/Höppler-type) |
+|---------|--------|----------------------------------------------------------|
+| **Type** | Dual-MCU automated falling-ball viscometer | Typically manual or semi-automatic |
+| **Fully Automated** | Yes | Rare / Limited |
+| **Production Cost** | ~25,000 TL (estimated) | Generally higher |
+| **Open Hardware** | Yes (KiCad, SolidWorks) | Generally closed / proprietary |
+| **Open Firmware** | Yes (Arduino `.ino`) | Generally closed |
+| **User Calibration** | User-defined | Usually factory-calibrated |
+| **Bilingual Interface (TR/EN)** | Yes | Usually single language |
+| **Temperature Control** | Integrated heater + DS18B20 + SSR | Usually external / manual |
+| **Tilt Measurement** | Integrated MPU-6050 | Usually not integrated |
+| **Ball Detection** | Optical sensors with hardware interrupt | Usually manual timing / photo-optical |
+| **Data Logging** | Not yet available (planned) | Usually not available |
+| **Assembly** | User-assemblable from open CAD/schematics | Factory-assembled |
 
-| Pricing Model | Calculation Logic | Suggested Range |
-|--------------|-------------------|-----------------|
-| **Cost + 20%** | Total BOM + Additional Cost + 20% profit | — TL |
-| **40% of Competitor** | Approximately 40% of Commercial Model A | — TL |
-| **Academic Discount** | Special discount for university laboratories | — TL |
+## 4. Advantages of VYTRON
 
-> These figures are just an example template. Actual pricing should be updated once supplier quotes and labor hours are finalized.
+- **Lower production cost**: Estimated ~25,000 TL, significantly lower than comparable commercial automated systems.
+- **Open design**: All CAD files, schematics, and firmware are open for modification and local manufacturing.
+- **Bilingual interface**: Turkish and English support.
+- **Integrated temperature and tilt control**: Built-in heater, DS18B20 temperature sensor, MPU-6050 tilt sensor, and real-time ETA calculation.
+- **Precise timing**: Optical sensors with hardware interrupt provide microsecond-precision fall-time measurement.
 
----
+## 5. Limitations Compared to Commercial Units
 
-## 5. Budget Tracking Form (For TÜBİTAK Projects)
+- **Data logging**: Automatic SD card / PC data logging is not yet available (planned feature).
+- **Service warranty**: No factory warranty or service network; maintenance is performed by the user.
+- **Industrial certification**: May not yet have ISO, CE, or similar industrial quality certificates.
 
-| Item | Planned (TL) | Actual (TL) | Difference (TL) | Approved |
-|------|--------------|-------------|-----------------|----------|
-| Electronic parts | — | — | — | ? |
-| Mechanical parts | — | — | — | ? |
-| Assembly and labor | — | — | — | ? |
-| Calibration fluids | — | — | — | ? |
-| Software development | — | — | — | ? |
-| Documentation | — | — | — | ? |
-| **Total** | **—** | **—** | **—** | ? |
+## 6. Related Files
 
----
-
-## 6. Cost Optimization Suggestions
-
-1. **Bulk purchasing**: Buying Arduino, sensors, and O-rings in large quantities reduces unit price.
-2. **Alternative suppliers**: Same-specification components can be sourced from local manufacturers for power supply and sensors.
-3. **PCB integration**: Instead of breadboard, designing a custom PCB reduces cable cost and assembly time.
-4. **Local production of CAD parts**: Aluminum chassis and mounting parts can be machined locally.
-
----
-
-## 7. Related Files
-
-- `docs/bom/bom-index.md` → General BOM summary
-- `docs/electronics/electronics-bom.md` → Detailed electronic list
-- `docs/mechanical/mechanical-bom.md` → Detailed mechanical list
-- `docs/calibration.md` → Reference fluid calibration (additional cost item)
+- `docs/bom/bom-index.md` — Material list and cost summary
+- `docs/electronics/electronics-bom.md` — Detailed electronic BOM (Excel)
+- `docs/mechanical/mechanical-bom.md` — Detailed mechanical BOM (Excel)
+- `docs/calibration.md` — Calibration procedure (HD-46VG reference fluid, 40 °C / 46 cSt)
+- `docs/cfd-analysis.md` — CFD validation (Ansys Fluent)
