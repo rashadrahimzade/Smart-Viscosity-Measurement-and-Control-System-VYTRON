@@ -6,13 +6,9 @@ This document summarizes the estimated production cost of the VYTRON system base
 
 | Item | Estimated Cost (TL) | Notes |
 |------|---------------------|-------|
-| Electronic parts | — | See `docs/electronics/electronics-bom.md` |
-| Mechanical parts | — | See `docs/mechanical/mechanical-bom.md` |
-| Assembly labor | — | Mechanical assembly, wiring, first run |
-| Calibration fluids | — | Reference viscosity fluids, thermometer |
-| Software development | — | Firmware, interface, calibration procedures |
-| Documentation | — | User manual, assembly guide, safety documents |
-| **Total Production Cost** | **~25,000 TL** | **Estimated, VAT included, May 2026** |
+| Electronic parts | 12,492 TL | See `docs/electronics/electronics-bom.md` |
+| Mechanical parts | 8,580 TL | See `docs/mechanical/mechanical-bom.md` |
+| **Total Production Cost** | **21,072 TL** | **KDV dahil, Mayıs 2026** |
 
 > **Note:** Detailed part-by-part prices are in the Excel BOM files under `docs/bom/files/`:
 > - `BOM_Electronic_VYTRON.xlsx`
@@ -28,16 +24,16 @@ This document summarizes the estimated production cost of the VYTRON system base
 
 ## 3. Comparison with Laboratory Viscometers
 
-| Feature | VYTRON | Conventional Laboratory Viscometer (Manual/Höppler-type) |
-|---------|--------|----------------------------------------------------------|
+| Feature | VYTRON | Conventional Laboratory Viscometer (Höppler-type) |
+|---------|--------|--------------------------------------------------|
 | **Type** | Dual-MCU automated falling-ball viscometer | Typically manual or semi-automatic |
 | **Fully Automated** | Yes | Rare / Limited |
-| **Production Cost** | ~25,000 TL (estimated) | Generally higher |
+| **Production Cost** | ~21,072 TL (estimated) | Generally higher |
 | **Open Hardware** | Yes (KiCad, SolidWorks) | Generally closed / proprietary |
 | **Open Firmware** | Yes (Arduino `.ino`) | Generally closed |
 | **User Calibration** | User-defined | Usually factory-calibrated |
 | **Bilingual Interface (TR/EN)** | Yes | Usually single language |
-| **Temperature Control** | Integrated heater + DS18B20 + SSR | Usually external / manual |
+| **Temperature Control** | Integrated heater + DS18B20 + SSR | Usually external heating / manual control |
 | **Tilt Measurement** | Integrated MPU-6050 | Usually not integrated |
 | **Ball Detection** | Optical sensors with hardware interrupt | Usually manual timing / photo-optical |
 | **Data Logging** | Not yet available (planned) | Usually not available |
@@ -45,7 +41,7 @@ This document summarizes the estimated production cost of the VYTRON system base
 
 ## 4. Advantages of VYTRON
 
-- **Lower production cost**: Estimated ~25,000 TL, significantly lower than comparable commercial automated systems.
+- **Lower production cost**: Estimated 21,072 TL, significantly lower than comparable commercial automated systems.
 - **Open design**: All CAD files, schematics, and firmware are open for modification and local manufacturing.
 - **Bilingual interface**: Turkish and English support.
 - **Integrated temperature and tilt control**: Built-in heater, DS18B20 temperature sensor, MPU-6050 tilt sensor, and real-time ETA calculation.
