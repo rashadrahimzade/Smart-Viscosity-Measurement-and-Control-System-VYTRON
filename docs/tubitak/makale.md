@@ -7,9 +7,9 @@ This folder contains the article written and published within the scope of the V
 | Source | Description | Link |
 |--------|-------------|------|
 | Article (Publisher Website) | Tribology Applications: A Mechatronics-Assisted Approach to Traditional Viscometers | [lubricant-world.com](https://lubricant-world.com/tribology-applications-a-mechatronics-assisted-approach-to-traditional-viscometers/?lang=en) |
-| Article PDF (Local File) | PDF file available in repository | [`vytron-makale.pdf`](./vytron-makale.pdf) |
+| Article PDF (Local File) | vytron-makale.pdf (this repository) | [`vytron-makale.pdf`](./vytron-makale.pdf) |
 
-> **Note:** Copy the local PDF file (`vytron-makale.pdf`) into this folder.
+> **Note:** The PDF file (`vytron-makale.pdf`) is available in this repository.
 
 ## 🔗 Related Links
 

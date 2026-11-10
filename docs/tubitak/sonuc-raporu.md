@@ -8,7 +8,7 @@ This folder contains the result report prepared within the scope of the TÜBİTA
 |------|-------------|
 | `1919B012431971_Sonuc_Raporu.pdf` | TÜBİTAK 2209-A result report (PDF) |
 
-> **Note:** Copy the PDF file (`1919B012431971_Sonuc_Raporu.pdf`) into this folder.
+> **Note:** The PDF file (`1919B012431971_Sonuc_Raporu.pdf`) is available in this repository.
 
 ## 🔗 Related Links
 
