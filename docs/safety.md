@@ -10,6 +10,10 @@ This guide explains the safe use of the VYTRON system. The system contains 220V 
 - All 220V cables must be double-insulated and kept in a suitable enclosure.
 - Never touch 220V lines during operation.
 
+### Isolation Between 220V and Logic Circuits
+- The **220V AC system and the Arduino logic circuits are completely independent (galvanically isolated)**. There is no direct electrical connection between them.
+- All 220V components are **housed inside the wooden enclosure**.
+
 ### Solid State Relay (SSR)
 - SSR switches 220V AC current. Incorrect connection or a fault may cause the heater to remain on continuously (runaway heating).
 - Ensure the SSR mounting location is ventilated; temperature rise may occur.
@@ -58,6 +62,11 @@ If a problem occurs (heater not heating, motor spinning out of control, smoke, e
 - Inspect O-ring and Viton gasket surfaces; replace if damaged.
 - Ensure sensors are clean (especially optical sensors).
 - Check all electrical connections are tight once every 12 months.
+
+### After Each Experiment (or After Several Experiments)
+- **Inspect the interior of the wooden enclosure** for any signs of damage, loose connections, or abnormal heat.
+- **Check the fuse status** (Schneider FUSE 10C) and verify it has not tripped.
+- **Check the internal temperature** of the enclosure; ensure no abnormal heat buildup has occurred.
 
 ## 7. Disclaimer
 
