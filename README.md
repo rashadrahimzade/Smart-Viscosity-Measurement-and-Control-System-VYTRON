@@ -130,6 +130,12 @@ The diagram below shows the main mechanical modules of the VYTRON system:
 
 ![VYTRON Blueprint](./docs/images/Blueprint.jpg)
 
+### SolidWorks CAD Model
+
+The SolidWorks CAD assembly view of the VYTRON system:
+
+![VYTRON CAD Prototype](./docs/images/CAD%20prototype.png)
+
 ---
 
 ## 📁 Repository Structure
