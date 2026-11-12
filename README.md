@@ -10,7 +10,7 @@ VYTRON is an automated **falling-ball viscometer** developed as a **TÜBİTAK 22
 
 This repository contains the **firmware, circuit schematics, and mechanical CAD files** of the system.
 
-<img width="675" height="540" alt="VYTRON Prototype" src="https://github.com/user-attachments/assets/8b889f8e-9948-4315-9d08-34bf66bbcde4" />
+![VYTRON Prototype](./docs/images/Prototype.jpeg)
 
 ---
 
@@ -123,6 +123,12 @@ Because the ball falls in a bounded tube, the result is multiplied by a **wall-e
 **Mechanical design:** Modeled and assembled in **SolidWorks**, with custom-engineered sealing channels.
 
 **Electronics:** KiCad schematic in `Electronics/`; EMI protection using aluminum shielded cables, ferrite cores, and capacitor filtering.
+
+### Technical Diagram
+
+The diagram below shows the main mechanical modules of the VYTRON system:
+
+![VYTRON Blueprint](./docs/images/Blueprint.jpg)
 
 ---
 
