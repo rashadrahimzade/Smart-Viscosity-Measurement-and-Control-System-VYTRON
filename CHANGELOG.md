@@ -2,6 +2,21 @@
 
 All notable changes to the VYTRON project are documented in this file.
 
+## [v1.1.0] — 2026-05-04
+
+### Added
+- Comprehensive documentation under `docs/` (getting-started, wiring, assembly, calibration, safety, pricing, BOM, use-cases, CFD, comparison)
+- GitHub Actions Arduino CI workflow
+- Issue and Pull Request templates
+- Code of Conduct, Contributing, and Security policy files
+- KiCad schematic and component photos in `Electronics/`
+- CFD analysis files in `Mechanical/CFD_Analysis/`
+- BOM Excel files and index documentation
+
+### Changed
+- Enhanced firmware with bilingual UI (TR/EN), SSR heater control, measurement history, EEPROM calibration persistence
+- Updated README.md with complete project documentation
+
 ## [v1.0.0] — 2026-05-04
 
 ### Added
