@@ -1,3 +1,5 @@
+<div align="center">
+
 # 🔬 VYTRON: Smart Viscosity Measurement and Control System
 
 ![Platform](https://img.shields.io/badge/MCU-Arduino%20Mega%202560%20%2B%20Nano-00979D?logo=arduino&logoColor=white)
@@ -11,6 +13,8 @@ VYTRON is an automated **falling-ball viscometer** developed as a **TÜBİTAK 22
 This repository contains the **firmware, circuit schematics, and mechanical CAD files** of the system.
 
 ![VYTRON Prototype](./docs/images/Prototype.jpeg)
+
+</div>
 
 ---
 
@@ -126,15 +130,24 @@ Because the ball falls in a bounded tube, the result is multiplied by a **wall-e
 
 ### Technical Diagram
 
+<div align="center">
+
 The diagram below shows the main mechanical modules of the VYTRON system:
 
 ![VYTRON Blueprint](./docs/images/Blueprint.jpg)
 
+</div>
+
 ### SolidWorks CAD Model
+
+<div align="center">
 
 The SolidWorks CAD assembly view of the VYTRON system:
 
 ![VYTRON CAD Prototype](./docs/images/CAD%20prototype.png)
+
+</div>
+
 
 ---
 
