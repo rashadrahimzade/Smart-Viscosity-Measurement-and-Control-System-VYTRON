@@ -345,7 +345,6 @@ This project was supported by the **TÜBİTAK 2209-A** University Students Resea
 | [`docs/comparison.md`](./docs/comparison.md) | Laboratory viscometer comparison |
 | [`docs/bom/bom-index.md`](./docs/bom/bom-index.md) | Bill of Materials (BOM) |
 | [`CHANGELOG.md`](./CHANGELOG.md) | Version history |
-| [`CODE_OF_CONDUCT.md`](./CODE_OF_CONDUCT.md) | Code of Conduct |
 
 
 
