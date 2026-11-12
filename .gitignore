@@ -21,3 +21,23 @@ Thumbs.db
 
 # Electronics specific
 Electronics/Screenshot 2026-05-04 110541.png
+
+# KiCad additional files
+*.kicad_sch-bak
+*-cache.lib
+fp-lib-table
+*.kicad_wks
+*.kicad_prl
+
+# Arduino IDE additional
+.arduinoide/
+*.aux
+
+# IDEs / editors
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# Temporary backup files only
+*.xlsx~
