@@ -3,7 +3,6 @@
 ![Platform](https://img.shields.io/badge/MCU-Arduino%20Mega%202560%20%2B%20Nano-00979D?logo=arduino&logoColor=white)
 ![Language](https://img.shields.io/badge/Firmware-C%2B%2B%20(.ino)-blue)
 ![CAD](https://img.shields.io/badge/CAD-SolidWorks-red)
-![CI](https://img.shields.io/badge/GitHub%20Actions-Arduino%20CI-blueviolet)
 ![Project](https://img.shields.io/badge/T%C3%9CB%C4%B0TAK-2209--A-orange)
 ![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red)
 
@@ -131,11 +130,6 @@ Because the ball falls in a bounded tube, the result is multiplied by a **wall-e
 
 ```
 Smart-Viscosity-Measurement-and-Control-System-VYTRON/
-├── .github/
-│   ├── ISSUE_TEMPLATE/     # Bug and feature report templates
-│   ├── PULL_REQUEST_TEMPLATE.md
-│   └── workflows/
-│       └── arduino-ci.yml  # GitHub Actions Arduino build CI
 ├── Software/
 │   ├── Mega_IDE.ino        # Arduino Mega 2560 (main MCU) firmware
 │   └── Nano_IDE.ino        # Arduino Nano (motion MCU) firmware
@@ -171,9 +165,7 @@ Smart-Viscosity-Measurement-and-Control-System-VYTRON/
 ├── .gitignore
 ├── CHANGELOG.md                 # Version history
 ├── CODE_OF_CONDUCT.md           # Code of Conduct
-├── CONTRIBUTING.md              # Contributing guide
 ├── LICENSE.txt                  # All Rights Reserved license
-├── SECURITY.md                  # Security policy
 └── README.md                    # Project overview (this file)
 
 
@@ -259,34 +251,9 @@ Smart-Viscosity-Measurement-and-Control-System-VYTRON/
 - Pin definitions should be at the top of the sketch with `#define`.
 - Keep Turkish and English UI labels consistent where applicable.
 
-### Contributing
+### Contact
 
-See [`CONTRIBUTING.md`](./CONTRIBUTING.md) for full details. Summary:
-
-1. Fork the repository and create a new branch from `main`.
-2. Make your changes in a focused commit.
-3. Update documentation in `docs/` if your change affects usage, wiring, or assembly.
-4. Test on the actual hardware if possible.
-5. Open a pull request with a clear description of what was changed and why.
-
-### Bug and Feature Reports
-
-Use the templates in `.github/ISSUE_TEMPLATE/`. Include:
-
-- A clear title and description
-- Steps to reproduce (if applicable)
-- Hardware version (Mega 2560, Nano, JSS-860H, etc.)
-- Firmware version / commit hash
-- Photos or screenshots (if relevant)
-- Expected vs. actual behavior
-
-### Continuous Integration (CI)
-
-GitHub Actions Arduino CI is configured (`.github/workflows/arduino-ci.yml`). On every push or pull request to `main`:
-
-- Arduino CLI environment setup
-- Required libraries installed
-- `Mega_IDE.ino` (Arduino Mega 2560) and `Nano_IDE.ino` (Arduino Nano) compilation check
+For permission requests, bug reports, or questions, email: **rahimzaderashad1@gmail.com**
 
 ---
 
@@ -353,9 +320,7 @@ This project was supported by the **TÜBİTAK 2209-A** University Students Resea
 | [`docs/comparison.md`](./docs/comparison.md) | Laboratory viscometer comparison |
 | [`docs/bom/bom-index.md`](./docs/bom/bom-index.md) | Bill of Materials (BOM) |
 | [`CHANGELOG.md`](./CHANGELOG.md) | Version history |
-| [`CONTRIBUTING.md`](./CONTRIBUTING.md) | Contributing guide |
 | [`CODE_OF_CONDUCT.md`](./CODE_OF_CONDUCT.md) | Code of Conduct |
-| [`SECURITY.md`](./SECURITY.md) | Security policy |
 
 
 
