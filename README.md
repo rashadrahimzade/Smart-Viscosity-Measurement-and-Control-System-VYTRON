@@ -345,6 +345,7 @@ This project was supported by the **TÜBİTAK 2209-A** University Students Resea
 | [`docs/comparison.md`](./docs/comparison.md) | Laboratory viscometer comparison |
 | [`docs/bom/bom-index.md`](./docs/bom/bom-index.md) | Bill of Materials (BOM) |
 | [`CHANGELOG.md`](./CHANGELOG.md) | Version history |
+| [`Software/interference-mitigation.md`](./Software/interference-mitigation.md) | Software-level noise & interference mitigation |
 
 
 
