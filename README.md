@@ -157,7 +157,8 @@ The SolidWorks CAD assembly view of the VYTRON system:
 Smart-Viscosity-Measurement-and-Control-System-VYTRON/
 ├── Software/
 │   ├── Mega_IDE.ino        # Arduino Mega 2560 (main MCU) firmware
-│   └── Nano_IDE.ino        # Arduino Nano (motion MCU) firmware
+│   ├── Nano_IDE.ino        # Arduino Nano (motion MCU) firmware
+│   └── interference-mitigation.md  # Software-level noise & interference mitigation
 ├── Electronics/
 │   ├── Smart Viscosity Measurement and Control System.kicad_sch   # KiCad schematic
 │   ├── Dual-microcontroller control panel and power architecture..jpg
