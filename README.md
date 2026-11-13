@@ -5,6 +5,8 @@
 ![Platform](https://img.shields.io/badge/MCU-Arduino%20Mega%202560%20%2B%20Nano-00979D?logo=arduino&logoColor=white)
 ![Language](https://img.shields.io/badge/Firmware-C%2B%2B%20(.ino)-blue)
 ![CAD](https://img.shields.io/badge/CAD-SolidWorks-red)
+![ECAD](https://img.shields.io/badge/ECAD-KiCad-blue)
+![CFD](https://img.shields.io/badge/CFD-Ansys%20Fluent-blue)
 ![Project](https://img.shields.io/badge/T%C3%9CB%C4%B0TAK-2209--A-orange)
 ![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red)
 
